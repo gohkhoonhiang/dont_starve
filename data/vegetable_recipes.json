@@ -1,0 +1,929 @@
+{
+  "data": [
+    {
+      "name": "(Spicy) Vegetable Stinger",
+      "dlc": [
+        "Hamlet"
+      ],
+      "health": 3.0,
+      "hunger": 25.0,
+      "sanity": 33.0,
+      "perish_time": "15",
+      "cook_time": "10",
+      "priority": "15",
+      "requirements": [
+        "Radish (1)",
+        "Vegetables (1.5)",
+        "Ice (1)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "(Spicy) Vegetable Stinger",
+      "dlc": [
+        "Don't Starve Together"
+      ],
+      "health": 3.0,
+      "hunger": 25.0,
+      "sanity": 33.0,
+      "perish_time": "15",
+      "cook_time": "10",
+      "priority": "15",
+      "requirements": [
+        "Toma Root (1)",
+        "Vegetables (1.5)",
+        "Ice (1)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "(Spicy) Vegetable Stinger",
+      "dlc": [
+
+      ],
+      "health": 3.0,
+      "hunger": 25.0,
+      "sanity": 33.0,
+      "perish_time": "15",
+      "cook_time": "10",
+      "priority": "15",
+      "requirements": [
+        "Asparagus (1)",
+        "Vegetables (1.5)",
+        "Ice (1)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Asparagazpacho",
+      "dlc": [
+        "Don't Starve Together"
+      ],
+      "health": 3.0,
+      "hunger": 25.0,
+      "sanity": 10.0,
+      "perish_time": "15",
+      "cook_time": "10",
+      "priority": "30",
+      "requirements": [
+        "Asparagus (2)",
+        "Ice (2)"
+      ],
+      "filler_restrictions": [
+        "Cooked in Portable Crock Pot"
+      ]
+    },
+    {
+      "name": "Asparagus Soup",
+      "dlc": [
+        "Don't Starve Together"
+      ],
+      "health": 20.0,
+      "hunger": 18.75,
+      "sanity": 5.0,
+      "perish_time": "15",
+      "cook_time": "10",
+      "priority": "10",
+      "requirements": [
+        "Asparagus (1)",
+        "Vegetables (1.5)"
+      ],
+      "filler_restrictions": [
+        "No Meats",
+        "No Inedibles"
+      ]
+    },
+    {
+      "name": "Asparagus Soup",
+      "dlc": [
+        "Hamlet"
+      ],
+      "health": 20.0,
+      "hunger": 18.75,
+      "sanity": 5.0,
+      "perish_time": "15",
+      "cook_time": "10",
+      "priority": "10",
+      "requirements": [
+        "Asparagus (1)",
+        "Vegetables (0.5)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Barnacle Linguine",
+      "dlc": [
+        "Don't Starve Together"
+      ],
+      "health": 10.0,
+      "hunger": 75.0,
+      "sanity": 20.0,
+      "perish_time": "6",
+      "cook_time": "40",
+      "priority": "25",
+      "requirements": [
+        "Barnacle (2)",
+        "Vegetables (2.0)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Barnacle Nigiri",
+      "dlc": [
+        "Don't Starve Together"
+      ],
+      "health": 40.0,
+      "hunger": 37.5,
+      "sanity": 5.0,
+      "perish_time": "10",
+      "cook_time": "10",
+      "priority": "30",
+      "requirements": [
+        "Barnacle (1)",
+        "Kelp Frond (1)",
+        "Eggs (1)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Barnacle Pita",
+      "dlc": [
+        "Don't Starve Together"
+      ],
+      "health": 20.0,
+      "hunger": 37.5,
+      "sanity": 5.0,
+      "perish_time": "15",
+      "cook_time": "40",
+      "priority": "25",
+      "requirements": [
+        "Barnacle (1)",
+        "Vegetables (1.0)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Beefy Greens",
+      "dlc": [
+        "Don't Starve Together"
+      ],
+      "health": 40.0,
+      "hunger": 75.0,
+      "sanity": 5.0,
+      "perish_time": "6",
+      "cook_time": "40",
+      "priority": "25",
+      "requirements": [
+        "Leafy Meat (1)",
+        "Vegetables (3.0)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Bone Bouillon",
+      "dlc": [
+        "Don't Starve Together"
+      ],
+      "health": 32.0,
+      "hunger": 150.0,
+      "sanity": 5.0,
+      "perish_time": "10",
+      "cook_time": "40",
+      "priority": "30",
+      "requirements": [
+        "Bone Shard (2)",
+        "Onion (1)"
+      ],
+      "filler_restrictions": [
+        "No Inedibles",
+        "Cooked in Portable Crock Pot"
+      ]
+    },
+    {
+      "name": "Butter Muffin",
+      "dlc": [
+
+      ],
+      "health": 20.0,
+      "hunger": 37.5,
+      "sanity": 5.0,
+      "perish_time": "15",
+      "cook_time": "40",
+      "priority": "1",
+      "requirements": [
+        "Butterfly Wing (1)",
+        "Vegetables (0.5)"
+      ],
+      "filler_restrictions": [
+        "No Meats"
+      ]
+    },
+    {
+      "name": "Butter Muffin",
+      "dlc": [
+        "Don't Starve Together"
+      ],
+      "health": 20.0,
+      "hunger": 37.5,
+      "sanity": 5.0,
+      "perish_time": "15",
+      "cook_time": "40",
+      "priority": "1",
+      "requirements": [
+        "Moon Moth Wing (1)",
+        "Vegetables (0.5)"
+      ],
+      "filler_restrictions": [
+        "No Meats"
+      ]
+    },
+    {
+      "name": "Butter Muffin",
+      "dlc": [
+        "Reign of Giants"
+      ],
+      "health": 20.0,
+      "hunger": 37.5,
+      "sanity": 5.0,
+      "perish_time": "15",
+      "cook_time": "40",
+      "priority": "1",
+      "requirements": [
+        "Moon Moth Wing (1)",
+        "Vegetables (0.5)",
+        "Ice (2)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "California Roll",
+      "dlc": [
+        "Shipwrecked"
+      ],
+      "health": 20.0,
+      "hunger": 37.5,
+      "sanity": 10.0,
+      "perish_time": "10",
+      "cook_time": "10",
+      "priority": "20",
+      "requirements": [
+        "Seaweed (2)",
+        "Fishes (1.0)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "California Roll",
+      "dlc": [
+        "Don't Starve Together"
+      ],
+      "health": 20.0,
+      "hunger": 37.5,
+      "sanity": 10.0,
+      "perish_time": "10",
+      "cook_time": "10",
+      "priority": "20",
+      "requirements": [
+        "Kelp Frond (2)",
+        "Fishes (1.0)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Caviar",
+      "dlc": [
+        "Shipwrecked"
+      ],
+      "health": 3.0,
+      "hunger": 12.5,
+      "sanity": 33.0,
+      "perish_time": "10",
+      "cook_time": "40",
+      "priority": "20",
+      "requirements": [
+        "Roe (1)",
+        "Vegetables (1.0)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Caviar",
+      "dlc": [
+        "Shipwrecked"
+      ],
+      "health": 3.0,
+      "hunger": 12.5,
+      "sanity": 33.0,
+      "perish_time": "10",
+      "cook_time": "40",
+      "priority": "20",
+      "requirements": [
+        "Cooked Roe (3)",
+        "Vegetables (1.0)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Creamy Potato Purée",
+      "dlc": [
+        "Don't Starve Together"
+      ],
+      "health": 20.0,
+      "hunger": 37.5,
+      "sanity": 33.0,
+      "perish_time": "15",
+      "cook_time": "20",
+      "priority": "20",
+      "requirements": [
+        "Potato (2)",
+        "Garlic (1)"
+      ],
+      "filler_restrictions": [
+        "No Meats",
+        "No Inedibles"
+      ]
+    },
+    {
+      "name": "Fancy Spiralled Tubers",
+      "dlc": [
+        "Don't Starve Together"
+      ],
+      "health": 3.0,
+      "hunger": 37.5,
+      "sanity": 15.0,
+      "perish_time": "10",
+      "cook_time": "15",
+      "priority": "10",
+      "requirements": [
+        "Potato (1)",
+        "Twig (1)"
+      ],
+      "filler_restrictions": [
+        "No Meats",
+        "Maximum Inedibles (1)",
+        "Maximum Monster Food (1)"
+      ]
+    },
+    {
+      "name": "Fish Tacos",
+      "dlc": [
+
+      ],
+      "health": 20.0,
+      "hunger": 37.5,
+      "sanity": 5.0,
+      "perish_time": "6",
+      "cook_time": "10",
+      "priority": "10",
+      "requirements": [
+        "Fishes (0.25)",
+        "Corn (1)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Flower Salad",
+      "dlc": [
+        "Reign of Giants"
+      ],
+      "health": 40.0,
+      "hunger": 12.5,
+      "sanity": 5.0,
+      "perish_time": "6",
+      "cook_time": "10",
+      "priority": "10",
+      "requirements": [
+        "Cactus Flower (1)",
+        "Vegetables (2.0)"
+      ],
+      "filler_restrictions": [
+        "No Fruits",
+        "No Meats",
+        "No Eggs",
+        "No Sweeteners",
+        "No Inedibles"
+      ]
+    },
+    {
+      "name": "Froggle Bunwich",
+      "dlc": [
+
+      ],
+      "health": 20.0,
+      "hunger": 37.5,
+      "sanity": 5.0,
+      "perish_time": "15",
+      "cook_time": "40",
+      "priority": "1",
+      "requirements": [
+        "Frog Leg (1)",
+        "Vegetables (0.5)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Grim Galette",
+      "dlc": [
+        "Don't Starve Together"
+      ],
+      "health": 1.0,
+      "hunger": 25.0,
+      "sanity": 5.0,
+      "perish_time": "10",
+      "cook_time": "40",
+      "priority": "30",
+      "requirements": [
+        "Nightmare Fuel (2)",
+        "Potato (1)",
+        "Onion (1)"
+      ],
+      "filler_restrictions": [
+        "Cooked in Portable Crock Pot"
+      ]
+    },
+    {
+      "name": "Guacamole",
+      "dlc": [
+
+      ],
+      "health": 20.0,
+      "hunger": 37.5,
+      "sanity": 0.0,
+      "perish_time": "10",
+      "cook_time": "10",
+      "priority": "10",
+      "requirements": [
+        "Cactus Flesh (1)",
+        "Moleworm (1)"
+      ],
+      "filler_restrictions": [
+        "No Fruits"
+      ]
+    },
+    {
+      "name": "Guacamole",
+      "dlc": [
+        "Don't Starve Together"
+      ],
+      "health": 20.0,
+      "hunger": 37.5,
+      "sanity": 0.0,
+      "perish_time": "10",
+      "cook_time": "10",
+      "priority": "10",
+      "requirements": [
+        "Ripe Stone Fruit (1)",
+        "Moleworm (1)"
+      ],
+      "filler_restrictions": [
+        "No Fruits"
+      ]
+    },
+    {
+      "name": "Hot Dragon Chili Salad",
+      "dlc": [
+        "Don't Starve Together"
+      ],
+      "health": -3.0,
+      "hunger": 25.0,
+      "sanity": 10.0,
+      "perish_time": "15",
+      "cook_time": "15",
+      "priority": "30",
+      "requirements": [
+        "Dragon Fruit (1)",
+        "Pepper (1)"
+      ],
+      "filler_restrictions": [
+        "No Eggs",
+        "No Inedibles",
+        "No Meats",
+        "Cooked in Portable Crock Pot"
+      ]
+    },
+    {
+      "name": "Mandrake Soup",
+      "dlc": [
+
+      ],
+      "health": 100.0,
+      "hunger": 150.0,
+      "sanity": 5.0,
+      "perish_time": "6",
+      "cook_time": "60",
+      "priority": "10",
+      "requirements": [
+        "Mandrake (1)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Monster Tartare",
+      "dlc": [
+        "Shipwrecked"
+      ],
+      "health": 3.0,
+      "hunger": 37.5,
+      "sanity": 10.0,
+      "perish_time": "10",
+      "cook_time": "20",
+      "priority": "30",
+      "requirements": [
+        "Monster Foods (2.0)",
+        "Eggs (1.0)",
+        "Vegetables (0.5)"
+      ],
+      "filler_restrictions": [
+        "Cooked in Portable Crock Pot"
+      ]
+    },
+    {
+      "name": "Moqueca",
+      "dlc": [
+        "Don't Starve Together"
+      ],
+      "health": 60.0,
+      "hunger": 112.5,
+      "sanity": 33.0,
+      "perish_time": "8",
+      "cook_time": "40",
+      "priority": "30",
+      "requirements": [
+        "Toma Root (1)",
+        "Onion (1)",
+        "Fishes (0.25)"
+      ],
+      "filler_restrictions": [
+        "No Inedibles",
+        "Cooked in Portable Crock Pot"
+      ]
+    },
+    {
+      "name": "Mushy Cake",
+      "dlc": [
+
+      ],
+      "health": 0.0,
+      "hunger": 25.0,
+      "sanity": 10.0,
+      "perish_time": "15",
+      "cook_time": "20",
+      "priority": "55",
+      "requirements": [
+        "Moon Shroom (1)",
+        "Red Cap (1)",
+        "Blue Cap (1)",
+        "Green Cap (1)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Mussel Bouillabaise",
+      "dlc": [
+        "Shipwrecked"
+      ],
+      "health": 20.0,
+      "hunger": 37.5,
+      "sanity": 15.0,
+      "perish_time": "10",
+      "cook_time": "20",
+      "priority": "30",
+      "requirements": [
+        "Mussel (2)",
+        "Vegetables (2.0)"
+      ],
+      "filler_restrictions": [
+        "Cooked in Portable Crock Pot"
+      ]
+    },
+    {
+      "name": "Pierogi",
+      "dlc": [
+
+      ],
+      "health": 40.0,
+      "hunger": 37.5,
+      "sanity": 5.0,
+      "perish_time": "20",
+      "cook_time": "20",
+      "priority": "5",
+      "requirements": [
+        "Eggs (1.0)",
+        "Meats (0.25)",
+        "Vegetables (0.5)"
+      ],
+      "filler_restrictions": [
+        "No Inedibles"
+      ]
+    },
+    {
+      "name": "Powdercake",
+      "dlc": [
+
+      ],
+      "health": -3.0,
+      "hunger": 0.0,
+      "sanity": 0.0,
+      "perish_time": "18750",
+      "cook_time": "10",
+      "priority": "10",
+      "requirements": [
+        "Corn (1)",
+        "Honey (1)",
+        "Twig (1)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Puffed Potato Soufflé",
+      "dlc": [
+        "Don't Starve Together"
+      ],
+      "health": 20.0,
+      "hunger": 37.5,
+      "sanity": 15.0,
+      "perish_time": "10",
+      "cook_time": "40",
+      "priority": "30",
+      "requirements": [
+        "Potato (2)",
+        "Eggs (1)"
+      ],
+      "filler_restrictions": [
+        "No Meats",
+        "No Inedibles",
+        "Cooked in Portable Crock Pot"
+      ]
+    },
+    {
+      "name": "Pumpkin Cookie",
+      "dlc": [
+
+      ],
+      "health": 0.0,
+      "hunger": 37.5,
+      "sanity": 15.0,
+      "perish_time": "10",
+      "cook_time": "40",
+      "priority": "10",
+      "requirements": [
+        "Pumpkin (1)",
+        "Sweeteners (2)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Ratatouille",
+      "dlc": [
+
+      ],
+      "health": 3.0,
+      "hunger": 25.0,
+      "sanity": 5.0,
+      "perish_time": "15",
+      "cook_time": "20",
+      "priority": "0",
+      "requirements": [
+        "Vegetables (0.5)"
+      ],
+      "filler_restrictions": [
+        "No Meats",
+        "No Inedibles"
+      ]
+    },
+    {
+      "name": "Salsa Fresca",
+      "dlc": [
+        "Don't Starve Together"
+      ],
+      "health": 3.0,
+      "hunger": 25.0,
+      "sanity": 33.0,
+      "perish_time": "15",
+      "cook_time": "10",
+      "priority": "20",
+      "requirements": [
+        "Toma Root (1)",
+        "Onion (1)"
+      ],
+      "filler_restrictions": [
+        "No Meats Inedibles"
+      ]
+    },
+    {
+      "name": "Spicy Chili",
+      "dlc": [
+        "Reign of Giants"
+      ],
+      "health": 20.0,
+      "hunger": 37.5,
+      "sanity": 0.0,
+      "perish_time": "10",
+      "cook_time": "10",
+      "priority": "10",
+      "requirements": [
+        "Vegetables (1.5)",
+        "Meats (1.5)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Stuffed Eggplant",
+      "dlc": [
+
+      ],
+      "health": 3.0,
+      "hunger": 37.5,
+      "sanity": 5.0,
+      "perish_time": "15",
+      "cook_time": "40",
+      "priority": "1",
+      "requirements": [
+        "Eggplant (1)",
+        "Vegetables (0.5)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Stuffed Pepper Poppers",
+      "dlc": [
+        "Don't Starve Together"
+      ],
+      "health": 30.0,
+      "hunger": 25.0,
+      "sanity": -5.0,
+      "perish_time": "15",
+      "cook_time": "40",
+      "priority": "20",
+      "requirements": [
+        "Pepper (1)",
+        "Meats (0.25)"
+      ],
+      "filler_restrictions": [
+        "No Inedibles",
+        "Maximum Meats (1.5)"
+      ]
+    },
+    {
+      "name": "Sweet Potato Souffle",
+      "dlc": [
+        "Shipwrecked"
+      ],
+      "health": 20.0,
+      "hunger": 37.5,
+      "sanity": 15.0,
+      "perish_time": "10",
+      "cook_time": "20",
+      "priority": "30",
+      "requirements": [
+        "Sweet Potato (2)",
+        "Eggs (2.0)"
+      ],
+      "filler_restrictions": [
+        "Cooked in Portable Crock Pot"
+      ]
+    },
+    {
+      "name": "Tropical Bouillabaisse",
+      "dlc": [
+        "Shipwrecked"
+      ],
+      "health": 20.0,
+      "hunger": 37.5,
+      "sanity": 15.0,
+      "perish_time": "10",
+      "cook_time": "40",
+      "priority": "35",
+      "requirements": [
+        "Purple Grouper (1)",
+        "Pierrot Fish (1)",
+        "Neon Quattro (1)",
+        "Vegetables (1)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Turkey Dinner",
+      "dlc": [
+
+      ],
+      "health": 20.0,
+      "hunger": 75.0,
+      "sanity": 5.0,
+      "perish_time": "6",
+      "cook_time": "60",
+      "priority": "10",
+      "requirements": [
+        "Drumstick (2)",
+        "Meats (0.25)",
+        "Fruits (0.5)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Turkey Dinner",
+      "dlc": [
+
+      ],
+      "health": 20.0,
+      "hunger": 75.0,
+      "sanity": 5.0,
+      "perish_time": "6",
+      "cook_time": "60",
+      "priority": "10",
+      "requirements": [
+        "Drumstick (2)",
+        "Meats (0.25)",
+        "Vegetables (0.5)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Unagi",
+      "dlc": [
+
+      ],
+      "health": 20.0,
+      "hunger": 18.75,
+      "sanity": 5.0,
+      "perish_time": "10",
+      "cook_time": "10",
+      "priority": "20",
+      "requirements": [
+        "Eel (1)",
+        "Lichen (1)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Veggie Burger",
+      "dlc": [
+        "Don't Starve Together"
+      ],
+      "health": 30.0,
+      "hunger": 37.5,
+      "sanity": 33.0,
+      "perish_time": "6",
+      "cook_time": "40",
+      "priority": "25",
+      "requirements": [
+        "Leafy Meat (1)",
+        "Onion (1)",
+        "Vegetables (1.0)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    }
+  ]
+}
