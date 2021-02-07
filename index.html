@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.9.55/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <style>
+    [v-cloak] > * { display:none }
+    [v-cloak]::before {  /* source: https://gist.github.com/wellington1993/d842720aff297d0a27cc8fb8c1e3735f */
+      content: " ";
+      display: block;
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background:  url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjAiIHdpZHRoPSI2NHB4IiBoZWlnaHQ9IjY0cHgiIHZpZXdCb3g9IjAgMCAxMjggMTI4IiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz48cGF0aCBkPSJNNzEgMzkuMlYuNGE2My42IDYzLjYgMCAwIDEgMzMuOTYgMTQuNTdMNzcuNjggNDIuMjRhMjUuNTMgMjUuNTMgMCAwIDAtNi43LTMuMDN6IiBmaWxsPSIjMDAwIi8+PHBhdGggZD0iTTcxIDM5LjJWLjRhNjMuNiA2My42IDAgMCAxIDMzLjk2IDE0LjU3TDc3LjY4IDQyLjI0YTI1LjUzIDI1LjUzIDAgMCAwLTYuNy0zLjAzeiIgZmlsbD0iI2UxZTFlMSIgdHJhbnNmb3JtPSJyb3RhdGUoNDUgNjQgNjQpIi8+PHBhdGggZD0iTTcxIDM5LjJWLjRhNjMuNiA2My42IDAgMCAxIDMzLjk2IDE0LjU3TDc3LjY4IDQyLjI0YTI1LjUzIDI1LjUzIDAgMCAwLTYuNy0zLjAzeiIgZmlsbD0iI2UxZTFlMSIgdHJhbnNmb3JtPSJyb3RhdGUoOTAgNjQgNjQpIi8+PHBhdGggZD0iTTcxIDM5LjJWLjRhNjMuNiA2My42IDAgMCAxIDMzLjk2IDE0LjU3TDc3LjY4IDQyLjI0YTI1LjUzIDI1LjUzIDAgMCAwLTYuNy0zLjAzeiIgZmlsbD0iI2UxZTFlMSIgdHJhbnNmb3JtPSJyb3RhdGUoMTM1IDY0IDY0KSIvPjxwYXRoIGQ9Ik03MSAzOS4yVi40YTYzLjYgNjMuNiAwIDAgMSAzMy45NiAxNC41N0w3Ny42OCA0Mi4yNGEyNS41MyAyNS41MyAwIDAgMC02LjctMy4wM3oiIGZpbGw9IiNiZWJlYmUiIHRyYW5zZm9ybT0icm90YXRlKDE4MCA2NCA2NCkiLz48cGF0aCBkPSJNNzEgMzkuMlYuNGE2My42IDYzLjYgMCAwIDEgMzMuOTYgMTQuNTdMNzcuNjggNDIuMjRhMjUuNTMgMjUuNTMgMCAwIDAtNi43LTMuMDN6IiBmaWxsPSIjOTc5Nzk3IiB0cmFuc2Zvcm09InJvdGF0ZSgyMjUgNjQgNjQpIi8+PHBhdGggZD0iTTcxIDM5LjJWLjRhNjMuNiA2My42IDAgMCAxIDMzLjk2IDE0LjU3TDc3LjY4IDQyLjI0YTI1LjUzIDI1LjUzIDAgMCAwLTYuNy0zLjAzeiIgZmlsbD0iIzZlNmU2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoMjcwIDY0IDY0KSIvPjxwYXRoIGQ9Ik03MSAzOS4yVi40YTYzLjYgNjMuNiAwIDAgMSAzMy45NiAxNC41N0w3Ny42OCA0Mi4yNGEyNS41MyAyNS41MyAwIDAgMC02LjctMy4wM3oiIGZpbGw9IiMzYzNjM2MiIHRyYW5zZm9ybT0icm90YXRlKDMxNSA2NCA2NCkiLz48YW5pbWF0ZVRyYW5zZm9ybSBhdHRyaWJ1dGVOYW1lPSJ0cmFuc2Zvcm0iIHR5cGU9InJvdGF0ZSIgdmFsdWVzPSIwIDY0IDY0OzQ1IDY0IDY0OzkwIDY0IDY0OzEzNSA2NCA2NDsxODAgNjQgNjQ7MjI1IDY0IDY0OzI3MCA2NCA2NDszMTUgNjQgNjQiIGNhbGNNb2RlPSJkaXNjcmV0ZSIgZHVyPSI3MjBtcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiPjwvYW5pbWF0ZVRyYW5zZm9ybT48L2c+PGc+PGNpcmNsZSBmaWxsPSIjMDAwIiBjeD0iNjMuNjYiIGN5PSI2My4xNiIgcj0iMTIiLz48YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJvcGFjaXR5IiBkdXI9IjcyMG1zIiBiZWdpbj0iMHMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiBrZXlUaW1lcz0iMDswLjU7MSIgdmFsdWVzPSIxOzA7MSIvPjwvZz48L3N2Zz4=') 50% 50% no-repeat rgb(249,249,249);
+    }
+
+    .v-application--is-ltr .v-data-table__mobile-row__cell {
+      max-width: 50% !important;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <v-app v-cloak>
+
+      <v-bottom-navigation>
+        <v-btn href="https://gohkhoonhiang.github.io/dont_starve_recipes" disabled>
+          <span>Recipes</span>
+          <v-icon>mdi-book-outline</v-icon>
+        </v-btn>
+      </v-bottom-navigation>
+
+      <v-main>
+        <v-container>
+          <v-card
+            class="mx-auto"
+            color="secondary"
+            light
+            outlined
+          >
+            <v-card-text class="font--text">
+              <p>
+                <strong>
+                This is the Don't Starve recipes list. All data are sourced from the <a href="https://dontstarve.fandom.com/wiki/Don%27t_Starve_Wiki">Fandom Wiki</a>.
+                </strong>
+              </p>
+            </v-card-text>
+          </v-card>
+
+        </v-container>
+
+        <v-spacer></v-spacer>
+
+        <v-container>
+          <v-toolbar flat color="toolbar" light>
+            <v-toolbar-title class="header--text font-weight-black">
+              <div class="sm-12">Recipes</div>
+            </v-toolbar-title>
+          </v-toolbar>
+          <v-tabs
+            v-model="tab"
+            background-color="toolbar"
+            light
+            show-arrows
+          >
+
+            <v-tab key="crockpot_tab">
+              Crockpot
+              <v-icon left>mdi-pot-mix-outline</v-icon>
+            </v-tab>
+            <v-tab key="help_tab">
+              Help
+              <v-icon left>mdi-help</v-icon>
+            </v-tab>
+
+            <v-tab-item key="crockpot_tab">
+
+              <v-container>
+                <v-card
+                  class="mx-auto"
+                  color="secondary"
+                  light
+                  outlined
+                >
+                  <v-card-text class="font--text">
+                    <div class="subtitle-1 mb-1 font-weight-bold">Global Controls</div>
+                    <div class="caption mb-1 font-weight-bold">Applies to all recipe list views.</div>
+                    <v-row>
+                      <v-checkbox
+                        v-model="toggle_dlc"
+                        class="mx-2"
+                        label="Don't Starve Together"
+                        value="DST"
+                      ></v-checkbox>
+                      <v-checkbox
+                        v-model="toggle_dlc"
+                        class="mx-2"
+                        label="Shipwrecked"
+                        value="SW"
+                      ></v-checkbox>
+                      <v-checkbox
+                        v-model="toggle_dlc"
+                        class="mx-2"
+                        label="Hamlet"
+                        value="H"
+                      ></v-checkbox>
+                      <v-checkbox
+                        v-model="toggle_dlc"
+                        class="mx-2"
+                        label="Reign of Giants"
+                        value="ROG"
+                      ></v-checkbox>
+                    </v-row>
+
+                    <v-row dense>
+                      <v-col
+                        cols="12"
+                        :xl="4"
+                        :lg="4"
+                        :md="4"
+                        :sm="12"
+                        :xs="12"
+                      >
+                        <v-card
+                          color="rgba(255, 255, 255, 0)"
+                          flat
+                        >
+                          <v-card-text>
+                            <v-text-field
+                              v-model="health_threshold"
+                              prepend-icon="mdi-heart-plus-outline"
+                              label="Health Threshold"
+                              type="number"
+                              hint="Set a threshold for health, recipes with this health value or higher will be highlighted"
+                              persistent-hint
+                            ></v-text-field>
+                          </v-card-text>
+                        </v-card>
+                      </v-col>
+
+                      <v-col
+                        cols="12"
+                        :xl="4"
+                        :lg="4"
+                        :md="4"
+                        :sm="12"
+                        :xs="12"
+                      >
+                        <v-card
+                          color="rgba(255, 255, 255, 0)"
+                          flat
+                        >
+                          <v-card-text>
+                            <v-text-field
+                              v-model="hunger_threshold"
+                              prepend-icon="mdi-stomach"
+                              label="Hunger Threshold"
+                              type="number"
+                              hint="Set a threshold for hunger, recipes with this hunger value or higher will be highlighted"
+                              persistent-hint
+                            ></v-text-field>
+                          </v-card-text>
+                        </v-card>
+                      </v-col>
+
+                      <v-col
+                        cols="12"
+                        :xl="4"
+                        :lg="4"
+                        :md="4"
+                        :sm="12"
+                        :xs="12"
+                      >
+                        <v-card
+                          color="rgba(255, 255, 255, 0)"
+                          flat
+                        >
+                          <v-card-text>
+                            <v-text-field
+                              v-model="sanity_threshold"
+                              prepend-icon="mdi-brain"
+                              label="Sanity Threshold"
+                              type="number"
+                              hint="Set a threshold for sanity, recipes with this sanity value or higher will be highlighted"
+                              persistent-hint
+                            ></v-text-field>
+                          </v-card-text>
+                        </v-card>
+                      </v-col>
+
+                    </v-row>
+
+                  </v-card-text>
+                </v-card>
+              </v-container>
+
+              <v-card flat>
+                <v-tabs
+                  show-arrows
+                >
+                  <v-tab key="vegetable_tab">
+                    Vegetable
+                    <v-icon left>mdi-fruit-watermelon</v-icon>
+                  </v-tab>
+                  <v-tab key="meat_tab">
+                    Meat
+                    <v-icon left>mdi-food-drumstick-outline</v-icon>
+                  </v-tab>
+
+                  <v-tab-item key="vegetable_tab">
+                    <v-container>
+                      <v-card
+                        class="mx-auto"
+                        color="secondary"
+                        flat
+                      >
+                        <v-card-text class="font--text">
+                          <div class="subtitle-1 mb-1 font-weight-bold">Filters <v-btn text small @click="clearVegetableFilters">Clear all</v-btn></div>
+                        </v-card-text>
+
+                        <v-container fluid>
+                          <v-row dense>
+                            <v-col
+                              cols="12"
+                              :xl="4"
+                              :lg="4"
+                              :md="4"
+                              :sm="12"
+                              :xs="12"
+                            >
+                              <v-card
+                                color="rgba(255, 255, 255, 0)"
+                                flat
+                              >
+                                <v-card-text>
+                                  <v-text-field
+                                    v-model="vegetable_search"
+                                    label="Filter name"
+                                    clearable
+                                    dense
+                                  ></v-text-field>
+                                </v-card-text>
+                              </v-card>
+                            </v-col>
+
+                            <v-col
+                              cols="12"
+                              :xl="4"
+                              :lg="4"
+                              :md="4"
+                              :sm="12"
+                              :xs="12"
+                            >
+                              <v-card
+                                color="rgba(255, 255, 255, 0)"
+                                flat
+                              >
+                                <v-card-text>
+                                  <v-switch
+                                    v-model="toggle_vegetable_favourite"
+                                    label="Favourite only"
+                                  ></v-switch>
+                                </v-card-text>
+                              </v-card>
+                            </v-col>
+                            
+                            <v-col
+                              cols="12"
+                              :xl="6"
+                              :lg="6"
+                              :md="6"
+                              :sm="12"
+                              :xs="12"
+                            >
+                              <v-card
+                                color="rgba(255, 255, 255, 0)"
+                                flat
+                              >
+                                <v-card-text>
+                                  <v-select
+                                    v-model="vegetable_requirements_search"
+                                    label="Requirements"
+                                    :items="requirements_materials"
+                                    multiple
+                                    chips
+                                    deletable-chips
+                                    dense
+                                  ></v-select>
+                                </v-card-text>
+                              </v-card>
+                            </v-col>
+
+                          </v-row>
+                        </v-container>
+                      </v-card>
+                    </v-container>
+
+                    <v-card flat>
+                      <v-data-table
+                        :headers="vegetable_headers"
+                        :items="vegetable_data"
+                        :search="vegetable_search"
+                        class="elevation-1"
+                        disable-pagination
+                        hide-default-footer
+                      >
+                        <template v-slot:item.dlc="{ item }">
+                          <v-chip-group
+                            dense
+                          >
+                            <v-chip
+                              v-for="(dlc, i) in item.dlc"
+                              :key="i"
+                              small
+                              disabled
+                            >
+                              {{ dlc }}
+                            </v-chip>
+                          </v-chip-group>
+                        </template>
+
+                        <template v-slot:item.health="{ item }">
+                          <v-chip :color="highlightValue(item.health, health_threshold)" :text-color="highlightText(item.health, health_threshold)">{{ item.health }}</v-chip>
+                        </template>
+
+                        <template v-slot:item.hunger="{ item }">
+                          <v-chip :color="highlightValue(item.hunger, hunger_threshold)" :text-color="highlightText(item.hunger, hunger_threshold)">{{ item.hunger }}</v-chip>
+                        </template>
+
+                        <template v-slot:item.sanity="{ item }">
+                          <v-chip :color="highlightValue(item.sanity, sanity_threshold)" :text-color="highlightText(item.sanity, sanity_threshold)">{{ item.sanity }}</v-chip>
+                        </template>
+
+                        <template v-slot:item.requirements="{ item }">
+                          <v-chip-group
+                            column
+                          >
+                            <v-chip
+                              v-for="(requirement, i) in item.requirements"
+                              :key="i"
+                              small
+                              disabled
+                            >
+                              {{ requirement }}
+                            </v-chip>
+                          </v-chip-group>
+                        </template>
+
+                        <template v-slot:item.filler_restrictions="{ item }">
+                          <v-chip-group
+                            column
+                          >
+                            <v-chip
+                              v-for="(restriction, i) in item.filler_restrictions"
+                              :key="i"
+                              small
+                              disabled
+                            >
+                              {{ restriction }}
+                            </v-chip>
+                          </v-chip-group>
+                        </template>
+
+                        <template v-slot:item.favourite="{ item }">
+                          <v-switch
+                            v-model="item.favourite"
+                            @change="updateFavourite(item)"
+                          ></v-switch>
+                        </template>
+
+                      </v-data-table>
+                    </v-card>
+                  </v-tab-item>
+
+                </v-tabs>
+              </v-card>
+            </v-tab-item>
+
+            <v-tab-item key="help_tab">
+              <v-card flat>
+                <v-container>
+                  <v-row dense>
+                    <v-col cols="12">
+                      <v-card
+                        color="secondary"
+                      >
+                        <v-card-title class="headline header--text">What is this site about?</v-card-title>
+                        <v-card-subtitle>
+                          <p>When I first started playing DST, I found myself frequently checking the <a href="https://dontstarve.fandom.com/wiki/Crock_Pot#Recipes_for_the_Crock_Pot" target="_blank">Fandom crockpot recipes</a> to find out what recipes are available for a particular ingredient/material.</p>
+                          <p>The Fandom page was great, but it is difficult to search and filter due to the ingredients/materials being rendered with icons.</p>
+                          <p>I decided to create a simple website like this one to allow easier search and filter.</p>
+                        </v-card-subtitle>
+                      </v-card>
+                    </v-col>
+                  </v-row>
+
+                  <v-row dense>
+                    <v-col cols="12">
+                      <v-card
+                        color="secondary"
+                      >
+                        <v-card-title class="headline header--text">Where do you get your data from?</v-card-title>
+                        <v-card-subtitle>
+                          <p>As mentioned in the previous answer, I got my data from the <a href="https://dontstarve.fandom.com/wiki/Crock_Pot#Recipes_for_the_Crock_Pot" target="_blank">Fandom crockpot recipes</a>.</p>
+                          <p>I downloaded the HTML source, normalized some values, and exported the data into CSV format. Then I cleaned up the CSV data manually, eg. to separate the recipes that allow for different alternative materials in different DLC versions. Finally, the cleaned up data are exported to JSON format, which is then served to the website.</p>
+                          <p>As some of the data cleanup is automated, there may be error in interpreting the raw data. Feel free to submit a request for change.</p>
+                        </v-card-subtitle>
+                      </v-card>
+                    </v-col>
+                  </v-row>
+
+                  <v-row dense>
+                    <v-col cols="12">
+                      <v-card
+                        color="secondary"
+                      >
+                        <v-card-title class="headline header--text">Which browsers are supported?</v-card-title>
+                        <v-card-subtitle>
+                          <p>This site has only been tested on MacOS Safari (Version 14.0.2 (16610.3.7.1.9)). No guarantee that it will work on other browsers.</p>
+                        </v-card-subtitle>
+                      </v-card>
+                    </v-col>
+                  </v-row>
+
+                  <v-row dense>
+                    <v-col cols="12">
+                      <v-card
+                        color="secondary"
+                      >
+                        <v-card-title class="headline header--text">Where did you get the color scheme from?</v-card-title>
+                        <v-card-subtitle>
+                          <p>The color scheme is inspired by the <a href="https://dontstarve.fandom.com/wiki/Don%27t_Starve_Wiki" target="_blank">Fandom Wiki</a>.</p>
+                        </v-card-subtitle>
+                      </v-card>
+                    </v-col>
+                  </v-row>
+
+                  <v-row dense>
+                    <v-col cols="12">
+                      <v-card
+                        color="secondary"
+                      >
+                        <v-card-title class="headline header--text">How do I reset all the controls?</v-card-title>
+                        <v-card-subtitle>
+                          <p>Just simply click <v-btn text small @click="resetSettings">here</v-btn> and reload your page. :)</p>
+                        </v-card-subtitle>
+                      </v-card>
+                    </v-col>
+                  </v-row>
+                </v-container>
+              </v-card>
+            </v-tab-item>
+          </v-tabs>
+
+        </v-container>
+      </v-main>
+    </v-app>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script src="assets/javascripts/main.js"></script>
+  <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+</body>
+</html>
