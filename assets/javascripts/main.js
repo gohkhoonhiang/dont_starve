@@ -107,7 +107,8 @@ var app = new Vue({
         url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve_recipes/master/data/vegetable_recipes.json',
         method: 'GET'
       }).then(function (response) {
-        var formatted_data = response.data.map(function(row, index) {
+        var vegetable_data = JSON.parse(response).data;
+        var formatted_data = vegetable_data.map(function(row, index) {
           var updated_row = row;
           updated_row.id = index + '_vegetable_' + row.name.replace(/\s/, '_').toLowerCase();
           updated_row.dlc = normalizeDlc(row.dlc);
