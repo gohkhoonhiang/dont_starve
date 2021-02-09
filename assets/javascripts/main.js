@@ -1,4 +1,4 @@
-var latest_data_version = 'ddd1e80';
+var latest_data_version = 'b8f85fa';
 
 var normalizeDlc = function(value) {
   return value.map(ele => mapDlc(ele));
@@ -55,6 +55,7 @@ var app = new Vue({
     this.retrieveSettings();
     if (this.data_version !== latest_data_version) {
       this.getVegetableData();
+      this.getMeatData();
       this.data_version = latest_data_version;
     }
   },
@@ -71,14 +72,40 @@ var app = new Vue({
     sanity_threshold: 10,
 
     favourite_recipes: [],
-    requirements_materials: [],
 
     toggle_vegetable_favourite: false,
     vegetable_search: '',
+    vegetable_requirements_materials: [],
     vegetable_requirements_search: [],
     vegetable_complete_data: [],
     vegetable_data: [],
     vegetable_headers: [
+      {
+        text: 'Name',
+        align: 'start',
+        sortable: true,
+        filterable: true,
+        value: 'name',
+      },
+      { text: 'DLC', filterable: false, value: 'dlc', filterable: false },
+      { text: 'Health', filterable: false, value: 'health' },
+      { text: 'Hunger', filterable: false, value: 'hunger' },
+      { text: 'Sanity', filterable: false, value: 'sanity' },
+      { text: 'Perish Time (days)', filterable: false, value: 'perish_time' },
+      { text: 'Cook Time (sec)', filterable: false, value: 'cook_time' },
+      { text: 'Priority', filterable: false, value: 'priority' },
+      { text: 'Requirements', filterable: false, value: 'requirements' },
+      { text: 'Filler Restrictions', filterable: false, value: 'filler_restrictions' },
+      { text: 'Favourite', filterable: false, value: 'favourite' },
+    ],
+
+    toggle_meat_favourite: false,
+    meat_search: '',
+    meat_requirements_materials: [],
+    meat_requirements_search: [],
+    meat_complete_data: [],
+    meat_data: [],
+    meat_headers: [
       {
         text: 'Name',
         align: 'start',
@@ -115,15 +142,41 @@ var app = new Vue({
           updated_row.favourite = hasElement(vm.favourite_recipes, updated_row.id);
           row.requirements.forEach(function(ele) {
             requirement = ele.replace(/\(.*\)/, '').trim();
-            if (!hasElement(vm.requirements_materials, requirement)) {
-              vm.requirements_materials = addElement(vm.requirements_materials, requirement)
+            if (!hasElement(vm.vegetable_requirements_materials, requirement)) {
+              vm.vegetable_requirements_materials = addElement(vm.vegetable_requirements_materials, requirement)
             }
           });
           return updated_row;
         });
 
-        vm.requirements_materials = vm.requirements_materials.sort();
+        vm.vegetable_requirements_materials = vm.vegetable_requirements_materials.sort();
         vm.vegetable_complete_data = formatted_data;
+      });
+    },
+
+    getMeatData: function() {
+      var vm = this;
+      $.ajax({
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve_recipes/master/data/meat_recipes.json',
+        method: 'GET'
+      }).then(function (response) {
+        var meat_data = JSON.parse(response).data;
+        var formatted_data = meat_data.map(function(row, index) {
+          var updated_row = row;
+          updated_row.id = index + '_meat_' + row.name.replace(/\s/, '_').toLowerCase();
+          updated_row.dlc = normalizeDlc(row.dlc);
+          updated_row.favourite = hasElement(vm.favourite_recipes, updated_row.id);
+          row.requirements.forEach(function(ele) {
+            requirement = ele.replace(/\(.*\)/, '').trim();
+            if (!hasElement(vm.meat_requirements_materials, requirement)) {
+              vm.meat_requirements_materials = addElement(vm.meat_requirements_materials, requirement)
+            }
+          });
+          return updated_row;
+        });
+
+        vm.meat_requirements_materials = vm.meat_requirements_materials.sort();
+        vm.meat_complete_data = formatted_data;
       });
     },
 
@@ -171,6 +224,11 @@ var app = new Vue({
       vm.vegetable_data = vm.filterData(vm.vegetable_complete_data, vm.toggle_dlc, vm.toggle_vegetable_favourite, vm.vegetable_requirements_search);
     },
 
+    filterMeatData: function() {
+      var vm = this;
+      vm.meat_data = vm.filterData(vm.meat_complete_data, vm.toggle_dlc, vm.toggle_meat_favourite, vm.meat_requirements_search);
+    },
+
     highlightValue: function(value, threshold) {
       if (value >= threshold) {
         return '#8b104a';
@@ -203,7 +261,13 @@ var app = new Vue({
     clearVegetableFilters: function() {
       var vm = this;
       vm.vegetable_search = '';
-      vm.toggle_vegetable_favourite = false; 
+      vm.toggle_vegetable_favourite = false;
+    },
+
+    clearMeatFilters: function() {
+      var vm = this;
+      vm.meat_search = '';
+      vm.toggle_meat_favourite = false;
     },
 
     retrieveSettings: function() {
@@ -220,14 +284,17 @@ var app = new Vue({
       var vm = this;
       var settings = {
         data_version: vm.data_version,
-        vegetable_complete_data: vm.vegetable_complete_data,
-        requirements_materials: vm.requirements_materials,
         toggle_dlc: vm.toggle_dlc,
-        toggle_vegetable_favourite: vm.toggle_vegetable_favourite,
         health_threshold: vm.health_threshold,
         hunger_threshold: vm.hunger_threshold,
         sanity_threshold: vm.sanity_threshold,
         favourite_recipes: vm.favourite_recipes,
+        vegetable_complete_data: vm.vegetable_complete_data,
+        vegetable_requirements_materials: vm.vegetable_requirements_materials,
+        toggle_vegetable_favourite: vm.toggle_vegetable_favourite,
+        meat_complete_data: vm.meat_complete_data,
+        meat_requirements_materials: vm.meat_requirements_materials,
+        toggle_meat_favourite: vm.toggle_meat_favourite,
       };
 
       localStorage.setItem('dont_starve_recipes_settings', JSON.stringify(settings));
@@ -255,6 +322,14 @@ var app = new Vue({
       }
     },
 
+    meat_complete_data: function(new_val, old_val) {
+      var vm = this;
+      if (new_val.length > 0) {
+        vm.filterMeatData();
+        vm.storeSettings();
+      }
+    },
+
     toggle_dlc: function(new_val, old_val) {
       var vm = this;
       vm.filterVegetableData();
@@ -264,6 +339,12 @@ var app = new Vue({
     toggle_vegetable_favourite: function(new_val, old_val) {
       var vm = this;
       vm.filterVegetableData();
+      vm.storeSettings();
+    },
+
+    toggle_meat_favourite: function(new_val, old_val) {
+      var vm = this;
+      vm.filterMeatData();
       vm.storeSettings();
     },
 
@@ -285,6 +366,12 @@ var app = new Vue({
     vegetable_requirements_search: function(new_val, old_val) {
       var vm = this;
       vm.filterVegetableData();
+      vm.storeSettings();
+    },
+
+    meat_requirements_search: function(new_val, old_val) {
+      var vm = this;
+      vm.filterMeatData();
       vm.storeSettings();
     },
 
