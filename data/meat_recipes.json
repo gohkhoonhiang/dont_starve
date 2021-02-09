@@ -1,0 +1,638 @@
+{
+  "data": [
+    {
+      "name": "Bacon and Eggs",
+      "dlc": [
+
+      ],
+      "health": 20.0,
+      "hunger": 75.0,
+      "sanity": 5.0,
+      "perish_time": "20",
+      "cook_time": "40",
+      "priority": "10",
+      "requirements": [
+        "Meats (1.25)",
+        "Eggs (2.0)"
+      ],
+      "filler_restrictions": [
+        "No Vegetables"
+      ]
+    },
+    {
+      "name": "Barnacle Linguine",
+      "dlc": [
+        "Don't Starve Together"
+      ],
+      "health": 10.0,
+      "hunger": 75.0,
+      "sanity": 20.0,
+      "perish_time": "6d",
+      "cook_time": "40s",
+      "priority": "25",
+      "requirements": [
+        "Barnacle (2)",
+        "Vegetables (2.0)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Barnacle Nigiri",
+      "dlc": [
+        "Don't Starve Together"
+      ],
+      "health": 40.0,
+      "hunger": 37.5,
+      "sanity": 5.0,
+      "perish_time": "10d",
+      "cook_time": "10s",
+      "priority": "30",
+      "requirements": [
+        "Barnacle (1)",
+        "Kelp Frond (1)",
+        "Eggs (1)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Barnacle Pita",
+      "dlc": [
+        "Don't Starve Together"
+      ],
+      "health": 20.0,
+      "hunger": 37.5,
+      "sanity": 5.0,
+      "perish_time": "15d",
+      "cook_time": "40s",
+      "priority": "25",
+      "requirements": [
+        "Barnacle (1)",
+        "Vegetables (0.5)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Beefy Greens",
+      "dlc": [
+
+      ],
+      "health": 40.0,
+      "hunger": 75.0,
+      "sanity": 5.0,
+      "perish_time": "6",
+      "cook_time": "40",
+      "priority": "25",
+      "requirements": [
+        "Leafy Meat (1)",
+        "Vegetables (3.0)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Caviar",
+      "dlc": [
+        "Shipwrecked"
+      ],
+      "health": 3.0,
+      "hunger": 12.5,
+      "sanity": 33.0,
+      "perish_time": "10",
+      "cook_time": "40",
+      "priority": "20",
+      "requirements": [
+        "Roe (1)",
+        "Vegetables (1.0)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Caviar",
+      "dlc": [
+        "Shipwrecked"
+      ],
+      "health": 3.0,
+      "hunger": 12.5,
+      "sanity": 33.0,
+      "perish_time": "10",
+      "cook_time": "40",
+      "priority": "20",
+      "requirements": [
+        "Roe (3)",
+        "Vegetables (1.0)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Feijoada",
+      "dlc": [
+        "Hamlet"
+      ],
+      "health": 20.0,
+      "hunger": 75.0,
+      "sanity": 15.0,
+      "perish_time": "8",
+      "cook_time": "70",
+      "priority": "30",
+      "requirements": [
+        "Bean Bug (3)",
+        "Meats (0.25)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Fish Cordon Bleu",
+      "dlc": [
+        "Don't Starve Together"
+      ],
+      "health": 20.0,
+      "hunger": 37.5,
+      "sanity": -10.0,
+      "perish_time": "8",
+      "cook_time": "40",
+      "priority": "30",
+      "requirements": [
+        "Frog Leg (2)",
+        "Fishes (1.0)"
+      ],
+      "filler_restrictions": [
+        "No Inedibles",
+        "Cooked in Portable Crock Pot"
+      ]
+    },
+    {
+      "name": "Froggle Bunwich",
+      "dlc": [
+
+      ],
+      "health": 20.0,
+      "hunger": 37.5,
+      "sanity": 5.0,
+      "perish_time": "15",
+      "cook_time": "40",
+      "priority": "1",
+      "requirements": [
+        "Frog Leg (1)",
+        "Vegetables (0.5)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Guacamole",
+      "dlc": [
+        "Reign of Giants"
+      ],
+      "health": 20.0,
+      "hunger": 37.5,
+      "sanity": 0.0,
+      "perish_time": "10",
+      "cook_time": "10",
+      "priority": "10",
+      "requirements": [
+        "Cactus Flesh (1)",
+        "Moleworm (1)"
+      ],
+      "filler_restrictions": [
+        "No Fruits"
+      ]
+    },
+    {
+      "name": "Guacamole",
+      "dlc": [
+        "Reign of Giants"
+      ],
+      "health": 20.0,
+      "hunger": 37.5,
+      "sanity": 0.0,
+      "perish_time": "10",
+      "cook_time": "10",
+      "priority": "10",
+      "requirements": [
+        "Ripe Stone Fruit (1)",
+        "Moleworm (1)"
+      ],
+      "filler_restrictions": [
+        "No Fruits"
+      ]
+    },
+    {
+      "name": "Honey Ham",
+      "dlc": [
+
+      ],
+      "health": 30.0,
+      "hunger": 75.0,
+      "sanity": 5.0,
+      "perish_time": "15",
+      "cook_time": "40",
+      "priority": "2",
+      "requirements": [
+        "Meats (1.75)",
+        "Honey (1)"
+      ],
+      "filler_restrictions": [
+        "No Inedibles"
+      ]
+    },
+    {
+      "name": "Honey Nuggets",
+      "dlc": [
+
+      ],
+      "health": 20.0,
+      "hunger": 37.5,
+      "sanity": 5.0,
+      "perish_time": "15",
+      "cook_time": "40",
+      "priority": "2",
+      "requirements": [
+        "Meats (0.25)",
+        "Honey (1)"
+      ],
+      "filler_restrictions": [
+        "No Inedibles"
+      ]
+    },
+    {
+      "name": "Jelly Salad",
+      "dlc": [
+
+      ],
+      "health": 0.0,
+      "hunger": 37.5,
+      "sanity": 50.0,
+      "perish_time": "6",
+      "cook_time": "40",
+      "priority": "50",
+      "requirements": [
+        "Leafy Meat (2)",
+        "Sweeteners (2.0)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Kabobs",
+      "dlc": [
+
+      ],
+      "health": 3.0,
+      "hunger": 37.5,
+      "sanity": 5.0,
+      "perish_time": "15",
+      "cook_time": "40",
+      "priority": "5",
+      "requirements": [
+        "Meats (0.25)",
+        "Twig (1)"
+      ],
+      "filler_restrictions": [
+        "No Inedibles"
+      ]
+    },
+    {
+      "name": "Leafy Meatloaf",
+      "dlc": [
+
+      ],
+      "health": 8.0,
+      "hunger": 37.5,
+      "sanity": 5.0,
+      "perish_time": "20",
+      "cook_time": "40",
+      "priority": "25",
+      "requirements": [
+        "Leafy Meat (2)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Meatballs",
+      "dlc": [
+
+      ],
+      "health": 3.0,
+      "hunger": 62.5,
+      "sanity": 5.0,
+      "perish_time": "10",
+      "cook_time": "15",
+      "priority": "-1",
+      "requirements": [
+        "Meats (0.25)"
+      ],
+      "filler_restrictions": [
+        "No Inedibles"
+      ]
+    },
+    {
+      "name": "Meaty Stew",
+      "dlc": [
+
+      ],
+      "health": 12.0,
+      "hunger": 150.0,
+      "sanity": 5.0,
+      "perish_time": "10",
+      "cook_time": "15",
+      "priority": "0",
+      "requirements": [
+        "Meats (3.0)"
+      ],
+      "filler_restrictions": [
+        "No Inedibles"
+      ]
+    },
+    {
+      "name": "Milkmade Hat",
+      "dlc": [
+
+      ],
+      "health": 0.0,
+      "hunger": 187.5,
+      "sanity": -5.3,
+      "perish_time": "3d",
+      "cook_time": "10s",
+      "priority": "10",
+      "requirements": [
+        "Naked Nostrils (1)",
+        "Kelp Frond (1)",
+        "Dairy (1)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Monster Lasagna",
+      "dlc": [
+
+      ],
+      "health": -20.0,
+      "hunger": 37.5,
+      "sanity": -20.0,
+      "perish_time": "6",
+      "cook_time": "10",
+      "priority": "10",
+      "requirements": [
+        "Monster Foods (2.0)"
+      ],
+      "filler_restrictions": [
+        "No Inedibles"
+      ]
+    },
+    {
+      "name": "Pierogi",
+      "dlc": [
+
+      ],
+      "health": 40.0,
+      "hunger": 37.5,
+      "sanity": 5.0,
+      "perish_time": "20",
+      "cook_time": "20",
+      "priority": "5",
+      "requirements": [
+        "Eggs (1.0)",
+        "Meats (0.25)",
+        "Vegetables (0.5)"
+      ],
+      "filler_restrictions": [
+        "No Inedibles"
+      ]
+    },
+    {
+      "name": "Shark Fin Soup",
+      "dlc": [
+        "Shipwrecked"
+      ],
+      "health": 40.0,
+      "hunger": 12.5,
+      "sanity": -10.0,
+      "perish_time": "10",
+      "cook_time": "10",
+      "priority": "20",
+      "requirements": [
+        "Shark Fin (1)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Snake Bone Soup",
+      "dlc": [
+        "Hamlet"
+      ],
+      "health": 40.0,
+      "hunger": 25.0,
+      "sanity": 10.0,
+      "perish_time": "10",
+      "cook_time": "20",
+      "priority": "20",
+      "requirements": [
+        "Snake Bone (2)",
+        "Meats (2.0)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Spicy Chili",
+      "dlc": [
+        "Reign of Giants"
+      ],
+      "health": 20.0,
+      "hunger": 37.5,
+      "sanity": 0.0,
+      "perish_time": "10",
+      "cook_time": "10",
+      "priority": "10",
+      "requirements": [
+        "Vegetables (1.5)",
+        "Meats (1.5)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Steamed Ham Sandwich",
+      "dlc": [
+        "Hamlet"
+      ],
+      "health": 40.0,
+      "hunger": 37.5,
+      "sanity": 15.0,
+      "perish_time": "6",
+      "cook_time": "40",
+      "priority": "5",
+      "requirements": [
+        "Meat (1)",
+        "Foliage (1)",
+        "Vegetables (1.0)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Steamed Ham Sandwich",
+      "dlc": [
+        "Hamlet"
+      ],
+      "health": 40.0,
+      "hunger": 37.5,
+      "sanity": 15.0,
+      "perish_time": "6",
+      "cook_time": "40",
+      "priority": "5",
+      "requirements": [
+        "Cooked Meat (1)",
+        "Foliage (1)",
+        "Vegetables (1.0)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Stuffed Fish Heads",
+      "dlc": [
+        "Don't Starve Together"
+      ],
+      "health": 20.0,
+      "hunger": 75.0,
+      "sanity": 0.0,
+      "perish_time": "3d",
+      "cook_time": "40s",
+      "priority": "25",
+      "requirements": [
+        "Barnacle (1)",
+        "Fishes (1.0)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Surf 'n' Turf",
+      "dlc": [
+        "Shipwrecked",
+        "Don't Starve Together"
+      ],
+      "health": 60.0,
+      "hunger": 37.5,
+      "sanity": 33.0,
+      "perish_time": "10",
+      "cook_time": "10",
+      "priority": "30",
+      "requirements": [
+        "Meats (2.5)",
+        "Fishes (1.5)"
+      ],
+      "filler_restrictions": [
+        "No Ice"
+      ]
+    },
+    {
+      "name": "Tropical Bouillabaisse",
+      "dlc": [
+        "Shipwrecked"
+      ],
+      "health": 20.0,
+      "hunger": 37.5,
+      "sanity": 15.0,
+      "perish_time": "10",
+      "cook_time": "40",
+      "priority": "35",
+      "requirements": [
+        "Neon Quattro (1)",
+        "Pierrot Fish (1)",
+        "Purple Grouper (1)",
+        "Vegetables (1.0)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Turkey Dinner",
+      "dlc": [
+
+      ],
+      "health": 20.0,
+      "hunger": 75.0,
+      "sanity": 5.0,
+      "perish_time": "6",
+      "cook_time": "60",
+      "priority": "10",
+      "requirements": [
+        "Drumstick (2)",
+        "Meats (0.25)",
+        "Vegetables (0.5)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Turkey Dinner",
+      "dlc": [
+
+      ],
+      "health": 20.0,
+      "hunger": 75.0,
+      "sanity": 5.0,
+      "perish_time": "6",
+      "cook_time": "60",
+      "priority": "10",
+      "requirements": [
+        "Drumstick (2)",
+        "Meats (0.25)",
+        "Fruits (0.5)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    },
+    {
+      "name": "Veggie Burger",
+      "dlc": [
+        "Don't Starve Together"
+      ],
+      "health": 30.0,
+      "hunger": 37.5,
+      "sanity": 33.0,
+      "perish_time": "6",
+      "cook_time": "40",
+      "priority": "25",
+      "requirements": [
+        "Leafy Meat (1)",
+        "Onion (1)",
+        "Vegetables (2)"
+      ],
+      "filler_restrictions": [
+
+      ]
+    }
+  ]
+}
