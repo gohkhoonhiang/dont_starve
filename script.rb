@@ -97,7 +97,14 @@ class Crockpot
     normalized = if key == 'dlc'
       value.split(',').map(&:strip)
                  elsif %w(health hunger sanity).include?(key)
-                   value.to_f
+                   stats = value.split(',')
+                   stats.map do |stat|
+                     if stat.match(/.* in ([\d]+) min/)
+                       value
+                     else
+                       value.to_f
+                     end
+                   end.join(',')
                  elsif key == 'requirements'
                    value.split(',').map do |ingredient|
                      captures = ingredient.match(/(\b[\w\s]+\b)×([\d\.]+)/).captures
@@ -113,6 +120,14 @@ class Crockpot
                        restriction
                      end
                    end
+                 elsif key == 'perish_time'
+                   if value == 'Never'
+                     9_999_999
+                   else
+                     value.tr('d', '').to_i
+                   end
+                 elsif key == 'cook_time'
+                   value.tr('s', '').to_i
                  else
                    value
                  end
