@@ -199,3 +199,27 @@ class Meat
     end
   end
 end
+
+class Seed
+  include Shared
+
+  def convert_html_to_csv(input, output)
+    html_to_csv(input, output) do |doc, csv|
+      csv << ['name', 'dlc', 'seed_name']
+
+      doc.xpath('//table/tbody/tr').each do |row|
+        tarray = []
+        row.xpath('td').each_with_index do |cell, index|
+          next if [0, 3, 5, 6].include?(index)
+
+          if [2].include?(index)
+            tarray << cell.xpath('a').attr('title')
+          else
+            tarray << cell.text.strip
+          end
+        end
+        csv << tarray
+      end
+    end
+  end
+end

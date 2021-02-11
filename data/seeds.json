@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "name": "Aloe Seeds",
+      "dlc": "Hamlet",
+      "seed_name": ""
+    },
+    {
+      "name": "Asparagus Seeds",
+      "dlc": "Hamlet",
+      "seed_name": "Tubular Seeds"
+    },
+    {
+      "name": "Carrot Seeds",
+      "dlc": "",
+      "seed_name": "Oblong Seeds"
+    },
+    {
+      "name": "Corn Seeds",
+      "dlc": "",
+      "seed_name": "Clustered Seeds"
+    },
+    {
+      "name": "Dragon Fruit Seeds",
+      "dlc": "",
+      "seed_name": "Bulbous Seeds"
+    },
+    {
+      "name": "Durian Seeds",
+      "dlc": "",
+      "seed_name": "Brittle Seed Pods"
+    },
+    {
+      "name": "Eggplant Seeds",
+      "dlc": "",
+      "seed_name": "Swirly Seeds"
+    },
+    {
+      "name": "Garlic Seeds",
+      "dlc": "Don't Starve Together",
+      "seed_name": "Seed Pods"
+    },
+    {
+      "name": "Onion Seeds",
+      "dlc": "Don't Starve Together",
+      "seed_name": "Pointy Seeds"
+    },
+    {
+      "name": "Pepper Seeds",
+      "dlc": "Don't Starve Together",
+      "seed_name": "Lumpy Seeds"
+    },
+    {
+      "name": "Pomegranate Seeds",
+      "dlc": "",
+      "seed_name": "Windblown Seeds"
+    },
+    {
+      "name": "Potato Seeds",
+      "dlc": "Don't Starve Together",
+      "seed_name": "Fluffy Seeds"
+    },
+    {
+      "name": "Pumpkin Seeds",
+      "dlc": "",
+      "seed_name": "Sharp Seeds"
+    },
+    {
+      "name": "Radish Seeds",
+      "dlc": "Hamlet",
+      "seed_name": ""
+    },
+    {
+      "name": "Sweet Potato Seeds",
+      "dlc": "Shipwrecked",
+      "seed_name": ""
+    },
+    {
+      "name": "Toma Root Seeds",
+      "dlc": "Don't Starve Together",
+      "seed_name": "Spiky Seeds"
+    },
+    {
+      "name": "Watermelon Seeds",
+      "dlc": "Reign of Giants",
+      "seed_name": "Square Seeds"
+    }
+  ]
+}
