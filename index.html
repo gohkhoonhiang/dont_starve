@@ -74,6 +74,10 @@
               Crockpot
               <v-icon left>mdi-pot-mix-outline</v-icon>
             </v-tab>
+            <v-tab key="raw_ingredients_tab">
+              Raw Ingredients
+              <v-icon left>mdi-view-list-outline</v-icon>
+            </v-tab>
             <v-tab key="help_tab">
               Help
               <v-icon left>mdi-help</v-icon>
@@ -543,6 +547,44 @@
                     </v-card>
                   </v-tab-item>
 
+                </v-tabs>
+              </v-card>
+            </v-tab-item>
+
+            <v-tab-item key="raw_ingredients_tab">
+
+              <v-card flat>
+                <v-tabs
+                  show-arrows
+                >
+                  <v-tab key="seed_tab">
+                    Seeds
+                    <v-icon left>mdi-seed-outline</v-icon>
+                  </v-tab>
+
+                  <v-tab-item key="seed_tab">
+
+                    <v-card flat>
+                      <v-data-table
+                        :headers="seed_headers"
+                        :items="seed_complete_data"
+                        class="elevation-1"
+                        disable-pagination
+                        hide-default-footer
+                      >
+                        <template v-slot:item.dlc="{ item }">
+                          <v-chip
+                            v-if="item.dlc.length > 0"
+                            small
+                            disabled
+                          >
+                            {{ item.dlc }}
+                          </v-chip>
+                        </template>
+
+                      </v-data-table>
+                    </v-card>
+                  </v-tab-item>
                 </v-tabs>
               </v-card>
             </v-tab-item>

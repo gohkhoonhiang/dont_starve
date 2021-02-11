@@ -1,4 +1,4 @@
-var latest_data_version = 'b8f85fa';
+var latest_data_version = '92f5278';
 
 var normalizeDlc = function(value) {
   return value.map(ele => mapDlc(ele));
@@ -56,6 +56,7 @@ var app = new Vue({
     if (this.data_version !== latest_data_version) {
       this.getVegetableData();
       this.getMeatData();
+      this.getSeedData();
       this.data_version = latest_data_version;
     }
   },
@@ -125,6 +126,20 @@ var app = new Vue({
       { text: 'Favourite', filterable: false, value: 'favourite' },
     ],
 
+    seed_complete_data: [],
+    seed_data: [],
+    seed_headers: [
+      {
+        text: 'Name',
+        align: 'start',
+        sortable: true,
+        filterable: true,
+        value: 'name',
+      },
+      { text: 'DLC', filterable: false, value: 'dlc', filterable: false },
+      { text: 'Seed Name', filterable: false, value: 'seed_name' },
+    ],
+
   },
 
   methods: {
@@ -178,6 +193,25 @@ var app = new Vue({
         vm.meat_requirements_materials = vm.meat_requirements_materials.sort();
         vm.meat_complete_data = formatted_data;
       });
+    },
+
+    getSeedData: function() {
+      var vm = this;
+      $.ajax({
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve_recipes/master/data/seeds.json',
+        method: 'GET'
+      }).then(function (response) {
+        var seed_data = JSON.parse(response).data;
+        var formatted_data = seed_data.map(function(row, index) {
+          var updated_row = row;
+          updated_row.id = index + '_seed_' + row.name.replace(/\s/, '_').toLowerCase();
+          updated_row.dlc = mapDlc(row.dlc);
+          return updated_row;
+        });
+
+        vm.seed_complete_data = formatted_data;
+      });
+
     },
 
     filterData: function(data, toggle_dlc, toggle_favourite, requirements_search) {
@@ -295,6 +329,7 @@ var app = new Vue({
         meat_complete_data: vm.meat_complete_data,
         meat_requirements_materials: vm.meat_requirements_materials,
         toggle_meat_favourite: vm.toggle_meat_favourite,
+        seed_complete_data: vm.seed_complete_data,
       };
 
       localStorage.setItem('dont_starve_recipes_settings', JSON.stringify(settings));
@@ -326,6 +361,13 @@ var app = new Vue({
       var vm = this;
       if (new_val.length > 0) {
         vm.filterMeatData();
+        vm.storeSettings();
+      }
+    },
+
+    seed_complete_data: function(new_val, old_val) {
+      var vm = this;
+      if (new_val.length > 0) {
         vm.storeSettings();
       }
     },
