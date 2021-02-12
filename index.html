@@ -225,7 +225,7 @@
                         flat
                       >
                         <v-card-text class="font--text">
-                          <div class="subtitle-1 mb-1 font-weight-bold">Filters <v-btn text small @click="clearVegetableFilters">Clear all</v-btn></div>
+                          <div class="subtitle-1 mb-1 font-weight-bold">Filters <v-btn text small @click="clearVegetableRecipeFilters">Clear all</v-btn></div>
                         </v-card-text>
 
                         <v-container fluid>
@@ -390,7 +390,7 @@
                         flat
                       >
                         <v-card-text class="font--text">
-                          <div class="subtitle-1 mb-1 font-weight-bold">Filters <v-btn text small @click="clearVegetableFilters">Clear all</v-btn></div>
+                          <div class="subtitle-1 mb-1 font-weight-bold">Filters <v-btn text small @click="clearMeatRecipeFilters">Clear all</v-btn></div>
                         </v-card-text>
 
                         <v-container fluid>
@@ -561,6 +561,14 @@
                     Seeds
                     <v-icon left>mdi-seed-outline</v-icon>
                   </v-tab>
+                  <v-tab key="raw_vegetable_tab">
+                    Vegetables
+                    <v-icon left>mdi-fruit-watermelon</v-icon>
+                  </v-tab>
+                  <v-tab key="raw_meat_tab">
+                    Meats
+                    <v-icon left>mdi-food-drumstick-outline</v-icon>
+                  </v-tab>
 
                   <v-tab-item key="seed_tab">
 
@@ -585,6 +593,201 @@
                       </v-data-table>
                     </v-card>
                   </v-tab-item>
+
+                  <v-tab-item key="raw_vegetable_tab">
+                    <v-container>
+                      <v-card
+                        class="mx-auto"
+                        color="secondary"
+                        flat
+                      >
+                        <v-card-text class="font--text">
+                          <div class="subtitle-1 mb-1 font-weight-bold">Filters <v-btn text small @click="clearVegetableFilters">Clear all</v-btn></div>
+                        </v-card-text>
+
+                        <v-container fluid>
+                          <v-row dense>
+                            <v-col
+                              cols="12"
+                              :xl="4"
+                              :lg="4"
+                              :md="4"
+                              :sm="12"
+                              :xs="12"
+                            >
+                              <v-card
+                                color="rgba(255, 255, 255, 0)"
+                                flat
+                              >
+                                <v-card-text>
+                                  <v-text-field
+                                    v-model="raw_vegetable_threshold"
+                                    prepend-icon="mdi-numeric"
+                                    label="Value Threshold"
+                                    type="number"
+                                    hint="Set a threshold for value, ingredients with this value or higher will be highlighted"
+                                    persistent-hint
+                                  ></v-text-field>
+                                </v-card-text>
+                              </v-card>
+                            </v-col>
+
+                            <v-col
+                              cols="12"
+                              :xl="4"
+                              :lg="4"
+                              :md="4"
+                              :sm="12"
+                              :xs="12"
+                            >
+                              <v-card
+                                color="rgba(255, 255, 255, 0)"
+                                flat
+                              >
+                                <v-card-text>
+                                  <v-switch
+                                    v-model="toggle_vegetable_crockpot"
+                                    label="Valid for Crockpot only"
+                                  ></v-switch>
+                                </v-card-text>
+                              </v-card>
+                            </v-col>
+
+                          </v-row>
+                        </v-container>
+                      </v-card>
+                    </v-container>
+
+                    <v-card flat>
+                      <v-data-table
+                        :headers="raw_vegetable_headers"
+                        :items="raw_vegetable_data"
+                        class="elevation-1"
+                        disable-pagination
+                        hide-default-footer
+                      >
+                        <template v-slot:item.dlc="{ item }">
+                          <v-chip
+                            v-if="item.dlc.length > 0"
+                            small
+                            disabled
+                          >
+                            {{ item.dlc }}
+                          </v-chip>
+                        </template>
+
+                        <template v-slot:item.value="{ item }">
+                          <v-chip :color="highlightValue(item.value, raw_vegetable_threshold)" :text-color="highlightText(item.value, raw_vegetable_threshold)">{{ item.value }}</v-chip>
+                        </template>
+
+                        <template v-slot:item.crockpot="{ item }">
+                          <v-switch
+                            v-model="item.crockpot"
+                            disabled
+                          ></v-switch>
+                        </template>
+
+                      </v-data-table>
+                    </v-card>
+                  </v-tab-item>
+
+                  <v-tab-item key="raw_meat_tab">
+                    <v-container>
+                      <v-card
+                        class="mx-auto"
+                        color="secondary"
+                        flat
+                      >
+                        <v-card-text class="font--text">
+                          <div class="subtitle-1 mb-1 font-weight-bold">Filters <v-btn text small @click="clearMeatFilters">Clear all</v-btn></div>
+                        </v-card-text>
+
+                        <v-container fluid>
+                          <v-row dense>
+                            <v-col
+                              cols="12"
+                              :xl="4"
+                              :lg="4"
+                              :md="4"
+                              :sm="12"
+                              :xs="12"
+                            >
+                              <v-card
+                                color="rgba(255, 255, 255, 0)"
+                                flat
+                              >
+                                <v-card-text>
+                                  <v-text-field
+                                    v-model="raw_meat_threshold"
+                                    prepend-icon="mdi-numeric"
+                                    label="Value Threshold"
+                                    type="number"
+                                    hint="Set a threshold for value, ingredients with this value or higher will be highlighted"
+                                    persistent-hint
+                                  ></v-text-field>
+                                </v-card-text>
+                              </v-card>
+                            </v-col>
+
+                            <v-col
+                              cols="12"
+                              :xl="4"
+                              :lg="4"
+                              :md="4"
+                              :sm="12"
+                              :xs="12"
+                            >
+                              <v-card
+                                color="rgba(255, 255, 255, 0)"
+                                flat
+                              >
+                                <v-card-text>
+                                  <v-switch
+                                    v-model="toggle_meat_crockpot"
+                                    label="Valid for Crockpot only"
+                                  ></v-switch>
+                                </v-card-text>
+                              </v-card>
+                            </v-col>
+
+                          </v-row>
+                        </v-container>
+                      </v-card>
+                    </v-container>
+
+                    <v-card flat>
+                      <v-data-table
+                        :headers="raw_meat_headers"
+                        :items="raw_meat_data"
+                        class="elevation-1"
+                        disable-pagination
+                        hide-default-footer
+                      >
+                        <template v-slot:item.dlc="{ item }">
+                          <v-chip
+                            v-if="item.dlc.length > 0"
+                            small
+                            disabled
+                          >
+                            {{ item.dlc }}
+                          </v-chip>
+                        </template>
+
+                        <template v-slot:item.value="{ item }">
+                          <v-chip :color="highlightValue(item.value, raw_meat_threshold)" :text-color="highlightText(item.value, raw_meat_threshold)">{{ item.value }}</v-chip>
+                        </template>
+
+                        <template v-slot:item.crockpot="{ item }">
+                          <v-switch
+                            v-model="item.crockpot"
+                            disabled
+                          ></v-switch>
+                        </template>
+
+                      </v-data-table>
+                    </v-card>
+                  </v-tab-item>
+
                 </v-tabs>
               </v-card>
             </v-tab-item>
