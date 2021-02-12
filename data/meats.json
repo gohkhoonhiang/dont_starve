@@ -1,0 +1,274 @@
+{
+  "data": [
+    {
+      "name": "Barnacles",
+      "sources": "Barnacles",
+      "cooked": "Cooked Barnacles",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together icon",
+      "value": "0.25",
+      "crockpot": "true"
+    },
+    {
+      "name": "Batilisk Wing",
+      "sources": "Batilisk Wing",
+      "cooked": "Cooked Batilisk Wing",
+      "dried": "Small Jerky",
+      "dlc": "",
+      "value": "0.5",
+      "crockpot": "false"
+    },
+    {
+      "name": "Dead Dogfish",
+      "sources": "Dead Dogfish",
+      "cooked": "Fish Steak",
+      "dried": "Jerky",
+      "dlc": "Shipwrecked",
+      "value": "0.5",
+      "crockpot": "true"
+    },
+    {
+      "name": "Dead Swordfish",
+      "sources": "Dead Swordfish",
+      "cooked": "Fish Steak",
+      "dried": "Jerky",
+      "dlc": "Shipwrecked",
+      "value": "0.0",
+      "crockpot": "false"
+    },
+    {
+      "name": "Deerclops Eyeball",
+      "sources": "Deerclops Eyeball",
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.0",
+      "crockpot": "false"
+    },
+    {
+      "name": "Dragoon Heart",
+      "sources": "Dragoon Heart",
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Shipwrecked",
+      "value": "0.0",
+      "crockpot": "false"
+    },
+    {
+      "name": "Drumstick",
+      "sources": "Drumstick",
+      "cooked": "Fried Drumstick",
+      "dried": "Small Jerky",
+      "dlc": "",
+      "value": "0.5",
+      "crockpot": "true"
+    },
+    {
+      "name": "Eel",
+      "sources": "Live Eel",
+      "cooked": "Cooked Eel",
+      "dried": "Small Jerky",
+      "dlc": "",
+      "value": "0.5",
+      "crockpot": "true"
+    },
+    {
+      "name": "Eye of the Tiger Shark",
+      "sources": "Eye of the Tiger Shark",
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Shipwrecked",
+      "value": "0.0",
+      "crockpot": "false"
+    },
+    {
+      "name": "Fish",
+      "sources": "Freshwater Fish",
+      "cooked": "Cooked Fish",
+      "dried": "Small Jerky",
+      "dlc": "",
+      "value": "0.5",
+      "crockpot": "true"
+    },
+    {
+      "name": "Fish Meat",
+      "sources": "Black Catfish,Dandy Lionfish,Deep Bass,Mudfish",
+      "cooked": "Fish Steak",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together",
+      "value": "1.0",
+      "crockpot": "true"
+    },
+    {
+      "name": "Fish Morsel",
+      "sources": "Bitty Baitfish,Needlenosed Squirt,Runty Guppy,Smolt Fry",
+      "cooked": "Cooked Fish Morsel",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together",
+      "value": "0.5",
+      "crockpot": "true"
+    },
+    {
+      "name": "Flytrap Stalk",
+      "sources": "Flytrap Stalk",
+      "cooked": "N/A",
+      "dried": "Stalking Stick",
+      "dlc": "Hamlet",
+      "value": "0.0",
+      "crockpot": "false"
+    },
+    {
+      "name": "Frog Legs",
+      "sources": "Frog Legs",
+      "cooked": "Cooked Frog Legs",
+      "dried": "Small Jerky",
+      "dlc": "",
+      "value": "0.5",
+      "crockpot": "true"
+    },
+    {
+      "name": "Guardian's Horn",
+      "sources": "Guardian's Horn",
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.0",
+      "crockpot": "false"
+    },
+    {
+      "name": "Koalefant Trunk",
+      "sources": "Koalefant Trunk",
+      "cooked": "Koalefant Trunk Steak",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.0",
+      "crockpot": "false"
+    },
+    {
+      "name": "Leafy Meat",
+      "sources": "Leafy Meat",
+      "cooked": "Cooked Leafy Meat",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.0",
+      "crockpot": "false"
+    },
+    {
+      "name": "Meat",
+      "sources": "Meat",
+      "cooked": "Cooked Meat",
+      "dried": "Jerky",
+      "dlc": "",
+      "value": "1.0",
+      "crockpot": "true"
+    },
+    {
+      "name": "Monster Meat",
+      "sources": "Monster Meat",
+      "cooked": "Cooked Monster Meat",
+      "dried": "Monster Jerky",
+      "dlc": "",
+      "value": "1.0",
+      "crockpot": "true"
+    },
+    {
+      "name": "Morsel",
+      "sources": "Moleworm",
+      "cooked": "Cooked Morsel",
+      "dried": "Small Jerky",
+      "dlc": "",
+      "value": "0.5",
+      "crockpot": "true"
+    },
+    {
+      "name": "Naked Nostrils",
+      "sources": "Naked Nostrils",
+      "cooked": "Charred Nostrils",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together icon",
+      "value": "0.5",
+      "crockpot": "true"
+    },
+    {
+      "name": "Neon Quattro",
+      "sources": "Neon Quattro",
+      "cooked": "Cooked Neon Quattro",
+      "dried": "N/A",
+      "dlc": "Shipwrecked",
+      "value": "0.5",
+      "crockpot": "true"
+    },
+    {
+      "name": "Pierrot Fish",
+      "sources": "Pierrot Fish",
+      "cooked": "Cooked Pierrot Fish",
+      "dried": "N/A",
+      "dlc": "Shipwrecked",
+      "value": "0.5",
+      "crockpot": "true"
+    },
+    {
+      "name": "Poison Dartfrog Legs",
+      "sources": "Poison Dartfrog Legs",
+      "cooked": "Cooked Dartfrog Legs",
+      "dried": "Small Jerky",
+      "dlc": "Hamlet",
+      "value": "0.0",
+      "crockpot": "false"
+    },
+    {
+      "name": "Purple Grouper",
+      "sources": "Purple Grouper",
+      "cooked": "Cooked Purple Grouper",
+      "dried": "N/A",
+      "dlc": "Shipwrecked",
+      "value": "0.5",
+      "crockpot": "true"
+    },
+    {
+      "name": "Raw Fish",
+      "sources": "Raw Fish",
+      "cooked": "Fish Steak",
+      "dried": "Jerky",
+      "dlc": "Shipwrecked",
+      "value": "0.5",
+      "crockpot": "true"
+    },
+    {
+      "name": "Roe",
+      "sources": "Roe",
+      "cooked": "Cooked Roe",
+      "dried": "N/A",
+      "dlc": "Shipwrecked",
+      "value": "0.5",
+      "crockpot": "true"
+    },
+    {
+      "name": "Shark Fin",
+      "sources": "Shark Fin",
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Shipwrecked",
+      "value": "0.5",
+      "crockpot": "true"
+    },
+    {
+      "name": "Tropical Fish",
+      "sources": "Tropical Fish",
+      "cooked": "Cooked Fish Morsel",
+      "dried": "Small Jerky",
+      "dlc": "Shipwrecked",
+      "value": "0.5",
+      "crockpot": "true"
+    },
+    {
+      "name": "Winter Koalefant Trunk",
+      "sources": "Winter Koalefant Trunk",
+      "cooked": "Koalefant Trunk Steak",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.0",
+      "crockpot": "false"
+    }
+  ]
+}

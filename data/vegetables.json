@@ -1,0 +1,283 @@
+{
+  "data": [
+    {
+      "name": "Aloe",
+      "sources": "Aloe",
+      "cooked": "Cooked Aloe",
+      "dried": "N/A",
+      "dlc": "Hamlet",
+      "value": "1.0",
+      "crockpot": "true"
+    },
+    {
+      "name": "Asparagus",
+      "sources": "Asparagus",
+      "cooked": "Cooked Asparagus",
+      "dried": "N/A",
+      "dlc": "Hamlet",
+      "value": "1.0",
+      "crockpot": "true"
+    },
+    {
+      "name": "Blue Cap",
+      "sources": "Blue Cap",
+      "cooked": "Cooked Blue Cap",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.5",
+      "crockpot": "true"
+    },
+    {
+      "name": "Cactus Flesh",
+      "sources": "Cactus Flesh",
+      "cooked": "Cooked Cactus Flesh",
+      "dried": "N/A",
+      "dlc": "Reign of Giants",
+      "value": "1.0",
+      "crockpot": "true"
+    },
+    {
+      "name": "Cactus Flower",
+      "sources": "Cactus Flower",
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Reign of Giants",
+      "value": "0.5",
+      "crockpot": "true"
+    },
+    {
+      "name": "Carrot",
+      "sources": "Carrot",
+      "cooked": "Roasted Carrot",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "1.0",
+      "crockpot": "true"
+    },
+    {
+      "name": "Corn",
+      "sources": "Corn",
+      "cooked": "Popcorn",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "1.0",
+      "crockpot": "true"
+    },
+    {
+      "name": "Corn Cod",
+      "sources": "Corn Cod",
+      "cooked": "Popcorn",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together",
+      "value": "1.0",
+      "crockpot": "true"
+    },
+    {
+      "name": "Dark Petals",
+      "sources": "Dark Petals",
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.0",
+      "crockpot": "false"
+    },
+    {
+      "name": "Eggplant",
+      "sources": "Eggplant",
+      "cooked": "Braised Eggplant",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "1.0",
+      "crockpot": "true"
+    },
+    {
+      "name": "Foliage",
+      "sources": "Foliage",
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.0",
+      "crockpot": "false"
+    },
+    {
+      "name": "Garlic",
+      "sources": "Garlic",
+      "cooked": "Roasted Garlic",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together",
+      "value": "1.0",
+      "crockpot": "true"
+    },
+    {
+      "name": "Glow Berry",
+      "sources": "Glow Berry",
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.0",
+      "crockpot": "false"
+    },
+    {
+      "name": "Green Cap",
+      "sources": "Green Cap",
+      "cooked": "Cooked Green Cap",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.5",
+      "crockpot": "true"
+    },
+    {
+      "name": "Kelp Fronds",
+      "sources": "Kelp Fronds",
+      "cooked": "Cooked Kelp Fronds",
+      "dried": "Dried Kelp Fronds",
+      "dlc": "Don't Starve Together",
+      "value": "0.5",
+      "crockpot": "true"
+    },
+    {
+      "name": "Lichen",
+      "sources": "Lichen",
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "1.0",
+      "crockpot": "true"
+    },
+    {
+      "name": "Mandrake",
+      "sources": "Mandrake",
+      "cooked": "Cooked Mandrake",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "1.0",
+      "crockpot": "true"
+    },
+    {
+      "name": "Moon Shroom",
+      "sources": "Moon Shroom",
+      "cooked": "Cooked Moon Shroom",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together",
+      "value": "0.5",
+      "crockpot": "true"
+    },
+    {
+      "name": "Onion",
+      "sources": "Onion",
+      "cooked": "Roasted Onion",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together",
+      "value": "1.0",
+      "crockpot": "true"
+    },
+    {
+      "name": "Pepper",
+      "sources": "Pepper",
+      "cooked": "Roasted Pepper",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together",
+      "value": "1.0",
+      "crockpot": "true"
+    },
+    {
+      "name": "Petals",
+      "sources": "Petals",
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.0",
+      "crockpot": "false"
+    },
+    {
+      "name": "Popperfish",
+      "sources": "Popperfish",
+      "cooked": "Popcorn",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together",
+      "value": "1.0",
+      "crockpot": "true"
+    },
+    {
+      "name": "Potato",
+      "sources": "Potato",
+      "cooked": "Roasted Potato",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together",
+      "value": "1.0",
+      "crockpot": "true"
+    },
+    {
+      "name": "Pumpkin",
+      "sources": "Pumpkin",
+      "cooked": "Hot Pumpkin",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "1.0",
+      "crockpot": "true"
+    },
+    {
+      "name": "Radish",
+      "sources": "Radish",
+      "cooked": "Cooked Radish",
+      "dried": "N/A",
+      "dlc": "Hamlet",
+      "value": "1.0",
+      "crockpot": "true"
+    },
+    {
+      "name": "Red Cap",
+      "sources": "Red Cap",
+      "cooked": "Cooked Red Cap",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.5",
+      "crockpot": "true"
+    },
+    {
+      "name": "Ripe Stone Fruit",
+      "sources": "Ripe Stone Fruit",
+      "cooked": "Cooked Stone Fruit",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together",
+      "value": "1.0",
+      "crockpot": "true"
+    },
+    {
+      "name": "Seaweed",
+      "sources": "Seaweed",
+      "cooked": "Roasted Seaweed",
+      "dried": "Dried Seaweed",
+      "dlc": "Shipwrecked",
+      "value": "1.0",
+      "crockpot": "true"
+    },
+    {
+      "name": "Succulent",
+      "sources": "Succulent",
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together",
+      "value": "0.0",
+      "crockpot": "false"
+    },
+    {
+      "name": "Sweet Potato",
+      "sources": "Sweet Potato",
+      "cooked": "Cooked Sweet Potato",
+      "dried": "N/A",
+      "dlc": "Shipwrecked",
+      "value": "1.0",
+      "crockpot": "true"
+    },
+    {
+      "name": "Toma Root",
+      "sources": "Toma Root",
+      "cooked": "Roasted Toma Root",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together",
+      "value": "1.0",
+      "crockpot": "true"
+    }
+  ]
+}
