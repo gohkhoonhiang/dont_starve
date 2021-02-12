@@ -56,6 +56,7 @@ var app = new Vue({
     if (this.data_version !== latest_data_version) {
       this.getVegetableRecipeData();
       this.getMeatRecipeData();
+      this.getCompleteRecipeData();
       this.getSeedData();
       this.getVegetableData();
       this.getMeatData();
@@ -109,6 +110,32 @@ var app = new Vue({
     meat_complete_data: [],
     meat_data: [],
     meat_headers: [
+      {
+        text: 'Name',
+        align: 'start',
+        sortable: true,
+        filterable: true,
+        value: 'name',
+      },
+      { text: 'DLC', filterable: false, value: 'dlc', filterable: false },
+      { text: 'Health', filterable: false, value: 'health' },
+      { text: 'Hunger', filterable: false, value: 'hunger' },
+      { text: 'Sanity', filterable: false, value: 'sanity' },
+      { text: 'Perish Time (days)', filterable: false, value: 'perish_time' },
+      { text: 'Cook Time (sec)', filterable: false, value: 'cook_time' },
+      { text: 'Priority', filterable: false, value: 'priority' },
+      { text: 'Requirements', filterable: false, value: 'requirements' },
+      { text: 'Filler Restrictions', filterable: false, value: 'filler_restrictions' },
+      { text: 'Favourite', filterable: false, value: 'favourite' },
+    ],
+
+    toggle_complete_recipes_favourite: false,
+    complete_recipes_search: '',
+    complete_recipes_requirements_materials: [],
+    complete_recipes_requirements_search: [],
+    complete_recipes_complete_data: [],
+    complete_recipes_data: [],
+    complete_recipes_headers: [
       {
         text: 'Name',
         align: 'start',
@@ -237,6 +264,32 @@ var app = new Vue({
       });
     },
 
+    getCompleteRecipeData: function() {
+      var vm = this;
+      $.ajax({
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve_recipes/master/data/complete_recipes.json',
+        method: 'GET'
+      }).then(function (response) {
+        var complete_recipes_data = JSON.parse(response).data;
+        var formatted_data = complete_recipes_data.map(function(row, index) {
+          var updated_row = row;
+          updated_row.id = index + '_complete_recipes_' + row.name.replace(/\s/, '_').toLowerCase();
+          updated_row.dlc = normalizeDlc(row.dlc);
+          updated_row.favourite = hasElement(vm.favourite_recipes, updated_row.id);
+          row.requirements.forEach(function(ele) {
+            requirement = ele.replace(/\(.*\)/, '').trim();
+            if (!hasElement(vm.complete_recipes_requirements_materials, requirement)) {
+              vm.complete_recipes_requirements_materials = addElement(vm.complete_recipes_requirements_materials, requirement)
+            }
+          });
+          return updated_row;
+        });
+
+        vm.complete_recipes_requirements_materials = vm.complete_recipes_requirements_materials.sort();
+        vm.complete_recipes_complete_data = formatted_data;
+      });
+    },
+
     getSeedData: function() {
       var vm = this;
       $.ajax({
@@ -351,6 +404,11 @@ var app = new Vue({
       vm.meat_data = vm.filterData(vm.meat_complete_data, vm.toggle_dlc, { field: 'favourite', value: vm.toggle_meat_favourite }, vm.meat_requirements_search);
     },
 
+    filterCompleteRecipeData: function() {
+      var vm = this;
+      vm.complete_recipes_data = vm.filterData(vm.complete_recipes_complete_data, vm.toggle_dlc, { field: 'favourite', value: vm.toggle_complete_recipes_favourite }, vm.complete_recipes_requirements_search);
+    },
+
     filterVegetableData: function() {
       var vm = this;
       vm.raw_vegetable_data = vm.filterData(vm.raw_vegetable_complete_data, vm.toggle_dlc, { field: 'crockpot', value: vm.toggle_vegetable_crockpot }, null);
@@ -402,6 +460,12 @@ var app = new Vue({
       vm.toggle_meat_favourite = false;
     },
 
+    clearCompleteRecipeFilters: function() {
+      var vm = this;
+      vm.complete_recipes_search = '';
+      vm.toggle_complete_recipes_favourite = false;
+    },
+
     clearVegetableFilters: function() {
       var vm = this;
       vm.toggle_vegetable_crockpot = false;
@@ -437,6 +501,9 @@ var app = new Vue({
         meat_complete_data: vm.meat_complete_data,
         meat_requirements_materials: vm.meat_requirements_materials,
         toggle_meat_favourite: vm.toggle_meat_favourite,
+        complete_recipes_complete_data: vm.complete_recipes_complete_data,
+        complete_recipes_requirements_materials: vm.complete_recipes_requirements_materials,
+        toggle_complete_recipes_favourite: vm.toggle_complete_recipes_favourite,
         seed_complete_data: vm.seed_complete_data,
         raw_vegetable_threshold: vm.raw_vegetable_threshold,
         toggle_vegetable_crockpot: vm.toggle_vegetable_crockpot,
@@ -475,6 +542,14 @@ var app = new Vue({
       var vm = this;
       if (new_val.length > 0) {
         vm.filterMeatRecipeData();
+        vm.storeSettings();
+      }
+    },
+
+    complete_recipes_complete_data: function(new_val, old_val) {
+      var vm = this;
+      if (new_val.length > 0) {
+        vm.filterCompleteRecipeData();
         vm.storeSettings();
       }
     },
@@ -518,6 +593,12 @@ var app = new Vue({
       vm.storeSettings();
     },
 
+    toggle_complete_recipes_favourite: function(new_val, old_val) {
+      var vm = this;
+      vm.filterCompleteRecipeData();
+      vm.storeSettings();
+    },
+
     toggle_vegetable_crockpot: function(new_val, old_val) {
       var vm = this;
       vm.filterVegetableData();
@@ -557,9 +638,17 @@ var app = new Vue({
       vm.storeSettings();
     },
 
+    complete_recipes_requirements_search: function(new_val, old_val) {
+      var vm = this;
+      vm.filterCompleteRecipeData();
+      vm.storeSettings();
+    },
+
     favourite_recipes: function(new_val, old_val) {
       var vm = this;
       vm.filterVegetableRecipeData();
+      vm.filterMeatRecipeData();
+      vm.filterCompleteRecipeData();
       vm.storeSettings();
     },
 
