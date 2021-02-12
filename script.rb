@@ -95,7 +95,7 @@ class Crockpot
 
   def normalize(key, value)
     normalized = if key == 'dlc'
-      value.split(',').map(&:strip)
+                   value.split(',').map(&:strip)
                  elsif %w(health hunger sanity).include?(key)
                    stats = value.split(',')
                    stats.map do |stat|
@@ -164,6 +164,15 @@ class Vegetable
       end
     end
   end
+
+  def normalize(key, value)
+    normalized = if key == 'sources'
+                   value.split(',')
+                 else
+                   value
+                 end
+    [key, normalized]
+  end
 end
 
 class Meat
@@ -197,6 +206,15 @@ class Meat
         csv << [name, sources.empty? ? name : sources, *meats.first[2..]]
       end
     end
+  end
+
+  def normalize(key, value)
+    normalized = if key == 'sources'
+                   value.split(',')
+                 else
+                   value
+                 end
+    [key, normalized]
   end
 end
 

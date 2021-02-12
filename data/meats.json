@@ -2,7 +2,9 @@
   "data": [
     {
       "name": "Barnacles",
-      "sources": "Barnacles",
+      "sources": [
+        "Barnacles"
+      ],
       "cooked": "Cooked Barnacles",
       "dried": "N/A",
       "dlc": "Don't Starve Together icon",
@@ -11,7 +13,9 @@
     },
     {
       "name": "Batilisk Wing",
-      "sources": "Batilisk Wing",
+      "sources": [
+        "Batilisk Wing"
+      ],
       "cooked": "Cooked Batilisk Wing",
       "dried": "Small Jerky",
       "dlc": "",
@@ -20,7 +24,9 @@
     },
     {
       "name": "Dead Dogfish",
-      "sources": "Dead Dogfish",
+      "sources": [
+        "Dead Dogfish"
+      ],
       "cooked": "Fish Steak",
       "dried": "Jerky",
       "dlc": "Shipwrecked",
@@ -29,7 +35,9 @@
     },
     {
       "name": "Dead Swordfish",
-      "sources": "Dead Swordfish",
+      "sources": [
+        "Dead Swordfish"
+      ],
       "cooked": "Fish Steak",
       "dried": "Jerky",
       "dlc": "Shipwrecked",
@@ -38,7 +46,9 @@
     },
     {
       "name": "Deerclops Eyeball",
-      "sources": "Deerclops Eyeball",
+      "sources": [
+        "Deerclops Eyeball"
+      ],
       "cooked": "N/A",
       "dried": "N/A",
       "dlc": "",
@@ -47,7 +57,9 @@
     },
     {
       "name": "Dragoon Heart",
-      "sources": "Dragoon Heart",
+      "sources": [
+        "Dragoon Heart"
+      ],
       "cooked": "N/A",
       "dried": "N/A",
       "dlc": "Shipwrecked",
@@ -56,7 +68,9 @@
     },
     {
       "name": "Drumstick",
-      "sources": "Drumstick",
+      "sources": [
+        "Drumstick"
+      ],
       "cooked": "Fried Drumstick",
       "dried": "Small Jerky",
       "dlc": "",
@@ -65,7 +79,9 @@
     },
     {
       "name": "Eel",
-      "sources": "Live Eel",
+      "sources": [
+        "Live Eel"
+      ],
       "cooked": "Cooked Eel",
       "dried": "Small Jerky",
       "dlc": "",
@@ -74,7 +90,9 @@
     },
     {
       "name": "Eye of the Tiger Shark",
-      "sources": "Eye of the Tiger Shark",
+      "sources": [
+        "Eye of the Tiger Shark"
+      ],
       "cooked": "N/A",
       "dried": "N/A",
       "dlc": "Shipwrecked",
@@ -83,7 +101,9 @@
     },
     {
       "name": "Fish",
-      "sources": "Freshwater Fish",
+      "sources": [
+        "Freshwater Fish"
+      ],
       "cooked": "Cooked Fish",
       "dried": "Small Jerky",
       "dlc": "",
@@ -92,7 +112,12 @@
     },
     {
       "name": "Fish Meat",
-      "sources": "Black Catfish,Dandy Lionfish,Deep Bass,Mudfish",
+      "sources": [
+        "Black Catfish",
+        "Dandy Lionfish",
+        "Deep Bass",
+        "Mudfish"
+      ],
       "cooked": "Fish Steak",
       "dried": "N/A",
       "dlc": "Don't Starve Together",
@@ -101,7 +126,12 @@
     },
     {
       "name": "Fish Morsel",
-      "sources": "Bitty Baitfish,Needlenosed Squirt,Runty Guppy,Smolt Fry",
+      "sources": [
+        "Bitty Baitfish",
+        "Needlenosed Squirt",
+        "Runty Guppy",
+        "Smolt Fry"
+      ],
       "cooked": "Cooked Fish Morsel",
       "dried": "N/A",
       "dlc": "Don't Starve Together",
@@ -110,7 +140,9 @@
     },
     {
       "name": "Flytrap Stalk",
-      "sources": "Flytrap Stalk",
+      "sources": [
+        "Flytrap Stalk"
+      ],
       "cooked": "N/A",
       "dried": "Stalking Stick",
       "dlc": "Hamlet",
@@ -119,7 +151,9 @@
     },
     {
       "name": "Frog Legs",
-      "sources": "Frog Legs",
+      "sources": [
+        "Frog Legs"
+      ],
       "cooked": "Cooked Frog Legs",
       "dried": "Small Jerky",
       "dlc": "",
@@ -128,7 +162,9 @@
     },
     {
       "name": "Guardian's Horn",
-      "sources": "Guardian's Horn",
+      "sources": [
+        "Guardian's Horn"
+      ],
       "cooked": "N/A",
       "dried": "N/A",
       "dlc": "",
@@ -137,7 +173,9 @@
     },
     {
       "name": "Koalefant Trunk",
-      "sources": "Koalefant Trunk",
+      "sources": [
+        "Koalefant Trunk"
+      ],
       "cooked": "Koalefant Trunk Steak",
       "dried": "N/A",
       "dlc": "",
@@ -146,7 +184,9 @@
     },
     {
       "name": "Leafy Meat",
-      "sources": "Leafy Meat",
+      "sources": [
+        "Leafy Meat"
+      ],
       "cooked": "Cooked Leafy Meat",
       "dried": "N/A",
       "dlc": "",
@@ -155,7 +195,9 @@
     },
     {
       "name": "Meat",
-      "sources": "Meat",
+      "sources": [
+        "Meat"
+      ],
       "cooked": "Cooked Meat",
       "dried": "Jerky",
       "dlc": "",
@@ -164,7 +206,9 @@
     },
     {
       "name": "Monster Meat",
-      "sources": "Monster Meat",
+      "sources": [
+        "Monster Meat"
+      ],
       "cooked": "Cooked Monster Meat",
       "dried": "Monster Jerky",
       "dlc": "",
@@ -173,7 +217,9 @@
     },
     {
       "name": "Morsel",
-      "sources": "Moleworm",
+      "sources": [
+        "Moleworm"
+      ],
       "cooked": "Cooked Morsel",
       "dried": "Small Jerky",
       "dlc": "",
@@ -182,7 +228,9 @@
     },
     {
       "name": "Naked Nostrils",
-      "sources": "Naked Nostrils",
+      "sources": [
+        "Naked Nostrils"
+      ],
       "cooked": "Charred Nostrils",
       "dried": "N/A",
       "dlc": "Don't Starve Together icon",
@@ -191,7 +239,9 @@
     },
     {
       "name": "Neon Quattro",
-      "sources": "Neon Quattro",
+      "sources": [
+        "Neon Quattro"
+      ],
       "cooked": "Cooked Neon Quattro",
       "dried": "N/A",
       "dlc": "Shipwrecked",
@@ -200,7 +250,9 @@
     },
     {
       "name": "Pierrot Fish",
-      "sources": "Pierrot Fish",
+      "sources": [
+        "Pierrot Fish"
+      ],
       "cooked": "Cooked Pierrot Fish",
       "dried": "N/A",
       "dlc": "Shipwrecked",
@@ -209,7 +261,9 @@
     },
     {
       "name": "Poison Dartfrog Legs",
-      "sources": "Poison Dartfrog Legs",
+      "sources": [
+        "Poison Dartfrog Legs"
+      ],
       "cooked": "Cooked Dartfrog Legs",
       "dried": "Small Jerky",
       "dlc": "Hamlet",
@@ -218,7 +272,9 @@
     },
     {
       "name": "Purple Grouper",
-      "sources": "Purple Grouper",
+      "sources": [
+        "Purple Grouper"
+      ],
       "cooked": "Cooked Purple Grouper",
       "dried": "N/A",
       "dlc": "Shipwrecked",
@@ -227,7 +283,9 @@
     },
     {
       "name": "Raw Fish",
-      "sources": "Raw Fish",
+      "sources": [
+        "Raw Fish"
+      ],
       "cooked": "Fish Steak",
       "dried": "Jerky",
       "dlc": "Shipwrecked",
@@ -236,7 +294,9 @@
     },
     {
       "name": "Roe",
-      "sources": "Roe",
+      "sources": [
+        "Roe"
+      ],
       "cooked": "Cooked Roe",
       "dried": "N/A",
       "dlc": "Shipwrecked",
@@ -245,7 +305,9 @@
     },
     {
       "name": "Shark Fin",
-      "sources": "Shark Fin",
+      "sources": [
+        "Shark Fin"
+      ],
       "cooked": "N/A",
       "dried": "N/A",
       "dlc": "Shipwrecked",
@@ -254,7 +316,9 @@
     },
     {
       "name": "Tropical Fish",
-      "sources": "Tropical Fish",
+      "sources": [
+        "Tropical Fish"
+      ],
       "cooked": "Cooked Fish Morsel",
       "dried": "Small Jerky",
       "dlc": "Shipwrecked",
@@ -263,7 +327,9 @@
     },
     {
       "name": "Winter Koalefant Trunk",
-      "sources": "Winter Koalefant Trunk",
+      "sources": [
+        "Winter Koalefant Trunk"
+      ],
       "cooked": "Koalefant Trunk Steak",
       "dried": "N/A",
       "dlc": "",

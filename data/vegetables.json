@@ -2,7 +2,9 @@
   "data": [
     {
       "name": "Aloe",
-      "sources": "Aloe",
+      "sources": [
+        "Aloe"
+      ],
       "cooked": "Cooked Aloe",
       "dried": "N/A",
       "dlc": "Hamlet",
@@ -11,7 +13,9 @@
     },
     {
       "name": "Asparagus",
-      "sources": "Asparagus",
+      "sources": [
+        "Asparagus"
+      ],
       "cooked": "Cooked Asparagus",
       "dried": "N/A",
       "dlc": "Hamlet",
@@ -20,7 +24,9 @@
     },
     {
       "name": "Blue Cap",
-      "sources": "Blue Cap",
+      "sources": [
+        "Blue Cap"
+      ],
       "cooked": "Cooked Blue Cap",
       "dried": "N/A",
       "dlc": "",
@@ -29,7 +35,9 @@
     },
     {
       "name": "Cactus Flesh",
-      "sources": "Cactus Flesh",
+      "sources": [
+        "Cactus Flesh"
+      ],
       "cooked": "Cooked Cactus Flesh",
       "dried": "N/A",
       "dlc": "Reign of Giants",
@@ -38,7 +46,9 @@
     },
     {
       "name": "Cactus Flower",
-      "sources": "Cactus Flower",
+      "sources": [
+        "Cactus Flower"
+      ],
       "cooked": "N/A",
       "dried": "N/A",
       "dlc": "Reign of Giants",
@@ -47,7 +57,9 @@
     },
     {
       "name": "Carrot",
-      "sources": "Carrot",
+      "sources": [
+        "Carrot"
+      ],
       "cooked": "Roasted Carrot",
       "dried": "N/A",
       "dlc": "",
@@ -56,7 +68,9 @@
     },
     {
       "name": "Corn",
-      "sources": "Corn",
+      "sources": [
+        "Corn"
+      ],
       "cooked": "Popcorn",
       "dried": "N/A",
       "dlc": "",
@@ -65,7 +79,9 @@
     },
     {
       "name": "Corn Cod",
-      "sources": "Corn Cod",
+      "sources": [
+        "Corn Cod"
+      ],
       "cooked": "Popcorn",
       "dried": "N/A",
       "dlc": "Don't Starve Together",
@@ -74,7 +90,9 @@
     },
     {
       "name": "Dark Petals",
-      "sources": "Dark Petals",
+      "sources": [
+        "Dark Petals"
+      ],
       "cooked": "N/A",
       "dried": "N/A",
       "dlc": "",
@@ -83,7 +101,9 @@
     },
     {
       "name": "Eggplant",
-      "sources": "Eggplant",
+      "sources": [
+        "Eggplant"
+      ],
       "cooked": "Braised Eggplant",
       "dried": "N/A",
       "dlc": "",
@@ -92,7 +112,9 @@
     },
     {
       "name": "Foliage",
-      "sources": "Foliage",
+      "sources": [
+        "Foliage"
+      ],
       "cooked": "N/A",
       "dried": "N/A",
       "dlc": "",
@@ -101,7 +123,9 @@
     },
     {
       "name": "Garlic",
-      "sources": "Garlic",
+      "sources": [
+        "Garlic"
+      ],
       "cooked": "Roasted Garlic",
       "dried": "N/A",
       "dlc": "Don't Starve Together",
@@ -110,7 +134,9 @@
     },
     {
       "name": "Glow Berry",
-      "sources": "Glow Berry",
+      "sources": [
+        "Glow Berry"
+      ],
       "cooked": "N/A",
       "dried": "N/A",
       "dlc": "",
@@ -119,7 +145,9 @@
     },
     {
       "name": "Green Cap",
-      "sources": "Green Cap",
+      "sources": [
+        "Green Cap"
+      ],
       "cooked": "Cooked Green Cap",
       "dried": "N/A",
       "dlc": "",
@@ -128,7 +156,9 @@
     },
     {
       "name": "Kelp Fronds",
-      "sources": "Kelp Fronds",
+      "sources": [
+        "Kelp Fronds"
+      ],
       "cooked": "Cooked Kelp Fronds",
       "dried": "Dried Kelp Fronds",
       "dlc": "Don't Starve Together",
@@ -137,7 +167,9 @@
     },
     {
       "name": "Lichen",
-      "sources": "Lichen",
+      "sources": [
+        "Lichen"
+      ],
       "cooked": "N/A",
       "dried": "N/A",
       "dlc": "",
@@ -146,7 +178,9 @@
     },
     {
       "name": "Mandrake",
-      "sources": "Mandrake",
+      "sources": [
+        "Mandrake"
+      ],
       "cooked": "Cooked Mandrake",
       "dried": "N/A",
       "dlc": "",
@@ -155,7 +189,9 @@
     },
     {
       "name": "Moon Shroom",
-      "sources": "Moon Shroom",
+      "sources": [
+        "Moon Shroom"
+      ],
       "cooked": "Cooked Moon Shroom",
       "dried": "N/A",
       "dlc": "Don't Starve Together",
@@ -164,7 +200,9 @@
     },
     {
       "name": "Onion",
-      "sources": "Onion",
+      "sources": [
+        "Onion"
+      ],
       "cooked": "Roasted Onion",
       "dried": "N/A",
       "dlc": "Don't Starve Together",
@@ -173,7 +211,9 @@
     },
     {
       "name": "Pepper",
-      "sources": "Pepper",
+      "sources": [
+        "Pepper"
+      ],
       "cooked": "Roasted Pepper",
       "dried": "N/A",
       "dlc": "Don't Starve Together",
@@ -182,7 +222,9 @@
     },
     {
       "name": "Petals",
-      "sources": "Petals",
+      "sources": [
+        "Petals"
+      ],
       "cooked": "N/A",
       "dried": "N/A",
       "dlc": "",
@@ -191,7 +233,9 @@
     },
     {
       "name": "Popperfish",
-      "sources": "Popperfish",
+      "sources": [
+        "Popperfish"
+      ],
       "cooked": "Popcorn",
       "dried": "N/A",
       "dlc": "Don't Starve Together",
@@ -200,7 +244,9 @@
     },
     {
       "name": "Potato",
-      "sources": "Potato",
+      "sources": [
+        "Potato"
+      ],
       "cooked": "Roasted Potato",
       "dried": "N/A",
       "dlc": "Don't Starve Together",
@@ -209,7 +255,9 @@
     },
     {
       "name": "Pumpkin",
-      "sources": "Pumpkin",
+      "sources": [
+        "Pumpkin"
+      ],
       "cooked": "Hot Pumpkin",
       "dried": "N/A",
       "dlc": "",
@@ -218,7 +266,9 @@
     },
     {
       "name": "Radish",
-      "sources": "Radish",
+      "sources": [
+        "Radish"
+      ],
       "cooked": "Cooked Radish",
       "dried": "N/A",
       "dlc": "Hamlet",
@@ -227,7 +277,9 @@
     },
     {
       "name": "Red Cap",
-      "sources": "Red Cap",
+      "sources": [
+        "Red Cap"
+      ],
       "cooked": "Cooked Red Cap",
       "dried": "N/A",
       "dlc": "",
@@ -236,7 +288,9 @@
     },
     {
       "name": "Ripe Stone Fruit",
-      "sources": "Ripe Stone Fruit",
+      "sources": [
+        "Ripe Stone Fruit"
+      ],
       "cooked": "Cooked Stone Fruit",
       "dried": "N/A",
       "dlc": "Don't Starve Together",
@@ -245,7 +299,9 @@
     },
     {
       "name": "Seaweed",
-      "sources": "Seaweed",
+      "sources": [
+        "Seaweed"
+      ],
       "cooked": "Roasted Seaweed",
       "dried": "Dried Seaweed",
       "dlc": "Shipwrecked",
@@ -254,7 +310,9 @@
     },
     {
       "name": "Succulent",
-      "sources": "Succulent",
+      "sources": [
+        "Succulent"
+      ],
       "cooked": "N/A",
       "dried": "N/A",
       "dlc": "Don't Starve Together",
@@ -263,7 +321,9 @@
     },
     {
       "name": "Sweet Potato",
-      "sources": "Sweet Potato",
+      "sources": [
+        "Sweet Potato"
+      ],
       "cooked": "Cooked Sweet Potato",
       "dried": "N/A",
       "dlc": "Shipwrecked",
@@ -272,7 +332,9 @@
     },
     {
       "name": "Toma Root",
-      "sources": "Toma Root",
+      "sources": [
+        "Toma Root"
+      ],
       "cooked": "Roasted Toma Root",
       "dried": "N/A",
       "dlc": "Don't Starve Together",
