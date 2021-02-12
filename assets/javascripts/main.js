@@ -420,7 +420,7 @@ var app = new Vue({
     },
 
     highlightValue: function(value, threshold) {
-      if (value >= threshold) {
+      if (parseFloat(value) >= parseFloat(threshold)) {
         return '#8b104a';
       } else {
         return 'white';
@@ -428,7 +428,7 @@ var app = new Vue({
     },
 
     highlightText: function(value, threshold) {
-      if (value >= threshold) {
+      if (parseFloat(value) >= parseFloat(threshold)) {
         return 'white';
       } else {
         return 'black';
