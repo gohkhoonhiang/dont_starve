@@ -165,8 +165,8 @@ var app = new Vue({
         filterable: true,
         value: 'name',
       },
-      { text: 'DLC', filterable: false, value: 'dlc', filterable: false },
       { text: 'Seed Name', filterable: false, value: 'seed_name' },
+      { text: 'DLC', filterable: false, value: 'dlc', filterable: false },
     ],
 
     toggle_vegetable_crockpot: false,
