@@ -234,18 +234,18 @@
                 "triple-crop": {
                     "asparagus-potato-carrot": [
                         ["asparagus", "potato", "potato", "potato", "potato", "asparagus"],
-                        ["asparagus", "potato", "carrot", "pepper", "potato", "asparagus"],
-                        ["asparagus", "carrot", "pepper", "pepper", "pepper", "asparagus"],
-                        ["asparagus", "carrot", "pepper", "pepper", "pepper", "asparagus"],
-                        ["asparagus", "potato", "carrot", "pepper", "potato", "asparagus"],
+                        ["asparagus", "potato", "carrot", "carrot", "potato", "asparagus"],
+                        ["asparagus", "carrot", "carrot", "carrot", "carrot", "asparagus"],
+                        ["asparagus", "carrot", "carrot", "carrot", "carrot", "asparagus"],
+                        ["asparagus", "potato", "carrot", "carrot", "potato", "asparagus"],
                         ["asparagus", "potato", "potato", "potato", "potato", "asparagus"]
                     ],
                     "asparagus-potato-pumpkin": [
                         ["asparagus", "potato", "potato", "potato", "potato", "asparagus"],
-                        ["asparagus", "potato", "pumpkin", "pepper", "potato", "asparagus"],
-                        ["asparagus", "pumpkin", "pepper", "pepper", "pepper", "asparagus"],
-                        ["asparagus", "pumpkin", "pepper", "pepper", "pepper", "asparagus"],
-                        ["asparagus", "potato", "pumpkin", "pepper", "potato", "asparagus"],
+                        ["asparagus", "potato", "pumpkin", "pumpkin", "potato", "asparagus"],
+                        ["asparagus", "pumpkin", "pumpkin", "pumpkin", "pumpkin", "asparagus"],
+                        ["asparagus", "pumpkin", "pumpkin", "pumpkin", "pumpkin", "asparagus"],
+                        ["asparagus", "potato", "pumpkin", "pumpkin", "potato", "asparagus"],
                         ["asparagus", "potato", "potato", "potato", "potato", "asparagus"]
                     ]
                 }
