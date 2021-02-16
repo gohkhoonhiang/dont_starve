@@ -1,0 +1,255 @@
+{
+    "data": [
+        {
+            "spring": {
+                "l-shape": {
+                    "tomaroot-eggplant": [
+                        ["tomaroot", "tomaroot", "tomaroot"],
+                        ["tomaroot", "", "eggplant"],
+                        ["eggplant", "eggplant", "eggplant"]
+                    ],
+                    "tomaroot-potato": [
+                        ["tomaroot", "tomaroot", "tomaroot"],
+                        ["tomaroot", "", "potato"],
+                        ["potato", "potato", "potato"]
+                    ],
+                    "watermelon-carrot": [
+                        ["watermelon", "watermelon", "watermelon"],
+                        ["watermelon", "", "carrot"],
+                        ["carrot", "carrot", "carrot"]
+                    ]
+                },
+                "two-by-two": {
+                    "watermelon-pomegranate": [
+                        ["watermelon", "watermelon", "pomegranate", "pomegranate", "watermelon", "watermelon"],
+                        ["watermelon", "watermelon", "pomegranate", "pomegranate", "watermelon", "watermelon"],
+                        ["watermelon", "watermelon", "pomegranate", "pomegranate", "watermelon", "watermelon"]
+                    ],
+                    "watermelon-onion": [
+                        ["watermelon", "watermelon", "onion", "onion", "watermelon", "watermelon"],
+                        ["watermelon", "watermelon", "onion", "onion", "watermelon", "watermelon"],
+                        ["watermelon", "watermelon", "onion", "onion", "watermelon", "watermelon"]
+                    ],
+                    "toma-dragonfruit": [
+                        ["tomaroot", "tomaroot", "dragonfruit", "dragonfruit", "tomaroot", "tomaroot"],
+                        ["tomaroot", "tomaroot", "dragonfruit", "dragonfruit", "tomaroot", "tomaroot"],
+                        ["tomaroot", "tomaroot", "dragonfruit", "dragonfruit", "tomaroot", "tomaroot"]
+                    ]
+                },
+                "triple-crop": {
+                    "carrot-corn-potato": [
+                        ["carrot", "corn", "corn", "corn", "corn", "carrot"],
+                        ["carrot", "corn", "potato", "potato", "corn", "carrot"],
+                        ["carrot", "potato", "potato", "potato", "potato", "carrot"],
+                        ["carrot", "potato", "potato", "potato", "potato", "carrot"],
+                        ["carrot", "corn", "potato", "potato", "corn", "carrot"],
+                        ["carrot", "corn", "corn", "corn", "corn", "carrot"]
+                    ],
+                    "carrot-corn-eggplant": [
+                        ["carrot", "corn", "corn", "corn", "corn", "carrot"],
+                        ["carrot", "corn", "eggplant", "eggplant", "corn", "carrot"],
+                        ["carrot", "eggplant", "eggplant", "eggplant", "eggplant", "carrot"],
+                        ["carrot", "eggplant", "eggplant", "eggplant", "eggplant", "carrot"],
+                        ["carrot", "corn", "eggplant", "eggplant", "corn", "carrot"],
+                        ["carrot", "corn", "corn", "corn", "corn", "carrot"]
+                    ],
+                    "carrot-asparagus-potato": [
+                        ["carrot", "asparagus", "asparagus", "asparagus", "asparagus", "carrot"],
+                        ["carrot", "asparagus", "potato", "potato", "asparagus", "carrot"],
+                        ["carrot", "potato", "potato", "potato", "potato", "carrot"],
+                        ["carrot", "potato", "potato", "potato", "potato", "carrot"],
+                        ["carrot", "asparagus", "potato", "potato", "asparagus", "carrot"],
+                        ["carrot", "asparagus", "asparagus", "asparagus", "asparagus", "carrot"]
+                    ],
+                    "carrot-asparagus-eggplant": [
+                        ["carrot", "asparagus", "asparagus", "asparagus", "asparagus", "carrot"],
+                        ["carrot", "asparagus", "eggplant", "eggplant", "asparagus", "carrot"],
+                        ["carrot", "eggplant", "eggplant", "eggplant", "eggplant", "carrot"],
+                        ["carrot", "eggplant", "eggplant", "eggplant", "eggplant", "carrot"],
+                        ["carrot", "asparagus", "eggplant", "eggplant", "asparagus", "carrot"],
+                        ["carrot", "asparagus", "asparagus", "asparagus", "asparagus", "carrot"]
+                    ],
+                    "dragonfruit-durian-onion": [
+                        ["dragonfruit", "durian", "durian", "durian", "durian", "dragonfruit"],
+                        ["dragonfruit", "durian", "onion", "onion", "durian", "dragonfruit"],
+                        ["dragonfruit", "onion", "onion", "onion", "onion", "dragonfruit"],
+                        ["dragonfruit", "onion", "onion", "onion", "onion", "dragonfruit"],
+                        ["dragonfruit", "durian", "onion", "onion", "durian", "dragonfruit"],
+                        ["dragonfruit", "durian", "durian", "durian", "durian", "dragonfruit"]
+                    ],
+                    "dragonfruit-durian-pomegranate": [
+                        ["dragonfruit", "durian", "durian", "durian", "durian", "dragonfruit"],
+                        ["dragonfruit", "durian", "pomegranate", "pomegranate", "durian", "dragonfruit"],
+                        ["dragonfruit", "pomegranate", "pomegranate", "pomegranate", "pomegranate", "dragonfruit"],
+                        ["dragonfruit", "pomegranate", "pomegranate", "pomegranate", "pomegranate", "dragonfruit"],
+                        ["dragonfruit", "durian", "pomegranate", "pomegranate", "durian", "dragonfruit"],
+                        ["dragonfruit", "durian", "durian", "durian", "durian", "dragonfruit"]
+                    ],
+                    "dragonfruit-garlic-onion": [
+                        ["dragonfruit", "garlic", "garlic", "garlic", "garlic", "dragonfruit"],
+                        ["dragonfruit", "garlic", "onion", "onion", "garlic", "dragonfruit"],
+                        ["dragonfruit", "onion", "onion", "onion", "onion", "dragonfruit"],
+                        ["dragonfruit", "onion", "onion", "onion", "onion", "dragonfruit"],
+                        ["dragonfruit", "garlic", "onion", "onion", "garlic", "dragonfruit"],
+                        ["dragonfruit", "garlic", "garlic", "garlic", "garlic", "dragonfruit"]
+                    ],
+                    "dragonfruit-garlic-pomegranate": [
+                        ["dragonfruit", "garlic", "garlic", "garlic", "garlic", "dragonfruit"],
+                        ["dragonfruit", "garlic", "pomegranate", "pomegranate", "garlic", "dragonfruit"],
+                        ["dragonfruit", "pomegranate", "pomegranate", "pomegranate", "pomegranate", "dragonfruit"],
+                        ["dragonfruit", "pomegranate", "pomegranate", "pomegranate", "pomegranate", "dragonfruit"],
+                        ["dragonfruit", "garlic", "pomegranate", "pomegranate", "garlic", "dragonfruit"],
+                        ["dragonfruit", "garlic", "garlic", "garlic", "garlic", "dragonfruit"]
+                    ]
+                }
+            },
+            "summer": {
+                "l-shape": {
+                },
+                "two-by-two": {
+                    "watermelon-pomegranate": [
+                        ["watermelon", "watermelon", "pomegranate", "pomegranate", "watermelon", "watermelon"],
+                        ["watermelon", "watermelon", "pomegranate", "pomegranate", "watermelon", "watermelon"],
+                        ["watermelon", "watermelon", "pomegranate", "pomegranate", "watermelon", "watermelon"]
+                    ],
+                    "watermelon-onion": [
+                        ["watermelon", "watermelon", "onion", "onion", "watermelon", "watermelon"],
+                        ["watermelon", "watermelon", "onion", "onion", "watermelon", "watermelon"],
+                        ["watermelon", "watermelon", "onion", "onion", "watermelon", "watermelon"]
+                    ],
+                    "toma-dragonfruit": [
+                        ["tomaroot", "tomaroot", "dragonfruit", "dragonfruit", "tomaroot", "tomaroot"],
+                        ["tomaroot", "tomaroot", "dragonfruit", "dragonfruit", "tomaroot", "tomaroot"],
+                        ["tomaroot", "tomaroot", "dragonfruit", "dragonfruit", "tomaroot", "tomaroot"]
+                    ],
+                    "toma-pepper": [
+                        ["tomaroot", "tomaroot", "pepper", "pepper", "tomaroot", "tomaroot"],
+                        ["tomaroot", "tomaroot", "pepper", "pepper", "tomaroot", "tomaroot"],
+                        ["tomaroot", "tomaroot", "pepper", "pepper", "tomaroot", "tomaroot"]
+                    ]
+                },
+                "triple-crop": {
+                    "dragonfruit-garlic-onion": [
+                        ["dragonfruit", "garlic", "garlic", "garlic", "garlic", "dragonfruit"],
+                        ["dragonfruit", "garlic", "onion", "onion", "garlic", "dragonfruit"],
+                        ["dragonfruit", "onion", "onion", "onion", "onion", "dragonfruit"],
+                        ["dragonfruit", "onion", "onion", "onion", "onion", "dragonfruit"],
+                        ["dragonfruit", "garlic", "onion", "onion", "garlic", "dragonfruit"],
+                        ["dragonfruit", "garlic", "garlic", "garlic", "garlic", "dragonfruit"]
+                    ],
+                    "dragonfruit-garlic-pomegranate": [
+                        ["dragonfruit", "garlic", "garlic", "garlic", "garlic", "dragonfruit"],
+                        ["dragonfruit", "garlic", "pomegranate", "pomegranate", "garlic", "dragonfruit"],
+                        ["dragonfruit", "pomegranate", "pomegranate", "pomegranate", "pomegranate", "dragonfruit"],
+                        ["dragonfruit", "pomegranate", "pomegranate", "pomegranate", "pomegranate", "dragonfruit"],
+                        ["dragonfruit", "garlic", "pomegranate", "pomegranate", "garlic", "dragonfruit"],
+                        ["dragonfruit", "garlic", "garlic", "garlic", "garlic", "dragonfruit"]
+                    ],
+                    "pepper-garlic-onion": [
+                        ["pepper", "garlic", "garlic", "garlic", "garlic", "pepper"],
+                        ["pepper", "garlic", "onion", "onion", "garlic", "pepper"],
+                        ["pepper", "onion", "onion", "onion", "onion", "pepper"],
+                        ["pepper", "onion", "onion", "onion", "onion", "pepper"],
+                        ["pepper", "garlic", "onion", "onion", "garlic", "pepper"],
+                        ["pepper", "garlic", "garlic", "garlic", "garlic", "pepper"]
+                    ],
+                    "pepper-garlic-pomegranate": [
+                        ["pepper", "garlic", "garlic", "garlic", "garlic", "pepper"],
+                        ["pepper", "garlic", "pomegranate", "pomegranate", "garlic", "pepper"],
+                        ["pepper", "pomegranate", "pomegranate", "pomegranate", "pomegranate", "pepper"],
+                        ["pepper", "pomegranate", "pomegranate", "pomegranate", "pomegranate", "pepper"],
+                        ["pepper", "garlic", "pomegranate", "pomegranate", "garlic", "pepper"],
+                        ["pepper", "garlic", "garlic", "garlic", "garlic", "pepper"]
+                    ]
+                }
+            },
+            "autumn": {
+                "l-shape": {
+                    "tomaroot-eggplant": [
+                        ["tomaroot", "tomaroot", "tomaroot"],
+                        ["tomaroot", "", "eggplant"],
+                        ["eggplant", "eggplant", "eggplant"]
+                    ],
+                    "tomaroot-potato": [
+                        ["tomaroot", "tomaroot", "tomaroot"],
+                        ["tomaroot", "", "potato"],
+                        ["potato", "potato", "potato"]
+                    ]
+                },
+                "two-by-two": {
+                    "toma-pepper": [
+                        ["tomaroot", "tomaroot", "pepper", "pepper", "tomaroot", "tomaroot"],
+                        ["tomaroot", "tomaroot", "pepper", "pepper", "tomaroot", "tomaroot"],
+                        ["tomaroot", "tomaroot", "pepper", "pepper", "tomaroot", "tomaroot"]
+                    ]
+                },
+                "triple-crop": {
+                    "carrot-corn-potato": [
+                        ["carrot", "corn", "corn", "corn", "corn", "carrot"],
+                        ["carrot", "corn", "potato", "potato", "corn", "carrot"],
+                        ["carrot", "potato", "potato", "potato", "potato", "carrot"],
+                        ["carrot", "potato", "potato", "potato", "potato", "carrot"],
+                        ["carrot", "corn", "potato", "potato", "corn", "carrot"],
+                        ["carrot", "corn", "corn", "corn", "corn", "carrot"]
+                    ],
+                    "carrot-corn-eggplant": [
+                        ["carrot", "corn", "corn", "corn", "corn", "carrot"],
+                        ["carrot", "corn", "eggplant", "eggplant", "corn", "carrot"],
+                        ["carrot", "eggplant", "eggplant", "eggplant", "eggplant", "carrot"],
+                        ["carrot", "eggplant", "eggplant", "eggplant", "eggplant", "carrot"],
+                        ["carrot", "corn", "eggplant", "eggplant", "corn", "carrot"],
+                        ["carrot", "corn", "corn", "corn", "corn", "carrot"]
+                    ],
+                    "pumpkin-corn-eggplant": [
+                        ["pumpkin", "corn", "corn", "corn", "corn", "pumpkin"],
+                        ["pumpkin", "corn", "eggplant", "eggplant", "corn", "pumpkin"],
+                        ["pumpkin", "eggplant", "eggplant", "eggplant", "eggplant", "pumpkin"],
+                        ["pumpkin", "eggplant", "eggplant", "eggplant", "eggplant", "pumpkin"],
+                        ["pumpkin", "corn", "eggplant", "eggplant", "corn", "pumpkin"],
+                        ["pumpkin", "corn", "corn", "corn", "corn", "pumpkin"]
+                    ],
+                    "pumpkin-corn-potato": [
+                        ["pumpkin", "corn", "corn", "corn", "corn", "pumpkin"],
+                        ["pumpkin", "corn", "potato", "potato", "corn", "pumpkin"],
+                        ["pumpkin", "potato", "potato", "potato", "potato", "pumpkin"],
+                        ["pumpkin", "potato", "potato", "potato", "potato", "pumpkin"],
+                        ["pumpkin", "corn", "potato", "potato", "corn", "pumpkin"],
+                        ["pumpkin", "corn", "corn", "corn", "corn", "pumpkin"]
+                    ],
+                    "garlic-onion-pepper": [
+                        ["garlic", "onion", "onion", "onion", "onion", "garlic"],
+                        ["garlic", "onion", "pepper", "pepper", "onion", "garlic"],
+                        ["garlic", "pepper", "pepper", "pepper", "pepper", "garlic"],
+                        ["garlic", "pepper", "pepper", "pepper", "pepper", "garlic"],
+                        ["garlic", "onion", "pepper", "pepper", "onion", "garlic"],
+                        ["garlic", "onion", "onion", "onion", "onion", "garlic"]
+                    ]
+                }
+            },
+            "winter": {
+                "l-shape": {
+                },
+                "two-by-two": {
+                },
+                "triple-crop": {
+                    "asparagus-potato-carrot": [
+                        ["asparagus", "potato", "potato", "potato", "potato", "asparagus"],
+                        ["asparagus", "potato", "carrot", "pepper", "potato", "asparagus"],
+                        ["asparagus", "carrot", "pepper", "pepper", "pepper", "asparagus"],
+                        ["asparagus", "carrot", "pepper", "pepper", "pepper", "asparagus"],
+                        ["asparagus", "potato", "carrot", "pepper", "potato", "asparagus"],
+                        ["asparagus", "potato", "potato", "potato", "potato", "asparagus"]
+                    ],
+                    "asparagus-potato-pumpkin": [
+                        ["asparagus", "potato", "potato", "potato", "potato", "asparagus"],
+                        ["asparagus", "potato", "pumpkin", "pepper", "potato", "asparagus"],
+                        ["asparagus", "pumpkin", "pepper", "pepper", "pepper", "asparagus"],
+                        ["asparagus", "pumpkin", "pepper", "pepper", "pepper", "asparagus"],
+                        ["asparagus", "potato", "pumpkin", "pepper", "potato", "asparagus"],
+                        ["asparagus", "potato", "potato", "potato", "potato", "asparagus"]
+                    ]
+                }
+            }
+        }
+    ]
+}
