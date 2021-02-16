@@ -1,4 +1,4 @@
-var latest_data_version = '1c64f9d';
+var latest_data_version = '9cca101';
 
 var normalizeDlc = function(value) {
   return value.map(ele => mapDlc(ele));
@@ -229,6 +229,7 @@ var app = new Vue({
     ],
 
     toggle_farm_season: ['spring', 'summer', 'autumn', 'winter'],
+    farming_config_search: '',
     farming_config_complete_data: [],
     farming_config_data: [],
     farming_config_headers: [
@@ -558,6 +559,12 @@ var app = new Vue({
     clearMeatFilters: function() {
       var vm = this;
       vm.toggle_meat_crockpot = false;
+    },
+
+    clearFarmingConfigFilters: function() {
+      var vm = this;
+      vm.farming_config_search = '';
+      vm.toggle_farm_season = ['spring', 'summer', 'autumn', 'winter'];
     },
 
     retrieveSettings: function() {
