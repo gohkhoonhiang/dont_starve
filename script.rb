@@ -241,3 +241,23 @@ class Seed
     end
   end
 end
+
+class FarmConfig
+  def format_data(input, output)
+    data = JSON.parse(File.read(input), symbolize_names: true)[:data].first
+    transformed = []
+    data.each do |season, configs|
+      configs.each do |shape, plots|
+        plots.each do |name, plot|
+          transformed << {
+            name: name,
+            season: season,
+            shape: shape,
+            config: plot
+          }
+        end
+      end
+    end
+    File.write(output, JSON.pretty_generate({ data: transformed }))
+  end
+end
