@@ -30,7 +30,7 @@
                         ["watermelon", "watermelon", "onion", "onion", "watermelon", "watermelon"],
                         ["watermelon", "watermelon", "onion", "onion", "watermelon", "watermelon"]
                     ],
-                    "toma-dragonfruit": [
+                    "tomaroot-dragonfruit": [
                         ["tomaroot", "tomaroot", "dragonfruit", "dragonfruit", "tomaroot", "tomaroot"],
                         ["tomaroot", "tomaroot", "dragonfruit", "dragonfruit", "tomaroot", "tomaroot"],
                         ["tomaroot", "tomaroot", "dragonfruit", "dragonfruit", "tomaroot", "tomaroot"]
@@ -117,12 +117,12 @@
                         ["watermelon", "watermelon", "onion", "onion", "watermelon", "watermelon"],
                         ["watermelon", "watermelon", "onion", "onion", "watermelon", "watermelon"]
                     ],
-                    "toma-dragonfruit": [
+                    "tomaroot-dragonfruit": [
                         ["tomaroot", "tomaroot", "dragonfruit", "dragonfruit", "tomaroot", "tomaroot"],
                         ["tomaroot", "tomaroot", "dragonfruit", "dragonfruit", "tomaroot", "tomaroot"],
                         ["tomaroot", "tomaroot", "dragonfruit", "dragonfruit", "tomaroot", "tomaroot"]
                     ],
-                    "toma-pepper": [
+                    "tomaroot-pepper": [
                         ["tomaroot", "tomaroot", "pepper", "pepper", "tomaroot", "tomaroot"],
                         ["tomaroot", "tomaroot", "pepper", "pepper", "tomaroot", "tomaroot"],
                         ["tomaroot", "tomaroot", "pepper", "pepper", "tomaroot", "tomaroot"]
@@ -177,7 +177,7 @@
                     ]
                 },
                 "two-by-two": {
-                    "toma-pepper": [
+                    "tomaroot-pepper": [
                         ["tomaroot", "tomaroot", "pepper", "pepper", "tomaroot", "tomaroot"],
                         ["tomaroot", "tomaroot", "pepper", "pepper", "tomaroot", "tomaroot"],
                         ["tomaroot", "tomaroot", "pepper", "pepper", "tomaroot", "tomaroot"]

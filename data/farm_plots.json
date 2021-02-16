@@ -129,7 +129,7 @@
       ]
     },
     {
-      "name": "toma-dragonfruit",
+      "name": "tomaroot-dragonfruit",
       "season": "spring",
       "shape": "two-by-two",
       "config": [
@@ -662,7 +662,7 @@
       ]
     },
     {
-      "name": "toma-dragonfruit",
+      "name": "tomaroot-dragonfruit",
       "season": "summer",
       "shape": "two-by-two",
       "config": [
@@ -693,7 +693,7 @@
       ]
     },
     {
-      "name": "toma-pepper",
+      "name": "tomaroot-pepper",
       "season": "summer",
       "shape": "two-by-two",
       "config": [
@@ -988,7 +988,7 @@
       ]
     },
     {
-      "name": "toma-pepper",
+      "name": "tomaroot-pepper",
       "season": "autumn",
       "shape": "two-by-two",
       "config": [
