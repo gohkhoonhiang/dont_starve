@@ -78,6 +78,10 @@
               Raw Ingredients
               <v-icon left>mdi-view-list-outline</v-icon>
             </v-tab>
+            <v-tab key="farming_tab">
+              Farming
+              <v-icon left>mdi-tractor</v-icon>
+            </v-tab>
             <v-tab key="help_tab">
               Help
               <v-icon left>mdi-help</v-icon>
@@ -992,6 +996,90 @@
 
                 </v-tabs>
               </v-card>
+            </v-tab-item>
+
+            <v-tab-item key="farming_tab">
+
+              <v-container>
+                <v-card
+                  class="mx-auto"
+                  color="secondary"
+                  light
+                  outlined
+                >
+                  <v-card-text class="font--text">
+                    <div class="subtitle-1 mb-1 font-weight-bold">Filters</div>
+                    <v-row>
+                      <v-checkbox
+                        v-model="toggle_farm_season"
+                        class="mx-2"
+                        label="Spring"
+                        value="spring"
+                      ></v-checkbox>
+                      <v-checkbox
+                        v-model="toggle_farm_season"
+                        class="mx-2"
+                        label="Summer"
+                        value="summer"
+                      ></v-checkbox>
+                      <v-checkbox
+                        v-model="toggle_farm_season"
+                        class="mx-2"
+                        label="Autumn"
+                        value="autumn"
+                      ></v-checkbox>
+                      <v-checkbox
+                        v-model="toggle_farm_season"
+                        class="mx-2"
+                        label="Winter"
+                        value="winter"
+                      ></v-checkbox>
+                    </v-row>
+
+                  </v-card-text>
+                </v-card>
+              </v-container>
+
+              <v-card flat>
+                <v-data-table
+                  :headers="farming_config_headers"
+                  :items="farming_config_data"
+                  class="elevation-1"
+                  disable-pagination
+                  hide-default-footer
+                >
+
+                  <template v-slot:item.config="{ item }">
+                    <v-container
+                    >
+                      <v-row
+                        v-for="(row, i) in item.config"
+                        :key="i"
+                        no-gutters
+                      >
+                        <v-col
+                          v-for="(col, j) in row"
+                          :key="j"
+                          col="12"
+                          md="2"
+                        >
+                          <v-sheet
+                            outlined
+                            class="py-3 text-center"
+                            height="50"
+                            :color="colorFarmPlot(col)"
+                            :class="colorFarmPlotText(col)"
+                          >
+                            {{ col.substring(0, 3) }}
+                          </v-sheet>
+                        </v-col>
+                      </v-row>
+                    </v-container>
+                  </template>
+
+                </v-data-table>
+              </v-card>
+
             </v-tab-item>
 
             <v-tab-item key="help_tab">

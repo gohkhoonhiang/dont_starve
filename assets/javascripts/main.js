@@ -1,4 +1,4 @@
-var latest_data_version = 'b6ab697';
+var latest_data_version = '1c64f9d';
 
 var normalizeDlc = function(value) {
   return value.map(ele => mapDlc(ele));
@@ -34,6 +34,24 @@ var removeElement = function(array, value) {
   return array;
 };
 
+var crop_colors = {
+  asparagus: { bg: '#566c62', fg: 'white--text' },
+  carrot: { bg: '#c19c64', fg: 'black--text' },
+  corn: { bg: '#808256', fg: 'black--text' },
+  dragonfruit: { bg: '#8e3041', fg: 'white--text' },
+  durian: { bg: '#6d7433', fg: 'black--text' },
+  eggplant: { bg: '#634276', fg: 'white--text' },
+  garlic: { bg: '#d5d0c8', fg: 'black--text' },
+  onion: { bg: '#e7d8a9', fg: 'black--text' },
+  pepper: { bg: '#c32c18', fg: 'white--text' },
+  pomegranate: { bg: '#a03432', fg: 'white--text' },
+  potato: { bg: '#c1b36f', fg: 'black--text' },
+  pumpkin: { bg: '#b26513', fg: 'black--text' },
+  toma: { bg: '#c06e37', fg: 'black--text' },
+  tomaroot: { bg: '#c06e37', fg: 'black--text' },
+  watermelon: { bg: '#4d8c4e', fg: 'black--text' },
+};
+
 var app = new Vue({
   el: '#app',
   vuetify: new Vuetify({
@@ -60,6 +78,7 @@ var app = new Vue({
       this.getSeedData();
       this.getVegetableData();
       this.getMeatData();
+      this.getFarmingConfigData();
       this.data_version = latest_data_version;
     }
   },
@@ -209,6 +228,22 @@ var app = new Vue({
       { text: 'Valid for Crockpot?', filterable: false, value: 'crockpot' },
     ],
 
+    toggle_farm_season: ['spring', 'summer', 'autumn', 'winter'],
+    farming_config_complete_data: [],
+    farming_config_data: [],
+    farming_config_headers: [
+      {
+        text: 'Name',
+        align: 'start',
+        sortable: true,
+        filterable: true,
+        value: 'name',
+        width: 300,
+      },
+      { text: 'Season', filterable: false, value: 'season', width: 50 },
+      { text: 'Shape', filterable: false, value: 'shape', width: 200 },
+      { text: 'Config', filterable: false, value: 'config', width: 350 },
+    ],
   },
 
   methods: {
@@ -349,6 +384,24 @@ var app = new Vue({
 
     },
 
+    getFarmingConfigData: function() {
+      var vm = this;
+      $.ajax({
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve_recipes/master/data/farm_plots.json',
+        method: 'GET'
+      }).then(function (response) {
+        var farming_config_data = JSON.parse(response).data;
+        var formatted_data = farming_config_data.map(function(row, index) {
+          var updated_row = row;
+          updated_row.id = index + '_farming_config_' + row.name.replace(/\s/, '_').toLowerCase();
+          return updated_row;
+        });
+
+        vm.farming_config_complete_data = formatted_data;
+      });
+
+    },
+
     filterData: function(data, toggle_dlc, toggle_boolean, requirements_search) {
       var vm = this;
       var filtered_data = data;
@@ -373,6 +426,16 @@ var app = new Vue({
         return data.filter(function(recipe) {
           return recipe.dlc.length === 0 || search.some(s => recipe.dlc.includes(s));
         })
+      }
+    },
+
+    filterBySeason: function(data, toggle_farm_season) {
+      var vm = this;
+      var search = toggle_farm_season;
+      if (search.length === 0) {
+        return [];
+      } else {
+        return data.filter(row => toggle_farm_season.includes(row.season)); 
       }
     },
 
@@ -419,6 +482,11 @@ var app = new Vue({
       vm.raw_meat_data = vm.filterData(vm.raw_meat_complete_data, vm.toggle_dlc, { field: 'crockpot', value: vm.toggle_meat_crockpot }, null);
     },
 
+    filterFarmingConfigData: function() {
+      var vm = this;
+      vm.farming_config_data = vm.filterBySeason(vm.farming_config_complete_data, vm.toggle_farm_season);
+    },
+
     highlightValue: function(value, threshold) {
       if (parseFloat(value) >= parseFloat(threshold)) {
         return '#8b104a';
@@ -432,6 +500,22 @@ var app = new Vue({
         return 'white';
       } else {
         return 'black';
+      }
+    },
+
+    colorFarmPlot: function(val) {
+      if (crop_colors[val] === undefined) {
+        return 'white';
+      } else {
+        return crop_colors[val].bg;
+      }
+    },
+
+    colorFarmPlotText: function(val) {
+      if (crop_colors[val] == undefined) {
+        return 'black--text';
+      } else {
+        return crop_colors[val].fg;
       }
     },
 
@@ -511,6 +595,8 @@ var app = new Vue({
         raw_meat_threshold: vm.raw_meat_threshold,
         toggle_meat_crockpot: vm.toggle_meat_crockpot,
         raw_meat_complete_data: vm.raw_meat_complete_data,
+        toggle_farm_season: vm.toggle_farm_season,
+        farming_config_complete_data: vm.farming_config_complete_data,
       };
 
       localStorage.setItem('dont_starve_recipes_settings', JSON.stringify(settings));
@@ -575,6 +661,14 @@ var app = new Vue({
       }
     },
 
+    farming_config_complete_data: function(new_val, old_val) {
+      var vm = this;
+      if (new_val.length > 0) {
+        vm.filterFarmingConfigData();
+        vm.storeSettings();
+      }
+    },
+
     toggle_dlc: function(new_val, old_val) {
       var vm = this;
       vm.filterVegetableRecipeData();
@@ -608,6 +702,12 @@ var app = new Vue({
     toggle_meat_crockpot: function(new_val, old_val) {
       var vm = this;
       vm.filterMeatData();
+      vm.storeSettings();
+    },
+
+    toggle_farm_season: function(new_val, old_val) {
+      var vm = this;
+      vm.filterFarmingConfigData();
       vm.storeSettings();
     },
 
