@@ -1,4 +1,4 @@
-var latest_data_version = '9cca101';
+var latest_data_version = '7e82a58';
 
 var normalizeDlc = function(value) {
   return value.map(ele => mapDlc(ele));
@@ -185,6 +185,12 @@ var app = new Vue({
         value: 'name',
       },
       { text: 'Seed Name', filterable: false, value: 'seed_name' },
+      { text: 'Product Name', filterable: false, value: 'product_name' },
+      { text: 'Seasons', filterable: false, value: 'seasons' },
+      { text: 'Growth Formula', filterable: false, value: 'growth_formula' },
+      { text: 'Compost', filterable: false, value: 'compost' },
+      { text: 'Manure', filterable: false, value: 'manure' },
+      { text: 'Drink Rate', filterable: false, value: 'drink_rate' },
       { text: 'DLC', filterable: false, value: 'dlc', filterable: false },
     ],
 
@@ -331,7 +337,7 @@ var app = new Vue({
     getSeedData: function() {
       var vm = this;
       $.ajax({
-        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve_recipes/master/data/seeds.json',
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve_recipes/master/data/merged_plants_seeds.json',
         method: 'GET'
       }).then(function (response) {
         var seed_data = JSON.parse(response).data;
@@ -339,6 +345,7 @@ var app = new Vue({
           var updated_row = row;
           updated_row.id = index + '_seed_' + row.name.replace(/\s/, '_').toLowerCase();
           updated_row.dlc = mapDlc(row.dlc);
+          updated_row.seasons = row.seasons.split(',');
           return updated_row;
         });
 

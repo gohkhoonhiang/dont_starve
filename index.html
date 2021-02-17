@@ -1005,6 +1005,34 @@
                           </v-chip>
                         </template>
 
+                        <template v-slot:item.seasons="{ item }">
+                          <v-chip-group
+                            v-if="item.seasons.length > 0"
+                            dense
+                          >
+                            <v-chip
+                              v-for="(season, i) in item.seasons"
+                              :key="i"
+                              small
+                              disabled
+                            >
+                              {{ season }}
+                            </v-chip>
+                          </v-chip-group>
+                        </template>
+
+                        <template v-slot:item.growth_formula="{ item }">
+                          <v-chip :color="parseInt(item.growth_formula) < 0 ? 'red' : 'green'" :text-color="parseInt(item.growth_formula) < 0 ? 'white' : 'black'">{{ parseFloat(item.growth_formula) }}</v-chip>
+                        </template>
+
+                        <template v-slot:item.compost="{ item }">
+                          <v-chip :color="parseInt(item.compost) < 0 ? 'red' : 'green'" :text-color="parseInt(item.compost) < 0 ? 'white' : 'black'">{{ parseFloat(item.compost) }}</v-chip>
+                        </template>
+
+                        <template v-slot:item.manure="{ item }">
+                          <v-chip :color="parseInt(item.manure) < 0 ? 'red' : 'green'" :text-color="parseInt(item.manure) < 0 ? 'white' : 'black'">{{ parseFloat(item.manure) }}</v-chip>
+                        </template>
+
                       </v-data-table>
                     </v-card>
                   </v-tab-item>
