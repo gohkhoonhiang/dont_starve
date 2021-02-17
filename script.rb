@@ -315,3 +315,27 @@ class FarmPlant
     seasons << season if cell.text.strip == '+'
   end
 end
+
+class Nutrient
+  include Shared
+
+  def convert_html_to_csv(input, output)
+    html_to_csv(input, output) do |doc, csv|
+      csv << ['name', 'uses', 'growth_formula', 'compost', 'manure', 'wormwood_heal', 'wormwood_bloom']
+
+      doc.xpath('//table/tbody/tr')[2..-1].each do |row|
+        tarray = []
+        row.xpath('td').each_with_index do |cell, index|
+          next if [0].include?(index)
+
+          if [3, 4, 5].include?(index)
+            tarray << cell.text.strip&.split(' ').first
+          else
+            tarray << cell.text.strip
+          end
+        end
+        csv << tarray
+      end
+    end
+  end
+end

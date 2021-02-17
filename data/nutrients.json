@@ -1,0 +1,112 @@
+{
+  "data": [
+    {
+      "name": "Compost",
+      "uses": "1",
+      "growth_formula": "",
+      "compost": "24",
+      "manure": "",
+      "wormwood_heal": "8(over 8sec)",
+      "wormwood_bloom": ""
+    },
+    {
+      "name": "Compost Wrap",
+      "uses": "1",
+      "growth_formula": "24",
+      "compost": "32",
+      "manure": "24",
+      "wormwood_heal": "8 + 32(over 32sec)",
+      "wormwood_bloom": "4 minutes"
+    },
+    {
+      "name": "Fermented Growth Formula",
+      "uses": "1",
+      "growth_formula": "32",
+      "compost": "",
+      "manure": "",
+      "wormwood_heal": "",
+      "wormwood_bloom": "4 minutes"
+    },
+    {
+      "name": "Fermenting Growth Formula",
+      "uses": "1",
+      "growth_formula": "16",
+      "compost": "",
+      "manure": "",
+      "wormwood_heal": "",
+      "wormwood_bloom": "2 minutes"
+    },
+    {
+      "name": "Glommer's Goop",
+      "uses": "1",
+      "growth_formula": "8",
+      "compost": "8",
+      "manure": "8",
+      "wormwood_heal": "2 + 4(over 4sec)",
+      "wormwood_bloom": "1 minute"
+    },
+    {
+      "name": "Growth Formula Starter",
+      "uses": "1",
+      "growth_formula": "8",
+      "compost": "",
+      "manure": "",
+      "wormwood_heal": "",
+      "wormwood_bloom": "1 minute"
+    },
+    {
+      "name": "Guano",
+      "uses": "1",
+      "growth_formula": "",
+      "compost": "",
+      "manure": "16",
+      "wormwood_heal": "3",
+      "wormwood_bloom": ""
+    },
+    {
+      "name": "Rot",
+      "uses": "1",
+      "growth_formula": "",
+      "compost": "8",
+      "manure": "",
+      "wormwood_heal": "4(over 4sec)",
+      "wormwood_bloom": ""
+    },
+    {
+      "name": "Rotten Egg",
+      "uses": "1",
+      "growth_formula": "",
+      "compost": "16",
+      "manure": "",
+      "wormwood_heal": "6(over 6sec)",
+      "wormwood_bloom": ""
+    },
+    {
+      "name": "Spoiled Fish",
+      "uses": "1",
+      "growth_formula": "16",
+      "compost": "",
+      "manure": "",
+      "wormwood_heal": "",
+      "wormwood_bloom": "2 minutes"
+    },
+    {
+      "name": "Spoiled Fish Morsel",
+      "uses": "1",
+      "growth_formula": "8",
+      "compost": "",
+      "manure": "",
+      "wormwood_heal": "",
+      "wormwood_bloom": "1 minutes"
+    },
+    {
+      "name": "Super Growth Formula",
+      "uses": "5",
+      "growth_formula": "32",
+      "compost": "",
+      "manure": "",
+      "wormwood_heal": "",
+      "wormwood_bloom": "4 minutes"
+    }
+  ]
+}
