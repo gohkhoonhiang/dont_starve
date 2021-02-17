@@ -323,7 +323,7 @@ class Nutrient
     html_to_csv(input, output) do |doc, csv|
       csv << ['name', 'uses', 'growth_formula', 'compost', 'manure', 'wormwood_heal', 'wormwood_bloom']
 
-      doc.xpath('//table/tbody/tr')[2..-1].each do |row|
+      doc.xpath('//table/tbody/tr').each do |row|
         tarray = []
         row.xpath('td').each_with_index do |cell, index|
           next if [0].include?(index)

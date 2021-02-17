@@ -1,6 +1,15 @@
 {
   "data": [
     {
+      "name": "Bucket-o-poop",
+      "uses": "10",
+      "growth_formula": "",
+      "compost": "",
+      "manure": "16",
+      "wormwood_heal": "3",
+      "wormwood_bloom": ""
+    },
+    {
       "name": "Compost",
       "uses": "1",
       "growth_formula": "",
@@ -61,6 +70,15 @@
       "compost": "",
       "manure": "16",
       "wormwood_heal": "3",
+      "wormwood_bloom": ""
+    },
+    {
+      "name": "Manure",
+      "uses": "1",
+      "growth_formula": "",
+      "compost": "",
+      "manure": "8",
+      "wormwood_heal": "2",
       "wormwood_bloom": ""
     },
     {

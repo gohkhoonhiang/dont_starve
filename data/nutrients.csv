@@ -1,4 +1,6 @@
 "name","uses","growth_formula","compost","manure","wormwood_heal","wormwood_bloom"
+"Manure","1","","","8","2",""
+"Bucket-o-poop","10","","","16","3",""
 "Guano","1","","","16","3",""
 "Compost","1","","24","","8(over 8sec)",""
 "Rotten Egg","1","","16","","6(over 6sec)",""
