@@ -253,6 +253,15 @@
       "stacking": "40"
     },
     {
+      "name": "Cooked Watermelon",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "7.5",
+      "perish_time": "3",
+      "food_value": "",
+      "stacking": "40"
+    },
+    {
       "name": "Corn",
       "health": "3",
       "hunger": "25",
@@ -440,6 +449,15 @@
       "perish_time": "6",
       "food_value": "1.0",
       "stacking": "40"
+    },
+    {
+      "name": "Watermelon",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "5",
+      "perish_time": "8",
+      "food_value": "",
+      "stacking": "20"
     }
   ]
 }

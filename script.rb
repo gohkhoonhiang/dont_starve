@@ -185,7 +185,7 @@ class Vegetable
 
       vegetables << matching_vegetable.merge(cooked: 'N/A', dried: 'N/A', **stat.slice(:name, :health, :hunger, :sanity, :perish_time, :stacking))
     end
-    File.open(output, 'w:ISO8859-1:utf-8') { |f| f.write(JSON.pretty_generate({ data: vegetables })) }
+    File.open(output, 'w:ISO8859-1:utf-8') { |f| f.write(JSON.pretty_generate({ data: vegetables.sort_by { |v| v[:name] } })) }
   end
 
   def normalize(key, value)
@@ -321,7 +321,7 @@ class FarmPlant
       matching_seed = seeds.find { |s| s[:seed_name] == plant[:seed_name] }
       plant[:dlc] = matching_seed[:dlc] || ''
     end
-    File.open(output, 'w:ISO8859-1:utf-8') { |f| f.write(JSON.pretty_generate({ data: plants })) }
+    File.open(output, 'w:ISO8859-1:utf-8') { |f| f.write(JSON.pretty_generate({ data: plants.sort_by { |p| p[:name] } })) }
   end
 
   def map_season(seasons, index, cell)
