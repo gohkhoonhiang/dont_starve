@@ -980,6 +980,10 @@
                     Seeds
                     <v-icon left>mdi-seed-outline</v-icon>
                   </v-tab>
+                  <v-tab key="nutrient_tab">
+                    Nutrients
+                    <v-icon left>mdi-watering-can-outline</v-icon>
+                  </v-tab>
                   <v-tab key="farming_config_tab">
                     Farm Plot Config
                     <v-icon left>mdi-tools</v-icon>
@@ -1032,6 +1036,21 @@
                         <template v-slot:item.manure="{ item }">
                           <v-chip :color="parseInt(item.manure) < 0 ? 'red' : 'green'" :text-color="parseInt(item.manure) < 0 ? 'white' : 'black'">{{ parseFloat(item.manure) }}</v-chip>
                         </template>
+
+                      </v-data-table>
+                    </v-card>
+                  </v-tab-item>
+
+                  <v-tab-item key="nutrient_tab">
+
+                    <v-card flat>
+                      <v-data-table
+                        :headers="nutrient_headers"
+                        :items="nutrient_complete_data"
+                        class="elevation-1"
+                        disable-pagination
+                        hide-default-footer
+                      >
 
                       </v-data-table>
                     </v-card>

@@ -1,4 +1,4 @@
-var latest_data_version = '7e82a58';
+var latest_data_version = '45b5d70';
 
 var normalizeDlc = function(value) {
   return value.map(ele => mapDlc(ele));
@@ -76,6 +76,7 @@ var app = new Vue({
       this.getMeatRecipeData();
       this.getCompleteRecipeData();
       this.getSeedData();
+      this.getNutrientData();
       this.getVegetableData();
       this.getMeatData();
       this.getFarmingConfigData();
@@ -192,6 +193,24 @@ var app = new Vue({
       { text: 'Manure', filterable: false, value: 'manure' },
       { text: 'Drink Rate', filterable: false, value: 'drink_rate' },
       { text: 'DLC', filterable: false, value: 'dlc', filterable: false },
+    ],
+
+    nutrient_complete_data: [],
+    nutrient_data: [],
+    nutrient_headers: [
+      {
+        text: 'Name',
+        align: 'start',
+        sortable: true,
+        filterable: true,
+        value: 'name',
+      },
+      { text: 'Uses', filterable: false, value: 'uses' },
+      { text: 'Growth Formula', filterable: false, value: 'growth_formula' },
+      { text: 'Compost', filterable: false, value: 'compost' },
+      { text: 'Manure', filterable: false, value: 'manure' },
+      { text: 'Wormwood Heal', filterable: false, value: 'wormwood_heal' },
+      { text: 'Wormwood Bloom', filterable: false, value: 'wormwood_bloom', filterable: false },
     ],
 
     toggle_vegetable_crockpot: false,
@@ -350,6 +369,24 @@ var app = new Vue({
         });
 
         vm.seed_complete_data = formatted_data;
+      });
+
+    },
+
+    getNutrientData: function() {
+      var vm = this;
+      $.ajax({
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve_recipes/master/data/nutrients.json',
+        method: 'GET'
+      }).then(function (response) {
+        var nutrient_data = JSON.parse(response).data;
+        var formatted_data = nutrient_data.map(function(row, index) {
+          var updated_row = row;
+          updated_row.id = index + '_nutrient_' + row.name.replace(/\s/, '_').toLowerCase();
+          return updated_row;
+        });
+
+        vm.nutrient_complete_data = formatted_data;
       });
 
     },
@@ -624,6 +661,7 @@ var app = new Vue({
         complete_recipes_requirements_materials: vm.complete_recipes_requirements_materials,
         toggle_complete_recipes_favourite: vm.toggle_complete_recipes_favourite,
         seed_complete_data: vm.seed_complete_data,
+        nutrient_complete_data: vm.nutrient_complete_data,
         raw_vegetable_threshold: vm.raw_vegetable_threshold,
         toggle_vegetable_crockpot: vm.toggle_vegetable_crockpot,
         raw_vegetable_complete_data: vm.raw_vegetable_complete_data,
@@ -678,6 +716,13 @@ var app = new Vue({
     },
 
     seed_complete_data: function(new_val, old_val) {
+      var vm = this;
+      if (new_val.length > 0) {
+        vm.storeSettings();
+      }
+    },
+
+    nutrient_complete_data: function(new_val, old_val) {
       var vm = this;
       if (new_val.length > 0) {
         vm.storeSettings();
