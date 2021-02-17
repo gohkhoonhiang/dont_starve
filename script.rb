@@ -176,6 +176,15 @@ class Vegetable
         vegetable.merge!(health: nil, hunger: nil, sanity: nil, perish_time: nil, stacking: nil)
       end
     end
+    stats.each do |stat|
+      next unless stat[:name].match(/Cooked/)
+
+      uncooked_name = stat[:name].gsub('Cooked ', '')
+      matching_vegetable = vegetables.find { |v| v[:name] == uncooked_name }
+      next unless matching_vegetable
+
+      vegetables << matching_vegetable.merge(cooked: 'N/A', dried: 'N/A', **stat.slice(:name, :health, :hunger, :sanity, :perish_time, :stacking))
+    end
     File.open(output, 'w:ISO8859-1:utf-8') { |f| f.write(JSON.pretty_generate({ data: vegetables })) }
   end
 

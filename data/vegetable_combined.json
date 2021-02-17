@@ -495,6 +495,358 @@
       "sanity": "0",
       "perish_time": "6",
       "stacking": "40"
+    },
+    {
+      "name": "Cooked Aloe",
+      "sources": [
+        "Aloe"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Hamlet",
+      "value": "1.0",
+      "crockpot": "true",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "15",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Asparagus",
+      "sources": [
+        "Asparagus"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Hamlet",
+      "value": "1.0",
+      "crockpot": "true",
+      "health": "3",
+      "hunger": "25",
+      "sanity": "0",
+      "perish_time": "3",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Blue Cap",
+      "sources": [
+        "Blue Cap"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "-3",
+      "hunger": "0",
+      "sanity": "10",
+      "perish_time": "10",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Cactus Flesh",
+      "sources": [
+        "Cactus Flesh"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Reign of Giants",
+      "value": "1.0",
+      "crockpot": "true",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "15",
+      "perish_time": "10",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Carrot",
+      "sources": [
+        "Carrot"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "1.0",
+      "crockpot": "true",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "6",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Corn",
+      "sources": [
+        "Corn"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "1.0",
+      "crockpot": "true",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "15",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Eggplant",
+      "sources": [
+        "Eggplant"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "1.0",
+      "crockpot": "true",
+      "health": "20",
+      "hunger": "25",
+      "sanity": "0",
+      "perish_time": "6",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Garlic",
+      "sources": [
+        "Garlic"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together",
+      "value": "1.0",
+      "crockpot": "true",
+      "health": "1",
+      "hunger": "9.375",
+      "sanity": "-5",
+      "perish_time": "10",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Green Cap",
+      "sources": [
+        "Green Cap"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "-1",
+      "hunger": "0",
+      "sanity": "15",
+      "perish_time": "10",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Kelp Fronds",
+      "sources": [
+        "Kelp Fronds"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "0",
+      "hunger": "9.375",
+      "sanity": "-5",
+      "perish_time": "10",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Mandrake",
+      "sources": [
+        "Mandrake"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "1.0",
+      "crockpot": "true",
+      "health": "100",
+      "hunger": "150",
+      "sanity": "0",
+      "perish_time": "999999999",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Moon Shroom",
+      "sources": [
+        "Moon Shroom"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "0",
+      "hunger": "-12.5",
+      "sanity": "-10",
+      "perish_time": "10",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Onion",
+      "sources": [
+        "Onion"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together",
+      "value": "1.0",
+      "crockpot": "true",
+      "health": "1",
+      "hunger": "9.375",
+      "sanity": "-5",
+      "perish_time": "10",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Pepper",
+      "sources": [
+        "Pepper"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together",
+      "value": "1.0",
+      "crockpot": "true",
+      "health": "-3",
+      "hunger": "9.375",
+      "sanity": "-10",
+      "perish_time": "15",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Potato",
+      "sources": [
+        "Potato"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together",
+      "value": "1.0",
+      "crockpot": "true",
+      "health": "20",
+      "hunger": "25",
+      "sanity": "0",
+      "perish_time": "6",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Pumpkin",
+      "sources": [
+        "Pumpkin"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "1.0",
+      "crockpot": "true",
+      "health": "3",
+      "hunger": "37.5",
+      "sanity": "0",
+      "perish_time": "6",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Radish",
+      "sources": [
+        "Radish"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Hamlet",
+      "value": "1.0",
+      "crockpot": "true",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "15",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Red Cap",
+      "sources": [
+        "Red Cap"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "1",
+      "hunger": "0",
+      "sanity": "-10",
+      "perish_time": "10",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Ripe Stone Fruit",
+      "sources": [
+        "Ripe Stone Fruit"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together",
+      "value": "1.0",
+      "crockpot": "true",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "2",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Seaweed",
+      "sources": [
+        "Seaweed"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Shipwrecked",
+      "value": "1.0",
+      "crockpot": "true",
+      "health": "3",
+      "hunger": "9.375",
+      "sanity": "0",
+      "perish_time": "10",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Sweet Potato",
+      "sources": [
+        "Sweet Potato"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Shipwrecked",
+      "value": "1.0",
+      "crockpot": "true",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "6",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Toma Root",
+      "sources": [
+        "Toma Root"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together",
+      "value": "1.0",
+      "crockpot": "true",
+      "health": "20",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "10",
+      "stacking": "40"
     }
   ]
 }
