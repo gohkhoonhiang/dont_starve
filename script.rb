@@ -261,3 +261,57 @@ class FarmConfig
     File.write(output, JSON.pretty_generate({ data: transformed }))
   end
 end
+
+class FarmPlant
+  include Shared
+
+  def convert_html_to_csv(input, output)
+    html_to_csv(input, output) do |doc, csv|
+      csv << ['name', 'seed_name', 'product_name', 'seasons', 'growth_formula', 'compost', 'manure', 'drink_rate']
+
+      doc.xpath('//table/tbody/tr')[2..-1].each do |row|
+        tarray = []
+        row.xpath('td').each_with_index do |cell, index|
+          next if [0].include?(index)
+
+          if [2, 3].include?(index)
+            tarray << cell.xpath('a').attr('title')
+          elsif index == 4
+            tarray << []
+            map_season(tarray[3], index, cell)
+          elsif [5, 6, 7].include?(index)
+            map_season(tarray[3], index, cell)
+          else
+            tarray << cell.text.strip
+          end
+        end
+        tarray[3] = tarray[3].join(',')
+        csv << tarray
+      end
+    end
+  end
+
+  def merge_seeds_data(plant_input, seed_input, output)
+    plants = JSON.parse(File.read(plant_input), symbolize_names: true)[:data]
+    seeds = JSON.parse(File.read(seed_input), symbolize_names: true)[:data]
+    plants.each do |plant|
+      matching_seed = seeds.find { |s| s[:seed_name] == plant[:seed_name] }
+      plant[:dlc] = matching_seed[:dlc] || ''
+    end
+    File.open(output, 'w:ISO8859-1:utf-8') { |f| f.write(JSON.pretty_generate({ data: plants })) }
+  end
+
+  def map_season(seasons, index, cell)
+    season = case index
+             when 4
+               'autumn'
+             when 5
+               'winter'
+             when 6
+               'spring'
+             when 7
+               'summer'
+             end
+    seasons << season if cell.text.strip == '+'
+  end
+end
