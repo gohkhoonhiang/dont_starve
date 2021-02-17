@@ -230,6 +230,8 @@ var app = new Vue({
 
     toggle_farm_season: ['spring', 'summer', 'autumn', 'winter'],
     farming_config_search: '',
+    farming_config_plants: [],
+    farming_config_plants_search: [],
     farming_config_complete_data: [],
     farming_config_data: [],
     farming_config_headers: [
@@ -395,9 +397,15 @@ var app = new Vue({
         var formatted_data = farming_config_data.map(function(row, index) {
           var updated_row = row;
           updated_row.id = index + '_farming_config_' + row.name.replace(/\s/, '_').toLowerCase();
+          row.name.split('-').forEach(function(plant) {
+            if (!hasElement(vm.farming_config_plants, plant)) {
+              vm.farming_config_plants = addElement(vm.farming_config_plants, plant)
+            }
+          });
           return updated_row;
         });
 
+        vm.farming_config_plants = vm.farming_config_plants.sort();
         vm.farming_config_complete_data = formatted_data;
       });
 
@@ -483,9 +491,21 @@ var app = new Vue({
       vm.raw_meat_data = vm.filterData(vm.raw_meat_complete_data, vm.toggle_dlc, { field: 'crockpot', value: vm.toggle_meat_crockpot }, null);
     },
 
+    filterByPlants: function(data, plants_search) {
+      var vm = this;
+      var search = plants_search;
+      if (search.length === 0) { return data; }
+
+      return data.filter(function(farm_config) {
+        var required = farm_config.name.split('-');
+        return search.every(s => required.includes(s));
+      });
+    },
+
     filterFarmingConfigData: function() {
       var vm = this;
       vm.farming_config_data = vm.filterBySeason(vm.farming_config_complete_data, vm.toggle_farm_season);
+      vm.farming_config_data = vm.filterByPlants(vm.farming_config_complete_data, vm.farming_config_plants_search);
     },
 
     highlightValue: function(value, threshold) {
@@ -565,6 +585,7 @@ var app = new Vue({
       var vm = this;
       vm.farming_config_search = '';
       vm.toggle_farm_season = ['spring', 'summer', 'autumn', 'winter'];
+      vm.farming_config_plants_search = [];
     },
 
     retrieveSettings: function() {
@@ -604,6 +625,8 @@ var app = new Vue({
         raw_meat_complete_data: vm.raw_meat_complete_data,
         toggle_farm_season: vm.toggle_farm_season,
         farming_config_complete_data: vm.farming_config_complete_data,
+        farming_config_plants_search: vm.farming_config_plants_search,
+        farming_config_plants: vm.farming_config_plants,
       };
 
       localStorage.setItem('dont_starve_recipes_settings', JSON.stringify(settings));
@@ -748,6 +771,12 @@ var app = new Vue({
     complete_recipes_requirements_search: function(new_val, old_val) {
       var vm = this;
       vm.filterCompleteRecipeData();
+      vm.storeSettings();
+    },
+
+    farming_config_plants_search: function(new_val, old_val) {
+      var vm = this;
+      vm.filterFarmingConfigData();
       vm.storeSettings();
     },
 
