@@ -165,6 +165,20 @@ class Vegetable
     end
   end
 
+  def merge_stats_data(vegetable_input, stats_input, output)
+    vegetables = JSON.parse(File.read(vegetable_input), symbolize_names: true)[:data]
+    stats = JSON.parse(File.read(stats_input), symbolize_names: true)[:data]
+    vegetables.each do |vegetable|
+      matching_stat = stats.find { |s| s[:name] == vegetable[:name] }
+      if matching_stat
+        vegetable.merge!(matching_stat.slice(:health, :hunger, :sanity, :perish_time, :stacking))
+      else
+        vegetable.merge!(health: nil, hunger: nil, sanity: nil, perish_time: nil, stacking: nil)
+      end
+    end
+    File.open(output, 'w:ISO8859-1:utf-8') { |f| f.write(JSON.pretty_generate({ data: vegetables })) }
+  end
+
   def normalize(key, value)
     normalized = if key == 'sources'
                    value.split(',')

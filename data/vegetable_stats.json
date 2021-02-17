@@ -1,0 +1,445 @@
+{
+  "data": [
+    {
+      "name": "Aloe",
+      "health": "8",
+      "hunger": "9.375",
+      "sanity": "0",
+      "perish_time": "10",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Asparagus",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "6",
+      "food_value": "",
+      "stacking": "40"
+    },
+    {
+      "name": "Blue Cap",
+      "health": "20",
+      "hunger": "12.5",
+      "sanity": "-15",
+      "perish_time": "10",
+      "food_value": "0.5",
+      "stacking": "40"
+    },
+    {
+      "name": "Cactus Flesh",
+      "health": "-3",
+      "hunger": "12.5",
+      "sanity": "-5",
+      "perish_time": "10",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Cactus Flower",
+      "health": "8",
+      "hunger": "12.5",
+      "sanity": "5",
+      "perish_time": "3",
+      "food_value": "0.5",
+      "stacking": "40"
+    },
+    {
+      "name": "Carrot",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "10",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Aloe",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "15",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Asparagus",
+      "health": "3",
+      "hunger": "25",
+      "sanity": "0",
+      "perish_time": "3",
+      "food_value": "",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Blue Cap",
+      "health": "-3",
+      "hunger": "0",
+      "sanity": "10",
+      "perish_time": "10",
+      "food_value": "0.5",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Cactus Flesh",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "15",
+      "perish_time": "10",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Carrot",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "6",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Corn",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "15",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Eggplant",
+      "health": "20",
+      "hunger": "25",
+      "sanity": "0",
+      "perish_time": "6",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Garlic",
+      "health": "1",
+      "hunger": "9.375",
+      "sanity": "-5",
+      "perish_time": "10",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Green Cap",
+      "health": "-1",
+      "hunger": "0",
+      "sanity": "15",
+      "perish_time": "10",
+      "food_value": "0.5",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Kelp Fronds",
+      "health": "0",
+      "hunger": "9.375",
+      "sanity": "-5",
+      "perish_time": "10",
+      "food_value": "0.5",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Mandrake",
+      "health": "100",
+      "hunger": "150",
+      "sanity": "0",
+      "perish_time": "999999999",
+      "food_value": "",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Moon Shroom",
+      "health": "0",
+      "hunger": "-12.5",
+      "sanity": "-10",
+      "perish_time": "10",
+      "food_value": "0.5",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Onion",
+      "health": "1",
+      "hunger": "9.375",
+      "sanity": "-5",
+      "perish_time": "10",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Pepper",
+      "health": "-3",
+      "hunger": "9.375",
+      "sanity": "-10",
+      "perish_time": "15",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Potato",
+      "health": "20",
+      "hunger": "25",
+      "sanity": "0",
+      "perish_time": "6",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Pumpkin",
+      "health": "3",
+      "hunger": "37.5",
+      "sanity": "0",
+      "perish_time": "6",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Radish",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "15",
+      "food_value": "",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Red Cap",
+      "health": "1",
+      "hunger": "0",
+      "sanity": "-10",
+      "perish_time": "10",
+      "food_value": "0.5",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Ripe Stone Fruit",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "2",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Seaweed",
+      "health": "3",
+      "hunger": "9.375",
+      "sanity": "0",
+      "perish_time": "10",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Sweet Potato",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "6",
+      "food_value": "",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Toma Root",
+      "health": "20",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "10",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Corn",
+      "health": "3",
+      "hunger": "25",
+      "sanity": "0",
+      "perish_time": "10",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Eggplant",
+      "health": "8",
+      "hunger": "25",
+      "sanity": "0",
+      "perish_time": "10",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Garlic",
+      "health": "0",
+      "hunger": "9.375",
+      "sanity": "-10",
+      "perish_time": "15",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Glow Berry",
+      "health": "11",
+      "hunger": "25",
+      "sanity": "-10",
+      "perish_time": "10",
+      "food_value": "1.0",
+      "stacking": "10"
+    },
+    {
+      "name": "Green Cap",
+      "health": "0",
+      "hunger": "12.5",
+      "sanity": "-50",
+      "perish_time": "10",
+      "food_value": "0.5",
+      "stacking": "40"
+    },
+    {
+      "name": "Kelp Fronds",
+      "health": "-1",
+      "hunger": "9.375",
+      "sanity": "-10",
+      "perish_time": "10",
+      "food_value": "0.5",
+      "stacking": "40"
+    },
+    {
+      "name": "Lichen",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "-5",
+      "perish_time": "2",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Mandrake",
+      "health": "60",
+      "hunger": "75",
+      "sanity": "0",
+      "perish_time": "999999999",
+      "food_value": "",
+      "stacking": "40"
+    },
+    {
+      "name": "Moon Shroom",
+      "health": "0",
+      "hunger": "12.5",
+      "sanity": "10",
+      "perish_time": "10",
+      "food_value": "0.5",
+      "stacking": "40"
+    },
+    {
+      "name": "Onion",
+      "health": "0",
+      "hunger": "9.375",
+      "sanity": "-10",
+      "perish_time": "15",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Pepper",
+      "health": "-20",
+      "hunger": "9.375",
+      "sanity": "-15",
+      "perish_time": "15",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Petals",
+      "health": "1",
+      "hunger": "0",
+      "sanity": "0",
+      "perish_time": "6",
+      "food_value": "",
+      "stacking": "40"
+    },
+    {
+      "name": "Potato",
+      "health": "-3",
+      "hunger": "12.5",
+      "sanity": "-5",
+      "perish_time": "10",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Pumpkin",
+      "health": "3",
+      "hunger": "37.5",
+      "sanity": "0",
+      "perish_time": "10",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Radish",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "10",
+      "food_value": "",
+      "stacking": "40"
+    },
+    {
+      "name": "Red Cap",
+      "health": "-20",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "10",
+      "food_value": "0.5",
+      "stacking": "40"
+    },
+    {
+      "name": "Ripe Stone Fruit",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "3",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Seaweed",
+      "health": "1",
+      "hunger": "9.375",
+      "sanity": "-10",
+      "perish_time": "6",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Succulent",
+      "health": "1",
+      "hunger": "0",
+      "sanity": "0",
+      "perish_time": "6",
+      "food_value": "",
+      "stacking": "40"
+    },
+    {
+      "name": "Sweet Potato",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "10",
+      "food_value": "",
+      "stacking": "40"
+    },
+    {
+      "name": "Toma Root",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "6",
+      "food_value": "1.0",
+      "stacking": "40"
+    }
+  ]
+}
