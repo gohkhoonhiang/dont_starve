@@ -1,4 +1,4 @@
-var latest_data_version = '45b5d70';
+var latest_data_version = '4648b1a';
 
 var normalizeDlc = function(value) {
   return value.map(ele => mapDlc(ele));
@@ -228,8 +228,12 @@ var app = new Vue({
       { text: 'Sources', filterable: false, value: 'sources' },
       { text: 'Cooked Name', filterable: false, value: 'cooked' },
       { text: 'Dried Name', filterable: false, value: 'dried' },
-      { text: 'DLC', filterable: false, value: 'dlc', filterable: false },
+      { text: 'Health', filterable: false, value: 'health' },
+      { text: 'Hunger', filterable: false, value: 'hunger' },
+      { text: 'Sanity', filterable: false, value: 'sanity' },
+      { text: 'Perish Time (days)', filterable: false, value: 'perish_time' },
       { text: 'Value', filterable: false, value: 'value' },
+      { text: 'DLC', filterable: false, value: 'dlc', filterable: false },
       { text: 'Valid for Crockpot?', filterable: false, value: 'crockpot' },
     ],
 
@@ -394,7 +398,7 @@ var app = new Vue({
     getVegetableData: function() {
       var vm = this;
       $.ajax({
-        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve_recipes/master/data/vegetables.json',
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve_recipes/master/data/vegetable_combined.json',
         method: 'GET'
       }).then(function (response) {
         var raw_vegetable_data = JSON.parse(response).data;
@@ -565,6 +569,14 @@ var app = new Vue({
         return 'white';
       } else {
         return 'black';
+      }
+    },
+
+    formatFloat: function(value) {
+      if (isNaN(parseFloat(value))) {
+        return 'N/A';
+      } else {
+        return parseFloat(value);
       }
     },
 
