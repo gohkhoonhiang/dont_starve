@@ -1,4 +1,4 @@
-var latest_data_version = '91aa5d5';
+var latest_data_version = '3c25b48';
 
 var normalizeDlc = function(value) {
   return value.map(ele => mapDlc(ele));
