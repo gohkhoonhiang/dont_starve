@@ -252,8 +252,12 @@ var app = new Vue({
       { text: 'Sources', filterable: false, value: 'sources' },
       { text: 'Cooked Name', filterable: false, value: 'cooked' },
       { text: 'Dried Name', filterable: false, value: 'dried' },
-      { text: 'DLC', filterable: false, value: 'dlc', filterable: false },
+      { text: 'Health', filterable: false, value: 'health' },
+      { text: 'Hunger', filterable: false, value: 'hunger' },
+      { text: 'Sanity', filterable: false, value: 'sanity' },
+      { text: 'Perish Time (days)', filterable: false, value: 'perish_time' },
       { text: 'Value', filterable: false, value: 'value' },
+      { text: 'DLC', filterable: false, value: 'dlc', filterable: false },
       { text: 'Valid for Crockpot?', filterable: false, value: 'crockpot' },
     ],
 
