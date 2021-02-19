@@ -271,6 +271,24 @@
       "stacking": "40"
     },
     {
+      "name": "Dried Kelp Fronds",
+      "health": "1",
+      "hunger": "9.375",
+      "sanity": "10",
+      "perish_time": "20",
+      "food_value": "0.5",
+      "stacking": "40"
+    },
+    {
+      "name": "Dried Seaweed",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "20",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
       "name": "Eggplant",
       "health": "8",
       "hunger": "25",

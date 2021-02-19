@@ -176,10 +176,15 @@ class Vegetable
         vegetable.merge!(health: nil, hunger: nil, sanity: nil, perish_time: nil, stacking: nil)
       end
     end
-    stats.each do |stat|
-      next unless stat[:name].match(/Cooked/)
-
+    stats.select { |s| s[:name].match(/Cooked/) }.each do |stat|
       uncooked_name = stat[:name].gsub('Cooked ', '')
+      matching_vegetable = vegetables.find { |v| v[:name] == uncooked_name }
+      next unless matching_vegetable
+
+      vegetables << matching_vegetable.merge(cooked: 'N/A', dried: 'N/A', **stat.slice(:name, :health, :hunger, :sanity, :perish_time, :stacking))
+    end
+    stats.select { |s| s[:name].match(/Dried/) }.each do |stat|
+      uncooked_name = stat[:name].gsub('Dried ', '')
       matching_vegetable = vegetables.find { |v| v[:name] == uncooked_name }
       next unless matching_vegetable
 
