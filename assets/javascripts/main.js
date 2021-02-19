@@ -1,4 +1,4 @@
-var latest_data_version = '6701732';
+var latest_data_version = '28316ba';
 
 var normalizeDlc = function(value) {
   return value.map(ele => mapDlc(ele));
@@ -418,7 +418,7 @@ var app = new Vue({
     getMeatData: function() {
       var vm = this;
       $.ajax({
-        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve_recipes/master/data/meats.json',
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve_recipes/master/data/meat_combined.json',
         method: 'GET'
       }).then(function (response) {
         var raw_meat_data = JSON.parse(response).data;
