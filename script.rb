@@ -257,7 +257,7 @@ class Meat
       end
     end
 
-    stats.select { |s| s[:name].match(/Cooked|Steak|Charred/) }.each do |stat|
+    stats.select { |s| s[:name].match(/Cooked|Steak|Charred|Fish Meat/) }.each do |stat|
       matching_meat = meats.find { |m| m[:cooked] == stat[:name] }
       next unless matching_meat
 

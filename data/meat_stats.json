@@ -91,15 +91,6 @@
       "stacking": "40"
     },
     {
-      "name": "Cooked Koalefant Trunk",
-      "health": "40",
-      "hunger": "75",
-      "sanity": "0",
-      "perish_time": "15",
-      "food_value": "",
-      "stacking": "20"
-    },
-    {
       "name": "Cooked Leafy Meat",
       "health": "1",
       "hunger": "18.75",
@@ -253,6 +244,15 @@
       "stacking": "40"
     },
     {
+      "name": "Fish Meat",
+      "health": "1",
+      "hunger": "25",
+      "sanity": "0",
+      "perish_time": "3",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
       "name": "Fish Morsel",
       "health": "1",
       "hunger": "12.5",
@@ -321,6 +321,15 @@
       "hunger": "37.5",
       "sanity": "0",
       "perish_time": "6",
+      "food_value": "",
+      "stacking": "20"
+    },
+    {
+      "name": "Koalefant Trunk Steak",
+      "health": "40",
+      "hunger": "75",
+      "sanity": "0",
+      "perish_time": "15",
       "food_value": "",
       "stacking": "20"
     },
@@ -467,6 +476,15 @@
       "perish_time": "3",
       "food_value": "1.0",
       "stacking": "40"
+    },
+    {
+      "name": "Winter Koalefant Trunk",
+      "health": "30",
+      "hunger": "37.5",
+      "sanity": "0",
+      "perish_time": "6",
+      "food_value": "",
+      "stacking": "20"
     }
   ]
 }

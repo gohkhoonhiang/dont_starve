@@ -416,11 +416,11 @@
       "dlc": "Don't Starve Together",
       "value": "1.0",
       "crockpot": "true",
-      "health": null,
-      "hunger": null,
-      "sanity": null,
-      "perish_time": null,
-      "stacking": null
+      "health": "1",
+      "hunger": "25",
+      "sanity": "0",
+      "perish_time": "3",
+      "stacking": "40"
     },
     {
       "name": "Fish Morsel",
@@ -538,6 +538,22 @@
       "hunger": "37.5",
       "sanity": "0",
       "perish_time": "6",
+      "stacking": "20"
+    },
+    {
+      "name": "Koalefant Trunk Steak",
+      "sources": [
+        "Koalefant Trunk"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.0",
+      "crockpot": "false",
+      "health": "40",
+      "hunger": "75",
+      "sanity": "0",
+      "perish_time": "15",
       "stacking": "20"
     },
     {
@@ -797,11 +813,11 @@
       "dlc": "",
       "value": "0.0",
       "crockpot": "false",
-      "health": null,
-      "hunger": null,
-      "sanity": null,
-      "perish_time": null,
-      "stacking": null
+      "health": "30",
+      "hunger": "37.5",
+      "sanity": "0",
+      "perish_time": "6",
+      "stacking": "20"
     }
   ]
 }
