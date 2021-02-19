@@ -244,6 +244,43 @@ class Meat
                  end
     [key, normalized]
   end
+
+  def merge_stats_data(meat_input, stats_input, output)
+    meats = JSON.parse(File.read(meat_input), symbolize_names: true)[:data]
+    stats = JSON.parse(File.read(stats_input), symbolize_names: true)[:data]
+    meats.each do |meat|
+      matching_stat = stats.find { |s| s[:name] == meat[:name] }
+      if matching_stat
+        meat.merge!(matching_stat.slice(:health, :hunger, :sanity, :perish_time, :stacking))
+      else
+        meat.merge!(health: nil, hunger: nil, sanity: nil, perish_time: nil, stacking: nil)
+      end
+    end
+
+    stats.select { |s| s[:name].match(/Cooked|Steak|Charred/) }.each do |stat|
+      matching_meat = meats.find { |m| m[:cooked] == stat[:name] }
+      next unless matching_meat
+
+      meats << matching_meat.merge(cooked: 'N/A', dried: 'N/A', **stat.slice(:name, :health, :hunger, :sanity, :perish_time, :stacking))
+    end
+
+    jerkies = ['Jerky', 'Small Jerky', 'Monster Jerky']
+    jerkies.each do |type|
+      jerky = stats.find { |s| s[:name] == type }
+      matching_meats = meats.select { |m| m[:dried] == type }
+      meats << {}.tap do |h|
+        h[:name] = jerky[:name]
+        h[:sources] = matching_meats.map { |m| m[:name] }
+        h[:cooked] = 'N/A'
+        h[:dried] = 'N/A'
+        h[:dlc] = ''
+        h[:value] = jerky[:food_value]
+        h[:crockpot] = 'true'
+      end.merge(jerky.slice(:health, :hunger, :sanity, :perish_time, :stacking))
+    end
+
+    File.open(output, 'w:ISO8859-1:utf-8') { |f| f.write(JSON.pretty_generate({ data: meats.sort_by { |m| m[:name] } })) }
+  end
 end
 
 class Seed

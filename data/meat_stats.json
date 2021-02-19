@@ -1,0 +1,472 @@
+{
+  "data": [
+    {
+      "name": "Barnacles",
+      "health": "0",
+      "hunger": "12.5",
+      "sanity": "-5",
+      "perish_time": "6",
+      "food_value": "0.25",
+      "stacking": "20"
+    },
+    {
+      "name": "Batilisk Wing",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "-10",
+      "perish_time": "6",
+      "food_value": "0.5",
+      "stacking": "20"
+    },
+    {
+      "name": "Charred Nostrils",
+      "health": "8",
+      "hunger": "18.5",
+      "sanity": "0",
+      "perish_time": "10",
+      "food_value": "0.5",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Barnacles",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "15",
+      "food_value": "0.25",
+      "stacking": "20"
+    },
+    {
+      "name": "Cooked Batilisk Wing",
+      "health": "8",
+      "hunger": "18.75",
+      "sanity": "0",
+      "perish_time": "10",
+      "food_value": "0.5",
+      "stacking": "20"
+    },
+    {
+      "name": "Cooked Drumstick",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "10",
+      "food_value": "",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Eel",
+      "health": "3",
+      "hunger": "9.375",
+      "sanity": "0",
+      "perish_time": "6",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Fish",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "6",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Fish Morsel",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "6",
+      "food_value": "0.5",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Frog Legs",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "10",
+      "food_value": "0.5",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Koalefant Trunk",
+      "health": "40",
+      "hunger": "75",
+      "sanity": "0",
+      "perish_time": "15",
+      "food_value": "",
+      "stacking": "20"
+    },
+    {
+      "name": "Cooked Leafy Meat",
+      "health": "1",
+      "hunger": "18.75",
+      "sanity": "0",
+      "perish_time": "10",
+      "food_value": "1.0",
+      "stacking": "20"
+    },
+    {
+      "name": "Cooked Meat",
+      "health": "3",
+      "hunger": "25",
+      "sanity": "0",
+      "perish_time": "10",
+      "food_value": "1.0",
+      "stacking": "20"
+    },
+    {
+      "name": "Cooked Monster Meat",
+      "health": "-3",
+      "hunger": "18.75",
+      "sanity": "-10",
+      "perish_time": "15",
+      "food_value": "1.0",
+      "stacking": "20"
+    },
+    {
+      "name": "Cooked Morsel",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "10",
+      "food_value": "0.5",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Neon Quattro",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "6",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Pierrot Fish",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "6",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Poison Dartfrog Legs",
+      "health": "-1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "10",
+      "food_value": "",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Purple Grouper",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "6",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Roe",
+      "health": "0",
+      "hunger": "4.6875",
+      "sanity": "0",
+      "perish_time": "10",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Dead Dogfish",
+      "health": "1",
+      "hunger": "25",
+      "sanity": "0",
+      "perish_time": "6",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Dead Swordfish",
+      "health": "1",
+      "hunger": "25",
+      "sanity": "0",
+      "perish_time": "6",
+      "food_value": "",
+      "stacking": "40"
+    },
+    {
+      "name": "Deerclops Eyeball",
+      "health": "60",
+      "hunger": "75",
+      "sanity": "-15",
+      "perish_time": "9999999",
+      "food_value": "",
+      "stacking": "1"
+    },
+    {
+      "name": "Dragoon Heart",
+      "health": "11",
+      "hunger": "25",
+      "sanity": "-10",
+      "perish_time": "10",
+      "food_value": "",
+      "stacking": "10"
+    },
+    {
+      "name": "Drumstick",
+      "health": "0",
+      "hunger": "12.5",
+      "sanity": "-10",
+      "perish_time": "6",
+      "food_value": "",
+      "stacking": "40"
+    },
+    {
+      "name": "Eel",
+      "health": "3",
+      "hunger": "9.375",
+      "sanity": "0",
+      "perish_time": "6",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Eye of the Tiger Shark",
+      "health": "60",
+      "hunger": "75",
+      "sanity": "-15",
+      "perish_time": "9999999",
+      "food_value": "",
+      "stacking": "10"
+    },
+    {
+      "name": "Fish",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "3",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Fish Morsel",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "3",
+      "food_value": "0.5",
+      "stacking": "40"
+    },
+    {
+      "name": "Fish Steak",
+      "health": "20",
+      "hunger": "25",
+      "sanity": "0",
+      "perish_time": "6",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Flytrap Stalk",
+      "health": "0",
+      "hunger": "12.5",
+      "sanity": "-10",
+      "perish_time": "6",
+      "food_value": "",
+      "stacking": "20"
+    },
+    {
+      "name": "Freshwater Fish",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "3",
+      "food_value": "0.5",
+      "stacking": "1"
+    },
+    {
+      "name": "Frog Legs",
+      "health": "0",
+      "hunger": "12.5",
+      "sanity": "-10",
+      "perish_time": "6",
+      "food_value": "0.5",
+      "stacking": "40"
+    },
+    {
+      "name": "Guardian’s Horn",
+      "health": "60",
+      "hunger": "75",
+      "sanity": "-15",
+      "perish_time": "9999999",
+      "food_value": "",
+      "stacking": "1"
+    },
+    {
+      "name": "Jerky",
+      "health": "20",
+      "hunger": "25",
+      "sanity": "15",
+      "perish_time": "20",
+      "food_value": "1.0",
+      "stacking": "20"
+    },
+    {
+      "name": "Koalefant Trunk",
+      "health": "30",
+      "hunger": "37.5",
+      "sanity": "0",
+      "perish_time": "6",
+      "food_value": "",
+      "stacking": "20"
+    },
+    {
+      "name": "Leafy Meat",
+      "health": "0",
+      "hunger": "12.5",
+      "sanity": "-10",
+      "perish_time": "6",
+      "food_value": "1.0",
+      "stacking": "20"
+    },
+    {
+      "name": "Live Eel",
+      "health": "3",
+      "hunger": "9.375",
+      "sanity": "0",
+      "perish_time": "3",
+      "food_value": "1.0",
+      "stacking": "1"
+    },
+    {
+      "name": "Meat",
+      "health": "1",
+      "hunger": "25",
+      "sanity": "-10",
+      "perish_time": "6",
+      "food_value": "1.0",
+      "stacking": "20"
+    },
+    {
+      "name": "Monster Jerky",
+      "health": "-3",
+      "hunger": "18.75",
+      "sanity": "-5",
+      "perish_time": "20",
+      "food_value": "1.0",
+      "stacking": "20"
+    },
+    {
+      "name": "Monster Meat",
+      "health": "-20",
+      "hunger": "18.75",
+      "sanity": "-15",
+      "perish_time": "6",
+      "food_value": "1.0",
+      "stacking": "20"
+    },
+    {
+      "name": "Morsel",
+      "health": "0",
+      "hunger": "12.5",
+      "sanity": "-10",
+      "perish_time": "6",
+      "food_value": "0.5",
+      "stacking": "40"
+    },
+    {
+      "name": "Naked Nostrils",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "-10",
+      "perish_time": "6",
+      "food_value": "0.5",
+      "stacking": "40"
+    },
+    {
+      "name": "Neon Quattro",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "10",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Pierrot Fish",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "10",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Poison Dartfrog Legs",
+      "health": "-3",
+      "hunger": "12.5",
+      "sanity": "-10",
+      "perish_time": "6",
+      "food_value": "",
+      "stacking": "40"
+    },
+    {
+      "name": "Purple Grouper",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "10",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Raw Fish",
+      "health": "1",
+      "hunger": "25",
+      "sanity": "0",
+      "perish_time": "3",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Roe",
+      "health": "1",
+      "hunger": "4.6875",
+      "sanity": "0",
+      "perish_time": "3",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Shark Fin",
+      "health": "20",
+      "hunger": "25",
+      "sanity": "-15",
+      "perish_time": "6",
+      "food_value": "1.0",
+      "stacking": "10"
+    },
+    {
+      "name": "Small Jerky",
+      "health": "8",
+      "hunger": "12.5",
+      "sanity": "10",
+      "perish_time": "20",
+      "food_value": "0.5",
+      "stacking": "40"
+    },
+    {
+      "name": "Tropical Fish",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "3",
+      "food_value": "1.0",
+      "stacking": "40"
+    }
+  ]
+}

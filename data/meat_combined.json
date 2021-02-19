@@ -1,0 +1,807 @@
+{
+  "data": [
+    {
+      "name": "Barnacles",
+      "sources": [
+        "Barnacles"
+      ],
+      "cooked": "Cooked Barnacles",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together icon",
+      "value": "0.25",
+      "crockpot": "true",
+      "health": "0",
+      "hunger": "12.5",
+      "sanity": "-5",
+      "perish_time": "6",
+      "stacking": "20"
+    },
+    {
+      "name": "Batilisk Wing",
+      "sources": [
+        "Batilisk Wing"
+      ],
+      "cooked": "Cooked Batilisk Wing",
+      "dried": "Small Jerky",
+      "dlc": "",
+      "value": "0.5",
+      "crockpot": "false",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "-10",
+      "perish_time": "6",
+      "stacking": "20"
+    },
+    {
+      "name": "Charred Nostrils",
+      "sources": [
+        "Naked Nostrils"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together icon",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "8",
+      "hunger": "18.5",
+      "sanity": "0",
+      "perish_time": "10",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Barnacles",
+      "sources": [
+        "Barnacles"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together icon",
+      "value": "0.25",
+      "crockpot": "true",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "15",
+      "stacking": "20"
+    },
+    {
+      "name": "Cooked Batilisk Wing",
+      "sources": [
+        "Batilisk Wing"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.5",
+      "crockpot": "false",
+      "health": "8",
+      "hunger": "18.75",
+      "sanity": "0",
+      "perish_time": "10",
+      "stacking": "20"
+    },
+    {
+      "name": "Cooked Eel",
+      "sources": [
+        "Live Eel"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "3",
+      "hunger": "9.375",
+      "sanity": "0",
+      "perish_time": "6",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Fish",
+      "sources": [
+        "Freshwater Fish"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "6",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Fish Morsel",
+      "sources": [
+        "Bitty Baitfish",
+        "Needlenosed Squirt",
+        "Runty Guppy",
+        "Smolt Fry"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "6",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Frog Legs",
+      "sources": [
+        "Frog Legs"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "10",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Leafy Meat",
+      "sources": [
+        "Leafy Meat"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.0",
+      "crockpot": "false",
+      "health": "1",
+      "hunger": "18.75",
+      "sanity": "0",
+      "perish_time": "10",
+      "stacking": "20"
+    },
+    {
+      "name": "Cooked Meat",
+      "sources": [
+        "Meat"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "1.0",
+      "crockpot": "true",
+      "health": "3",
+      "hunger": "25",
+      "sanity": "0",
+      "perish_time": "10",
+      "stacking": "20"
+    },
+    {
+      "name": "Cooked Monster Meat",
+      "sources": [
+        "Monster Meat"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "1.0",
+      "crockpot": "true",
+      "health": "-3",
+      "hunger": "18.75",
+      "sanity": "-10",
+      "perish_time": "15",
+      "stacking": "20"
+    },
+    {
+      "name": "Cooked Morsel",
+      "sources": [
+        "Moleworm"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "10",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Neon Quattro",
+      "sources": [
+        "Neon Quattro"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Shipwrecked",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "6",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Pierrot Fish",
+      "sources": [
+        "Pierrot Fish"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Shipwrecked",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "6",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Purple Grouper",
+      "sources": [
+        "Purple Grouper"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Shipwrecked",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "6",
+      "stacking": "40"
+    },
+    {
+      "name": "Cooked Roe",
+      "sources": [
+        "Roe"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Shipwrecked",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "0",
+      "hunger": "4.6875",
+      "sanity": "0",
+      "perish_time": "10",
+      "stacking": "40"
+    },
+    {
+      "name": "Dead Dogfish",
+      "sources": [
+        "Dead Dogfish"
+      ],
+      "cooked": "Fish Steak",
+      "dried": "Jerky",
+      "dlc": "Shipwrecked",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "1",
+      "hunger": "25",
+      "sanity": "0",
+      "perish_time": "6",
+      "stacking": "40"
+    },
+    {
+      "name": "Dead Swordfish",
+      "sources": [
+        "Dead Swordfish"
+      ],
+      "cooked": "Fish Steak",
+      "dried": "Jerky",
+      "dlc": "Shipwrecked",
+      "value": "0.0",
+      "crockpot": "false",
+      "health": "1",
+      "hunger": "25",
+      "sanity": "0",
+      "perish_time": "6",
+      "stacking": "40"
+    },
+    {
+      "name": "Deerclops Eyeball",
+      "sources": [
+        "Deerclops Eyeball"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.0",
+      "crockpot": "false",
+      "health": "60",
+      "hunger": "75",
+      "sanity": "-15",
+      "perish_time": "9999999",
+      "stacking": "1"
+    },
+    {
+      "name": "Dragoon Heart",
+      "sources": [
+        "Dragoon Heart"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Shipwrecked",
+      "value": "0.0",
+      "crockpot": "false",
+      "health": "11",
+      "hunger": "25",
+      "sanity": "-10",
+      "perish_time": "10",
+      "stacking": "10"
+    },
+    {
+      "name": "Drumstick",
+      "sources": [
+        "Drumstick"
+      ],
+      "cooked": "Fried Drumstick",
+      "dried": "Small Jerky",
+      "dlc": "",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "0",
+      "hunger": "12.5",
+      "sanity": "-10",
+      "perish_time": "6",
+      "stacking": "40"
+    },
+    {
+      "name": "Eel",
+      "sources": [
+        "Live Eel"
+      ],
+      "cooked": "Cooked Eel",
+      "dried": "Small Jerky",
+      "dlc": "",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "3",
+      "hunger": "9.375",
+      "sanity": "0",
+      "perish_time": "6",
+      "stacking": "40"
+    },
+    {
+      "name": "Eye of the Tiger Shark",
+      "sources": [
+        "Eye of the Tiger Shark"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Shipwrecked",
+      "value": "0.0",
+      "crockpot": "false",
+      "health": "60",
+      "hunger": "75",
+      "sanity": "-15",
+      "perish_time": "9999999",
+      "stacking": "10"
+    },
+    {
+      "name": "Fish",
+      "sources": [
+        "Freshwater Fish"
+      ],
+      "cooked": "Cooked Fish",
+      "dried": "Small Jerky",
+      "dlc": "",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "3",
+      "stacking": "40"
+    },
+    {
+      "name": "Fish Meat",
+      "sources": [
+        "Black Catfish",
+        "Dandy Lionfish",
+        "Deep Bass",
+        "Mudfish"
+      ],
+      "cooked": "Fish Steak",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together",
+      "value": "1.0",
+      "crockpot": "true",
+      "health": null,
+      "hunger": null,
+      "sanity": null,
+      "perish_time": null,
+      "stacking": null
+    },
+    {
+      "name": "Fish Morsel",
+      "sources": [
+        "Bitty Baitfish",
+        "Needlenosed Squirt",
+        "Runty Guppy",
+        "Smolt Fry"
+      ],
+      "cooked": "Cooked Fish Morsel",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "3",
+      "stacking": "40"
+    },
+    {
+      "name": "Fish Steak",
+      "sources": [
+        "Dead Dogfish"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Shipwrecked",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "20",
+      "hunger": "25",
+      "sanity": "0",
+      "perish_time": "6",
+      "stacking": "40"
+    },
+    {
+      "name": "Flytrap Stalk",
+      "sources": [
+        "Flytrap Stalk"
+      ],
+      "cooked": "N/A",
+      "dried": "Stalking Stick",
+      "dlc": "Hamlet",
+      "value": "0.0",
+      "crockpot": "false",
+      "health": "0",
+      "hunger": "12.5",
+      "sanity": "-10",
+      "perish_time": "6",
+      "stacking": "20"
+    },
+    {
+      "name": "Frog Legs",
+      "sources": [
+        "Frog Legs"
+      ],
+      "cooked": "Cooked Frog Legs",
+      "dried": "Small Jerky",
+      "dlc": "",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "0",
+      "hunger": "12.5",
+      "sanity": "-10",
+      "perish_time": "6",
+      "stacking": "40"
+    },
+    {
+      "name": "Guardian's Horn",
+      "sources": [
+        "Guardian's Horn"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.0",
+      "crockpot": "false",
+      "health": null,
+      "hunger": null,
+      "sanity": null,
+      "perish_time": null,
+      "stacking": null
+    },
+    {
+      "name": "Jerky",
+      "sources": [
+        "Dead Dogfish",
+        "Dead Swordfish",
+        "Meat",
+        "Raw Fish"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "1.0",
+      "crockpot": "true",
+      "health": "20",
+      "hunger": "25",
+      "sanity": "15",
+      "perish_time": "20",
+      "stacking": "20"
+    },
+    {
+      "name": "Koalefant Trunk",
+      "sources": [
+        "Koalefant Trunk"
+      ],
+      "cooked": "Koalefant Trunk Steak",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.0",
+      "crockpot": "false",
+      "health": "30",
+      "hunger": "37.5",
+      "sanity": "0",
+      "perish_time": "6",
+      "stacking": "20"
+    },
+    {
+      "name": "Leafy Meat",
+      "sources": [
+        "Leafy Meat"
+      ],
+      "cooked": "Cooked Leafy Meat",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.0",
+      "crockpot": "false",
+      "health": "0",
+      "hunger": "12.5",
+      "sanity": "-10",
+      "perish_time": "6",
+      "stacking": "20"
+    },
+    {
+      "name": "Meat",
+      "sources": [
+        "Meat"
+      ],
+      "cooked": "Cooked Meat",
+      "dried": "Jerky",
+      "dlc": "",
+      "value": "1.0",
+      "crockpot": "true",
+      "health": "1",
+      "hunger": "25",
+      "sanity": "-10",
+      "perish_time": "6",
+      "stacking": "20"
+    },
+    {
+      "name": "Monster Jerky",
+      "sources": [
+        "Monster Meat"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "1.0",
+      "crockpot": "true",
+      "health": "-3",
+      "hunger": "18.75",
+      "sanity": "-5",
+      "perish_time": "20",
+      "stacking": "20"
+    },
+    {
+      "name": "Monster Meat",
+      "sources": [
+        "Monster Meat"
+      ],
+      "cooked": "Cooked Monster Meat",
+      "dried": "Monster Jerky",
+      "dlc": "",
+      "value": "1.0",
+      "crockpot": "true",
+      "health": "-20",
+      "hunger": "18.75",
+      "sanity": "-15",
+      "perish_time": "6",
+      "stacking": "20"
+    },
+    {
+      "name": "Morsel",
+      "sources": [
+        "Moleworm"
+      ],
+      "cooked": "Cooked Morsel",
+      "dried": "Small Jerky",
+      "dlc": "",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "0",
+      "hunger": "12.5",
+      "sanity": "-10",
+      "perish_time": "6",
+      "stacking": "40"
+    },
+    {
+      "name": "Naked Nostrils",
+      "sources": [
+        "Naked Nostrils"
+      ],
+      "cooked": "Charred Nostrils",
+      "dried": "N/A",
+      "dlc": "Don't Starve Together icon",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "-10",
+      "perish_time": "6",
+      "stacking": "40"
+    },
+    {
+      "name": "Neon Quattro",
+      "sources": [
+        "Neon Quattro"
+      ],
+      "cooked": "Cooked Neon Quattro",
+      "dried": "N/A",
+      "dlc": "Shipwrecked",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "10",
+      "stacking": "40"
+    },
+    {
+      "name": "Pierrot Fish",
+      "sources": [
+        "Pierrot Fish"
+      ],
+      "cooked": "Cooked Pierrot Fish",
+      "dried": "N/A",
+      "dlc": "Shipwrecked",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "10",
+      "stacking": "40"
+    },
+    {
+      "name": "Poison Dartfrog Legs",
+      "sources": [
+        "Poison Dartfrog Legs"
+      ],
+      "cooked": "Cooked Dartfrog Legs",
+      "dried": "Small Jerky",
+      "dlc": "Hamlet",
+      "value": "0.0",
+      "crockpot": "false",
+      "health": "-3",
+      "hunger": "12.5",
+      "sanity": "-10",
+      "perish_time": "6",
+      "stacking": "40"
+    },
+    {
+      "name": "Purple Grouper",
+      "sources": [
+        "Purple Grouper"
+      ],
+      "cooked": "Cooked Purple Grouper",
+      "dried": "N/A",
+      "dlc": "Shipwrecked",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "10",
+      "stacking": "40"
+    },
+    {
+      "name": "Raw Fish",
+      "sources": [
+        "Raw Fish"
+      ],
+      "cooked": "Fish Steak",
+      "dried": "Jerky",
+      "dlc": "Shipwrecked",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "1",
+      "hunger": "25",
+      "sanity": "0",
+      "perish_time": "3",
+      "stacking": "40"
+    },
+    {
+      "name": "Roe",
+      "sources": [
+        "Roe"
+      ],
+      "cooked": "Cooked Roe",
+      "dried": "N/A",
+      "dlc": "Shipwrecked",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "1",
+      "hunger": "4.6875",
+      "sanity": "0",
+      "perish_time": "3",
+      "stacking": "40"
+    },
+    {
+      "name": "Shark Fin",
+      "sources": [
+        "Shark Fin"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "Shipwrecked",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "20",
+      "hunger": "25",
+      "sanity": "-15",
+      "perish_time": "6",
+      "stacking": "10"
+    },
+    {
+      "name": "Small Jerky",
+      "sources": [
+        "Batilisk Wing",
+        "Drumstick",
+        "Eel",
+        "Fish",
+        "Frog Legs",
+        "Morsel",
+        "Poison Dartfrog Legs",
+        "Tropical Fish"
+      ],
+      "cooked": "N/A",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "8",
+      "hunger": "12.5",
+      "sanity": "10",
+      "perish_time": "20",
+      "stacking": "40"
+    },
+    {
+      "name": "Tropical Fish",
+      "sources": [
+        "Tropical Fish"
+      ],
+      "cooked": "Cooked Fish Morsel",
+      "dried": "Small Jerky",
+      "dlc": "Shipwrecked",
+      "value": "0.5",
+      "crockpot": "true",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "3",
+      "stacking": "40"
+    },
+    {
+      "name": "Winter Koalefant Trunk",
+      "sources": [
+        "Winter Koalefant Trunk"
+      ],
+      "cooked": "Koalefant Trunk Steak",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "0.0",
+      "crockpot": "false",
+      "health": null,
+      "hunger": null,
+      "sanity": null,
+      "perish_time": null,
+      "stacking": null
+    }
+  ]
+}
