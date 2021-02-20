@@ -340,6 +340,17 @@
       "dlc": "Don't Starve Together",
       "value": "1.0",
       "crockpot": "true"
+    },
+    {
+      "name": "Watermelon",
+      "sources": [
+        "Watermelon"
+      ],
+      "cooked": "Grilled Watermelon",
+      "dried": "N/A",
+      "dlc": "",
+      "value": "1.0",
+      "crockpot": "true"
     }
   ]
 }

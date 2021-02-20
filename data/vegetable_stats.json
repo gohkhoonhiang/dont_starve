@@ -28,6 +28,15 @@
       "stacking": "40"
     },
     {
+      "name": "Braised Eggplant",
+      "health": "20",
+      "hunger": "25",
+      "sanity": "0",
+      "perish_time": "6",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
       "name": "Cactus Flesh",
       "health": "-3",
       "hunger": "12.5",
@@ -91,42 +100,6 @@
       "stacking": "40"
     },
     {
-      "name": "Cooked Carrot",
-      "health": "3",
-      "hunger": "12.5",
-      "sanity": "0",
-      "perish_time": "6",
-      "food_value": "1.0",
-      "stacking": "40"
-    },
-    {
-      "name": "Cooked Corn",
-      "health": "3",
-      "hunger": "12.5",
-      "sanity": "0",
-      "perish_time": "15",
-      "food_value": "1.0",
-      "stacking": "40"
-    },
-    {
-      "name": "Cooked Eggplant",
-      "health": "20",
-      "hunger": "25",
-      "sanity": "0",
-      "perish_time": "6",
-      "food_value": "1.0",
-      "stacking": "40"
-    },
-    {
-      "name": "Cooked Garlic",
-      "health": "1",
-      "hunger": "9.375",
-      "sanity": "-5",
-      "perish_time": "10",
-      "food_value": "1.0",
-      "stacking": "40"
-    },
-    {
       "name": "Cooked Green Cap",
       "health": "-1",
       "hunger": "0",
@@ -160,42 +133,6 @@
       "sanity": "-10",
       "perish_time": "10",
       "food_value": "0.5",
-      "stacking": "40"
-    },
-    {
-      "name": "Cooked Onion",
-      "health": "1",
-      "hunger": "9.375",
-      "sanity": "-5",
-      "perish_time": "10",
-      "food_value": "1.0",
-      "stacking": "40"
-    },
-    {
-      "name": "Cooked Pepper",
-      "health": "-3",
-      "hunger": "9.375",
-      "sanity": "-10",
-      "perish_time": "15",
-      "food_value": "1.0",
-      "stacking": "40"
-    },
-    {
-      "name": "Cooked Potato",
-      "health": "20",
-      "hunger": "25",
-      "sanity": "0",
-      "perish_time": "6",
-      "food_value": "1.0",
-      "stacking": "40"
-    },
-    {
-      "name": "Cooked Pumpkin",
-      "health": "3",
-      "hunger": "37.5",
-      "sanity": "0",
-      "perish_time": "6",
-      "food_value": "1.0",
       "stacking": "40"
     },
     {
@@ -240,24 +177,6 @@
       "hunger": "12.5",
       "sanity": "0",
       "perish_time": "6",
-      "food_value": "",
-      "stacking": "40"
-    },
-    {
-      "name": "Cooked Toma Root",
-      "health": "20",
-      "hunger": "12.5",
-      "sanity": "0",
-      "perish_time": "10",
-      "food_value": "1.0",
-      "stacking": "40"
-    },
-    {
-      "name": "Cooked Watermelon",
-      "health": "1",
-      "hunger": "12.5",
-      "sanity": "7.5",
-      "perish_time": "3",
       "food_value": "",
       "stacking": "40"
     },
@@ -325,6 +244,24 @@
       "stacking": "40"
     },
     {
+      "name": "Grilled Watermelon",
+      "health": "1",
+      "hunger": "12.5",
+      "sanity": "7.5",
+      "perish_time": "3",
+      "food_value": "",
+      "stacking": "40"
+    },
+    {
+      "name": "Hot Pumpkin",
+      "health": "3",
+      "hunger": "37.5",
+      "sanity": "0",
+      "perish_time": "6",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
       "name": "Kelp Fronds",
       "health": "-1",
       "hunger": "9.375",
@@ -388,6 +325,15 @@
       "stacking": "40"
     },
     {
+      "name": "Popcorn",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "15",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
       "name": "Potato",
       "health": "-3",
       "hunger": "12.5",
@@ -429,6 +375,60 @@
       "hunger": "12.5",
       "sanity": "0",
       "perish_time": "3",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Roasted Carrot",
+      "health": "3",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "6",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Roasted Garlic",
+      "health": "1",
+      "hunger": "9.375",
+      "sanity": "-5",
+      "perish_time": "10",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Roasted Onion",
+      "health": "1",
+      "hunger": "9.375",
+      "sanity": "-5",
+      "perish_time": "10",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Roasted Pepper",
+      "health": "-3",
+      "hunger": "9.375",
+      "sanity": "-10",
+      "perish_time": "15",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Roasted Potato",
+      "health": "20",
+      "hunger": "25",
+      "sanity": "0",
+      "perish_time": "6",
+      "food_value": "1.0",
+      "stacking": "40"
+    },
+    {
+      "name": "Roasted Toma Root",
+      "health": "20",
+      "hunger": "12.5",
+      "sanity": "0",
+      "perish_time": "10",
       "food_value": "1.0",
       "stacking": "40"
     },
