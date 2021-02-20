@@ -286,7 +286,7 @@ var app = new Vue({
     getVegetableRecipeData: function() {
       var vm = this;
       $.ajax({
-        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve_recipes/master/data/vegetable_recipes.json',
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve/master/data/vegetable_recipes.json',
         method: 'GET'
       }).then(function (response) {
         var vegetable_data = JSON.parse(response).data;
@@ -312,7 +312,7 @@ var app = new Vue({
     getMeatRecipeData: function() {
       var vm = this;
       $.ajax({
-        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve_recipes/master/data/meat_recipes.json',
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve/master/data/meat_recipes.json',
         method: 'GET'
       }).then(function (response) {
         var meat_data = JSON.parse(response).data;
@@ -338,7 +338,7 @@ var app = new Vue({
     getCompleteRecipeData: function() {
       var vm = this;
       $.ajax({
-        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve_recipes/master/data/complete_recipes.json',
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve/master/data/complete_recipes.json',
         method: 'GET'
       }).then(function (response) {
         var complete_recipes_data = JSON.parse(response).data;
@@ -364,7 +364,7 @@ var app = new Vue({
     getSeedData: function() {
       var vm = this;
       $.ajax({
-        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve_recipes/master/data/merged_plants_seeds.json',
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve/master/data/merged_plants_seeds.json',
         method: 'GET'
       }).then(function (response) {
         var seed_data = JSON.parse(response).data;
@@ -384,7 +384,7 @@ var app = new Vue({
     getNutrientData: function() {
       var vm = this;
       $.ajax({
-        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve_recipes/master/data/nutrients.json',
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve/master/data/nutrients.json',
         method: 'GET'
       }).then(function (response) {
         var nutrient_data = JSON.parse(response).data;
@@ -402,7 +402,7 @@ var app = new Vue({
     getVegetableData: function() {
       var vm = this;
       $.ajax({
-        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve_recipes/master/data/vegetable_combined.json',
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve/master/data/vegetable_combined.json',
         method: 'GET'
       }).then(function (response) {
         var raw_vegetable_data = JSON.parse(response).data;
@@ -422,7 +422,7 @@ var app = new Vue({
     getMeatData: function() {
       var vm = this;
       $.ajax({
-        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve_recipes/master/data/meat_combined.json',
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve/master/data/meat_combined.json',
         method: 'GET'
       }).then(function (response) {
         var raw_meat_data = JSON.parse(response).data;
@@ -442,7 +442,7 @@ var app = new Vue({
     getFarmingConfigData: function() {
       var vm = this;
       $.ajax({
-        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve_recipes/master/data/farm_plots.json',
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve/master/data/farm_plots.json',
         method: 'GET'
       }).then(function (response) {
         var farming_config_data = JSON.parse(response).data;
@@ -650,7 +650,7 @@ var app = new Vue({
 
     retrieveSettings: function() {
       var vm = this;
-      var settings = JSON.parse(localStorage.getItem('dont_starve_recipes_settings'));
+      var settings = JSON.parse(localStorage.getItem('dont_starve_settings'));
       if (!settings) { return; }
 
       for (var property in settings) {
@@ -690,11 +690,11 @@ var app = new Vue({
         farming_config_plants: vm.farming_config_plants,
       };
 
-      localStorage.setItem('dont_starve_recipes_settings', JSON.stringify(settings));
+      localStorage.setItem('dont_starve_settings', JSON.stringify(settings));
     },
 
     resetSettings: function() {
-      localStorage.removeItem('dont_starve_recipes_settings');
+      localStorage.removeItem('dont_starve_settings');
     },
 
   },
