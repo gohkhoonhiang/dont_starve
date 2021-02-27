@@ -1,4 +1,4 @@
-var latest_data_version = 'acc5304';
+var latest_data_version = 'd2788b3';
 
 var normalizeDlc = function(value) {
   return value.map(ele => mapDlc(ele));
@@ -81,6 +81,7 @@ var app = new Vue({
       this.getMeatData();
       this.getFarmingConfigData();
       this.getCharacterData();
+      this.getPigShopData();
       this.data_version = latest_data_version;
     }
   },
@@ -297,6 +298,22 @@ var app = new Vue({
       { text: 'Hunger', filterable: false, value: 'hunger' },
       { text: 'Sanity', filterable: false, value: 'sanity' },
     ],
+
+    pig_shop_complete_data: [],
+    pig_shop_data: [],
+    pig_shop_headers: [
+      {
+        text: 'Shop Name',
+        align: 'start',
+        sortable: true,
+        filterable: true,
+        value: 'shop_name',
+        width: 300,
+      },
+      { text: 'Shop Image', filterable: false, value: 'shop_img', width: 30 },
+      { text: 'Item Name', filterable: false, value: 'item' },
+      { text: 'Oinc', filterable: false, value: 'oinc_cost' },
+    ],
   },
 
   methods: {
@@ -494,6 +511,24 @@ var app = new Vue({
         });
 
         vm.character_complete_data = formatted_data;
+      });
+
+    },
+
+    getPigShopData: function() {
+      var vm = this;
+      $.ajax({
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve/master/data/pig_shops.json',
+        method: 'GET'
+      }).then(function (response) {
+        var raw_pig_shop_data = JSON.parse(response).data;
+        var formatted_data = raw_pig_shop_data.map(function(row, index) {
+          var updated_row = row;
+          updated_row.id = index + '_raw_pig_shop_' + row.shop_name.replace(/\s/, '_').toLowerCase() + '_' + row.item.replace(/\s/, '_').toLowerCase();
+          return updated_row;
+        });
+
+        vm.pig_shop_complete_data = formatted_data;
       });
 
     },
@@ -724,6 +759,7 @@ var app = new Vue({
         farming_config_plants_search: vm.farming_config_plants_search,
         farming_config_plants: vm.farming_config_plants,
         character_complete_data: vm.character_complete_data,
+        pig_shop_complete_data: vm.pig_shop_complete_data,
       };
 
       localStorage.setItem('dont_starve_settings', JSON.stringify(settings));
@@ -804,6 +840,13 @@ var app = new Vue({
     },
 
     character_complete_data: function(new_val, old_val) {
+      var vm = this;
+      if (new_val.length > 0) {
+        vm.storeSettings();
+      }
+    },
+
+    pig_shop_complete_data: function(new_val, old_val) {
       var vm = this;
       if (new_val.length > 0) {
         vm.storeSettings();

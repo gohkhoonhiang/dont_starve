@@ -86,6 +86,10 @@
               Character
               <v-icon left>mdi-account-group</v-icon>
             </v-tab>
+            <v-tab key="hamlet_tab">
+              Hamlet
+              <v-icon left>mdi-pig</v-icon>
+            </v-tab>
             <v-tab key="help_tab">
               Help
               <v-icon left>mdi-help</v-icon>
@@ -1251,17 +1255,41 @@
                         disable-pagination
                         hide-default-footer
                       >
-                        <!--<template v-slot:item.health="{ item }">
-                          <v-chip :color="parseInt(item.health) < 0 ? 'red' : 'green'" :text-color="parseInt(item.health) < 0 ? 'white' : 'black'">{{ formatFloat(item.health) }}</v-chip>
-                        </template>
 
-                        <template v-slot:item.hunger="{ item }">
-                          <v-chip :color="parseInt(item.hunger) < 0 ? 'red' : 'green'" :text-color="parseInt(item.hunger) < 0 ? 'white' : 'black'">{{ formatFloat(item.hunger) }}</v-chip>
-                        </template>
+                      </v-data-table>
+                    </v-card>
+                  </v-tab-item>
 
-                        <template v-slot:item.sanity="{ item }">
-                          <v-chip :color="parseInt(item.sanity) < 0 ? 'red' : 'green'" :text-color="parseInt(item.sanity) < 0 ? 'white' : 'black'">{{ formatFloat(item.sanity) }}</v-chip>
-                        </template>-->
+                </v-tabs>
+              </v-card>
+
+            </v-tab-item>
+
+            <v-tab-item key="hamlet_tab">
+
+              <v-card flat>
+                <v-tabs
+                  show-arrows
+                >
+                  <v-tab key="pig_shops_tab">
+                    Pig Shops
+                    <v-icon left>mdi-cart-outline</v-icon>
+                  </v-tab>
+
+                  <v-tab-item key="pig_shops_tab">
+
+                    <v-card flat>
+                      <v-data-table
+                        :headers="pig_shop_headers"
+                        :items="pig_shop_complete_data"
+                        class="elevation-1"
+                        disable-pagination
+                        hide-default-footer
+                      >
+
+                        <template v-slot:item.shop_img="{ item }">
+                          <v-img :src="item.shop_img" max-width="20%"></v-img>
+                        </template>
 
                       </v-data-table>
                     </v-card>
