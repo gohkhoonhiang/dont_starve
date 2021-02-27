@@ -1,0 +1,142 @@
+{
+  "data": [
+    {
+      "name": "Maxwell",
+      "sanity": "200",
+      "health": "75",
+      "hunger": "150"
+    },
+    {
+      "name": "WX-78",
+      "sanity": "100-300",
+      "health": "100-400",
+      "hunger": "100-200"
+    },
+    {
+      "name": "Wagstaff",
+      "sanity": "150",
+      "health": "150",
+      "hunger": "225"
+    },
+    {
+      "name": "Walani",
+      "sanity": "200",
+      "health": "120",
+      "hunger": "200"
+    },
+    {
+      "name": "Walter",
+      "sanity": "200",
+      "health": "130",
+      "hunger": "110"
+    },
+    {
+      "name": "Warly",
+      "sanity": "200",
+      "health": "150",
+      "hunger": "250"
+    },
+    {
+      "name": "Webber",
+      "sanity": "100",
+      "health": "175",
+      "hunger": "175"
+    },
+    {
+      "name": "Wendy",
+      "sanity": "200",
+      "health": "150",
+      "hunger": "150"
+    },
+    {
+      "name": "Wes",
+      "sanity": "150",
+      "health": "113",
+      "hunger": "113"
+    },
+    {
+      "name": "Wheeler",
+      "sanity": "200",
+      "health": "100",
+      "hunger": "150"
+    },
+    {
+      "name": "Wickerbottom",
+      "sanity": "250",
+      "health": "150",
+      "hunger": "150"
+    },
+    {
+      "name": "Wigfrid",
+      "sanity": "120",
+      "health": "200",
+      "hunger": "120"
+    },
+    {
+      "name": "Wilba",
+      "sanity": "100",
+      "health": "150",
+      "hunger": "200"
+    },
+    {
+      "name": "Wilbur",
+      "sanity": "150",
+      "health": "125",
+      "hunger": "175"
+    },
+    {
+      "name": "Willow",
+      "sanity": "120",
+      "health": "150",
+      "hunger": "150"
+    },
+    {
+      "name": "Wilson",
+      "sanity": "200",
+      "health": "150",
+      "hunger": "150"
+    },
+    {
+      "name": "Winona",
+      "sanity": "200",
+      "health": "150",
+      "hunger": "150"
+    },
+    {
+      "name": "Wolfgang",
+      "sanity": "200",
+      "health": "150-300",
+      "hunger": "300"
+    },
+    {
+      "name": "Woodie",
+      "sanity": "200",
+      "health": "150",
+      "hunger": "150"
+    },
+    {
+      "name": "Woodlegs",
+      "sanity": "120",
+      "health": "150",
+      "hunger": "150"
+    },
+    {
+      "name": "Wormwood",
+      "sanity": "200",
+      "health": "150",
+      "hunger": "150"
+    },
+    {
+      "name": "Wortox",
+      "sanity": "150",
+      "health": "200",
+      "hunger": "175"
+    },
+    {
+      "name": "Wurt",
+      "sanity": "150-200",
+      "health": "150-250",
+      "hunger": "200-250"
+    }
+  ]
+}
