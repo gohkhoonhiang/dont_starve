@@ -423,3 +423,30 @@ class Character
     end
   end
 end
+
+class HamletShop
+  include Shared
+
+  def convert_html_to_csv(input, output)
+    html_to_csv(input, output) do |doc, csv|
+      csv << ['shop_name', 'shop_img', 'item', 'oinc_cost']
+
+      doc.xpath('//table/tr').each do |outer_row|
+        table_row = outer_row.xpath('td')[2]
+        next unless table_row
+
+        shop_name = outer_row.xpath('td')[0]
+        shop_img = outer_row.xpath('td')[1].xpath('img').attr('src').value
+        table_row.xpath('//table/tbody/tr').each do |data_row|
+          tarray = [shop_name, shop_img]
+          data_row.xpath('td').each_with_index do |cell, index|
+            next if index == 0
+
+            tarray << cell.text.strip
+          end
+          csv << tarray
+        end
+      end
+    end
+  end
+end
