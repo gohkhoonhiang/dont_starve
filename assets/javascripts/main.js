@@ -1,4 +1,4 @@
-var latest_data_version = '6dfcfaf';
+var latest_data_version = 'acc5304';
 
 var normalizeDlc = function(value) {
   return value.map(ele => mapDlc(ele));
@@ -80,6 +80,7 @@ var app = new Vue({
       this.getVegetableData();
       this.getMeatData();
       this.getFarmingConfigData();
+      this.getCharacterData();
       this.data_version = latest_data_version;
     }
   },
@@ -280,6 +281,22 @@ var app = new Vue({
       { text: 'Shape', filterable: false, value: 'shape', width: 200 },
       { text: 'Config', filterable: false, value: 'config', width: 350 },
     ],
+
+    character_complete_data: [],
+    character_data: [],
+    character_headers: [
+      {
+        text: 'Name',
+        align: 'start',
+        sortable: true,
+        filterable: true,
+        value: 'name',
+        width: 300,
+      },
+      { text: 'Health', filterable: false, value: 'health' },
+      { text: 'Hunger', filterable: false, value: 'hunger' },
+      { text: 'Sanity', filterable: false, value: 'sanity' },
+    ],
   },
 
   methods: {
@@ -459,6 +476,24 @@ var app = new Vue({
 
         vm.farming_config_plants = vm.farming_config_plants.sort();
         vm.farming_config_complete_data = formatted_data;
+      });
+
+    },
+
+    getCharacterData: function() {
+      var vm = this;
+      $.ajax({
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve/master/data/characters.json',
+        method: 'GET'
+      }).then(function (response) {
+        var raw_character_data = JSON.parse(response).data;
+        var formatted_data = raw_character_data.map(function(row, index) {
+          var updated_row = row;
+          updated_row.id = index + '_raw_character_' + row.name.replace(/\s/, '_').toLowerCase();
+          return updated_row;
+        });
+
+        vm.character_complete_data = formatted_data;
       });
 
     },
@@ -688,6 +723,7 @@ var app = new Vue({
         farming_config_complete_data: vm.farming_config_complete_data,
         farming_config_plants_search: vm.farming_config_plants_search,
         farming_config_plants: vm.farming_config_plants,
+        character_complete_data: vm.character_complete_data,
       };
 
       localStorage.setItem('dont_starve_settings', JSON.stringify(settings));
@@ -763,6 +799,13 @@ var app = new Vue({
       var vm = this;
       if (new_val.length > 0) {
         vm.filterFarmingConfigData();
+        vm.storeSettings();
+      }
+    },
+
+    character_complete_data: function(new_val, old_val) {
+      var vm = this;
+      if (new_val.length > 0) {
         vm.storeSettings();
       }
     },

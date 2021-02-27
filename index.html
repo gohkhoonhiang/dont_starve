@@ -60,7 +60,7 @@
         <v-container>
           <v-toolbar flat color="toolbar" light>
             <v-toolbar-title class="header--text font-weight-black">
-              <div class="sm-12">Recipes</div>
+              <div class="sm-12">Wiki</div>
             </v-toolbar-title>
           </v-toolbar>
           <v-tabs
@@ -81,6 +81,10 @@
             <v-tab key="farming_tab">
               Farming
               <v-icon left>mdi-tractor</v-icon>
+            </v-tab>
+            <v-tab key="character_tab">
+              Character
+              <v-icon left>mdi-account-group</v-icon>
             </v-tab>
             <v-tab key="help_tab">
               Help
@@ -1216,6 +1220,48 @@
                             </v-row>
                           </v-container>
                         </template>
+
+                      </v-data-table>
+                    </v-card>
+                  </v-tab-item>
+
+                </v-tabs>
+              </v-card>
+
+            </v-tab-item>
+
+            <v-tab-item key="character_tab">
+
+              <v-card flat>
+                <v-tabs
+                  show-arrows
+                >
+                  <v-tab key="character_stats_tab">
+                    Characters
+                    <v-icon left>mdi-account</v-icon>
+                  </v-tab>
+
+                  <v-tab-item key="character_stats_tab">
+
+                    <v-card flat>
+                      <v-data-table
+                        :headers="character_headers"
+                        :items="character_complete_data"
+                        class="elevation-1"
+                        disable-pagination
+                        hide-default-footer
+                      >
+                        <!--<template v-slot:item.health="{ item }">
+                          <v-chip :color="parseInt(item.health) < 0 ? 'red' : 'green'" :text-color="parseInt(item.health) < 0 ? 'white' : 'black'">{{ formatFloat(item.health) }}</v-chip>
+                        </template>
+
+                        <template v-slot:item.hunger="{ item }">
+                          <v-chip :color="parseInt(item.hunger) < 0 ? 'red' : 'green'" :text-color="parseInt(item.hunger) < 0 ? 'white' : 'black'">{{ formatFloat(item.hunger) }}</v-chip>
+                        </template>
+
+                        <template v-slot:item.sanity="{ item }">
+                          <v-chip :color="parseInt(item.sanity) < 0 ? 'red' : 'green'" :text-color="parseInt(item.sanity) < 0 ? 'white' : 'black'">{{ formatFloat(item.sanity) }}</v-chip>
+                        </template>-->
 
                       </v-data-table>
                     </v-card>
