@@ -525,6 +525,7 @@ var app = new Vue({
         var formatted_data = raw_pig_shop_data.map(function(row, index) {
           var updated_row = row;
           updated_row.id = index + '_raw_pig_shop_' + row.shop_name.replace(/\s/, '_').toLowerCase() + '_' + row.item.replace(/\s/, '_').toLowerCase();
+          updated_row.full_shop_img = 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve/master/assets/images/' + row.shop_img
           return updated_row;
         });
 
