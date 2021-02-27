@@ -403,3 +403,23 @@ class Nutrient
     end
   end
 end
+
+class Character
+  include Shared
+
+  def convert_html_to_csv(input, output)
+    html_to_csv(input, output) do |doc, csv|
+      csv << ['name', 'sanity', 'health', 'hunger']
+
+      doc.xpath('//table/tbody/tr').each do |row|
+        tarray = []
+        row.xpath('td').each_with_index do |cell, index|
+          next if index == 1
+
+          tarray << cell.text.strip
+        end
+        csv << tarray
+      end
+    end
+  end
+end
