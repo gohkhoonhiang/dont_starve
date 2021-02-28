@@ -925,6 +925,7 @@ var app = new Vue({
     raw_vegetable_complete_data: function(new_val, old_val) {
       var vm = this;
       if (new_val.length > 0) {
+        vm.filterVegetableData();
         vm.storeSettings();
       }
     },
@@ -932,6 +933,7 @@ var app = new Vue({
     raw_meat_complete_data: function(new_val, old_val) {
       var vm = this;
       if (new_val.length > 0) {
+        vm.filterMeatData();
         vm.storeSettings();
       }
     },
