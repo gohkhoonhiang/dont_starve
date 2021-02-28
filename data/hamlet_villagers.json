@@ -1,0 +1,281 @@
+{
+  "data": [
+    {
+      "name": "Banker",
+      "trader_img": "pig_banker.png",
+      "items": [
+        "Blue Gem",
+        "Green Gem",
+        "Yellow Gem",
+        "Orange Gem",
+        "Red Gem"
+      ],
+      "reward": {
+        "count": "1",
+        "oinc_img": "tenpiece_oinc.png"
+      },
+      "limit": "No",
+      "location": [
+        "Swinesbury",
+        "Palace City",
+        "Pigg and Pigglet's General Store",
+        "Swinesbury Mineral Exchange"
+      ]
+    },
+    {
+      "name": "Beautician",
+      "trader_img": "pig_beautician.png",
+      "items": [
+        "Jet Feather",
+        "Azure Feather",
+        "Crimson Feather",
+        "Thunder Feather",
+        "Peagawk Plume",
+        "Doydoy Feather"
+      ],
+      "reward": {
+        "count": "2",
+        "oinc_img": "oinc.png"
+      },
+      "limit": "Once per day",
+      "location": [
+        "Swinesbury",
+        "Curly Tails Mud Spa",
+        "Palace City"
+      ]
+    },
+    {
+      "name": "Collector",
+      "trader_img": "pig_collector.png",
+      "items": [
+        "Stinger",
+        "Silk",
+        "Mosquito Sack",
+        "Chitin",
+        "Flytrap Stalk",
+        "Venom Gland",
+        "Spider Gland",
+        "Lotus Flower"
+      ],
+      "reward": {
+        "count": "3",
+        "oinc_img": "oinc.png"
+      },
+      "limit": "No",
+      "location": [
+        "Palace City",
+        "'The Sty' Oddities Emporium"
+      ]
+    },
+    {
+      "name": "Erudite",
+      "trader_img": "pig_erudite.png",
+      "items": [
+        "Nightmare Fuel"
+      ],
+      "reward": {
+        "count": "5",
+        "oinc_img": "oinc.png"
+      },
+      "limit": "Once per day",
+      "location": [
+        "The Flying Pig Arcane Shop",
+        "Palace City"
+      ]
+    },
+    {
+      "name": "Farmer",
+      "trader_img": "pig_farmer.png",
+      "items": [
+        "Cut Grass",
+        "Twigs"
+      ],
+      "reward": {
+        "count": "1",
+        "oinc_img": "oinc.png"
+      },
+      "limit": "Once per day",
+      "location": [
+        "Swinesbury",
+        "Palace City"
+      ]
+    },
+    {
+      "name": "Florist",
+      "trader_img": "pig_florist.png",
+      "items": [
+        "Petals"
+      ],
+      "reward": {
+        "count": "1",
+        "oinc_img": "oinc.png"
+      },
+      "limit": "Once per day",
+      "location": [
+        "Swinesbury",
+        "Miss Sow's Floral Arrangements",
+        "Palace City"
+      ]
+    },
+    {
+      "name": "Hatmaker",
+      "trader_img": "pig_hatmaker.png",
+      "items": [
+        "Silk"
+      ],
+      "reward": {
+        "count": "5",
+        "oinc_img": "oinc.png"
+      },
+      "limit": "Once per day",
+      "location": [
+        "Palace City",
+        "The Sow's Ear Hat Shop"
+      ]
+    },
+    {
+      "name": "Hunter",
+      "trader_img": "pig_hunter.png",
+      "items": [
+        "Hound's Tooth",
+        "Stinger"
+      ],
+      "reward": {
+        "count": "5",
+        "oinc_img": "oinc.png"
+      },
+      "limit": "Once per day",
+      "location": [
+        "Palace City",
+        "The Boar's Tusk Weapon Shop"
+      ]
+    },
+    {
+      "name": "Mayor Truffleston",
+      "trader_img": "pig_mayor.png",
+      "items": [
+        "Gold Nugget"
+      ],
+      "reward": {
+        "count": "5",
+        "oinc_img": "oinc.png"
+      },
+      "limit": "No",
+      "location": [
+        "Swinesbury City Hall"
+      ]
+    },
+    {
+      "name": "Miner",
+      "trader_img": "pig_miner.png",
+      "items": [
+        "Rocks"
+      ],
+      "reward": {
+        "count": "1",
+        "oinc_img": "oinc.png"
+      },
+      "limit": "Once per day",
+      "location": [
+        "Swinesbury",
+        "Palace City"
+      ]
+    },
+    {
+      "name": "Pig Queen",
+      "trader_img": "pig_queen.png",
+      "items": [
+        "Royal Crown",
+        "Regal Scepter",
+        "The Blue Sow",
+        "The Jeweled Truffle"
+      ],
+      "reward": {
+        "count": "1",
+        "oinc_img": "royal_gallery_key.png"
+      },
+      "limit": "No",
+      "location": [
+        "Palace"
+      ]
+    },
+    {
+      "name": "Professor",
+      "trader_img": "pig_professor.png",
+      "items": [
+        "Lost Idol",
+        "Lost Totem",
+        "Relic Fragment"
+      ],
+      "reward": {
+        "count": "1",
+        "oinc_img": "tenpiece_oinc.png"
+      },
+      "limit": "No",
+      "location": [
+        "Swinesbury",
+        "Palace City",
+        "Swinesbury Academy"
+      ]
+    },
+    {
+      "name": "Shopkeep",
+      "trader_img": "pig_shopkeep.png",
+      "items": [
+        "Clippings"
+      ],
+      "reward": {
+        "count": "1",
+        "oinc_img": "oinc.png"
+      },
+      "limit": "No",
+      "location": [
+        "Swinesbury",
+        "The Sterling Trough Deli",
+        "Swinesbury Fine Grocer's"
+      ]
+    },
+    {
+      "name": "Usher",
+      "trader_img": "pig_usher.png",
+      "items": [
+        "Honey",
+        "Fist Full of Jam",
+        "Ice Cream",
+        "Pumpkin Cookie",
+        "Waffles",
+        "Berries",
+        "Roasted Berries"
+      ],
+      "reward": {
+        "count": "4",
+        "oinc_img": "oinc.png"
+      },
+      "limit": "Once per day",
+      "location": [
+        "Swinesbury: Streets",
+        "Palace City"
+      ]
+    },
+    {
+      "name": "Worker",
+      "trader_img": "pig_worker.png",
+      "items": [
+        "Boards",
+        "Rope",
+        "Cut Stone",
+        "Papyrus"
+      ],
+      "reward": {
+        "count": "2",
+        "oinc_img": "oinc.png"
+      },
+      "limit": "Once per day",
+      "location": [
+        "Swinesbury",
+        "The Tinkerer's Tower",
+        "Palace City"
+      ]
+    }
+  ]
+}

@@ -447,3 +447,46 @@ class HamletShop
     end
   end
 end
+
+class HamletVillager
+  include Shared
+
+  def convert_html_to_csv(input, output)
+    html_to_csv(input, output) do |doc, csv|
+      csv << ['name', 'trader_img', 'items', 'reward', 'limit', 'location']
+
+      doc.xpath('//table/tbody/tr').each do |row|
+        tarray = []
+        row.xpath('td').each_with_index do |cell, index|
+          if index == 1
+            tarray << cell.xpath('div/figure/a/img').attr('alt').text.strip.gsub(/\s/, '_').downcase
+          elsif index == 2
+            tarray << cell.xpath('a').map { |a| a.attr('title') }.join(',')
+          elsif index == 3
+            count = cell.children.select { |c| c.is_a?(Nokogiri::XML::Element) }.map { |e| e.text.strip }.reject(&:empty?).first&.tr('x', '')&.to_i || 1
+            oinc = cell.xpath('p/a', 'a').map { |a| a.attr('title') }.reject(&:empty?).first.gsub(/\s/, '_').downcase + '.png'
+            tarray << [count, oinc].join(',')
+          elsif index == 5
+            tarray << cell.xpath('ul/li', 'ul/li/a').map { |l| l.text.strip }.uniq.join(',')
+          else
+            tarray << cell.text.strip
+          end
+        end
+        csv << tarray
+      end
+    end
+  end
+
+  def normalize(key, value)
+    normalized = if %w(items location).include?(key)
+                   value.split(',')
+                 elsif %w(reward).include?(key)
+                   count, oinc = value.split(',')
+                   { count: count, oinc_img: oinc }
+                 else
+                   value
+                 end
+
+    [key, normalized]
+  end
+end
