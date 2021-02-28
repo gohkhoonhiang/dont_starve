@@ -1,4 +1,4 @@
-var latest_data_version = 'd2788b3';
+var latest_data_version = '7ca93a4';
 
 var normalizeDlc = function(value) {
   return value.map(ele => mapDlc(ele));
@@ -299,6 +299,9 @@ var app = new Vue({
       { text: 'Sanity', filterable: false, value: 'sanity' },
     ],
 
+    pig_shop_item_search: '',
+    pig_shop_name_search: '',
+    pig_shop_names: [],
     pig_shop_complete_data: [],
     pig_shop_data: [],
     pig_shop_headers: [
@@ -306,12 +309,12 @@ var app = new Vue({
         text: 'Shop Name',
         align: 'start',
         sortable: true,
-        filterable: true,
+        filterable: false,
         value: 'shop_name',
         width: 300,
       },
-      { text: 'Shop Image', filterable: false, value: 'shop_img', width: 30 },
-      { text: 'Item Name', filterable: false, value: 'item' },
+      { text: 'Shop Image', filterable: false, value: 'full_shop_img', width: 30 },
+      { text: 'Item Name', filterable: true, value: 'item' },
       { text: 'Oinc', filterable: false, value: 'oinc_cost' },
     ],
   },
@@ -524,11 +527,15 @@ var app = new Vue({
         var raw_pig_shop_data = JSON.parse(response).data;
         var formatted_data = raw_pig_shop_data.map(function(row, index) {
           var updated_row = row;
-          updated_row.id = index + '_raw_pig_shop_' + row.shop_name.replace(/\s/, '_').toLowerCase() + '_' + row.item.replace(/\s/, '_').toLowerCase();
+          updated_row.id = index + '_raw_pig_shop_' + row.shop_name.replace(/\s|\(|\)/, '_').toLowerCase() + '_' + row.item.replace(/\s/, '_').toLowerCase();
           updated_row.full_shop_img = 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve/master/assets/images/' + row.shop_img
+          if (!hasElement(vm.pig_shop_names, row.shop_name)) {
+            vm.pig_shop_names = addElement(vm.pig_shop_names, row.shop_name);
+          }
           return updated_row;
         });
 
+        vm.pig_shop_names = vm.pig_shop_names.sort();
         vm.pig_shop_complete_data = formatted_data;
       });
 
@@ -631,6 +638,21 @@ var app = new Vue({
       vm.farming_config_data = vm.filterByPlants(vm.farming_config_complete_data, vm.farming_config_plants_search);
     },
 
+    filterByShopName: function(data, pig_shop_name_search) {
+      var vm = this;
+      var search = pig_shop_name_search;
+      if (search === null || search.length === 0) { return data; }
+
+      return data.filter(function(shop_item) {
+        return search === shop_item.shop_name;
+      });
+    },
+
+    filterPigShopData: function() {
+      var vm = this;
+      vm.pig_shop_data = vm.filterByShopName(vm.pig_shop_complete_data, vm.pig_shop_name_search);
+    },
+
     highlightValue: function(value, threshold) {
       if (parseFloat(value) >= parseFloat(threshold)) {
         return '#8b104a';
@@ -719,6 +741,12 @@ var app = new Vue({
       vm.farming_config_plants_search = [];
     },
 
+    clearPigShopFilters: function() {
+      var vm = this;
+      vm.pig_shop_item_search = '';
+      vm.pig_shop_name_search = '';
+    },
+
     retrieveSettings: function() {
       var vm = this;
       var settings = JSON.parse(localStorage.getItem('dont_starve_settings'));
@@ -760,6 +788,9 @@ var app = new Vue({
         farming_config_plants_search: vm.farming_config_plants_search,
         farming_config_plants: vm.farming_config_plants,
         character_complete_data: vm.character_complete_data,
+        pig_shop_item_search: vm.pig_shop_item_search,
+        pig_shop_name_search: vm.pig_shop_name_search,
+        pig_shop_names: vm.pig_shop_names,
         pig_shop_complete_data: vm.pig_shop_complete_data,
       };
 
@@ -850,6 +881,7 @@ var app = new Vue({
     pig_shop_complete_data: function(new_val, old_val) {
       var vm = this;
       if (new_val.length > 0) {
+        vm.filterPigShopData();
         vm.storeSettings();
       }
     },
@@ -932,6 +964,17 @@ var app = new Vue({
     farming_config_plants_search: function(new_val, old_val) {
       var vm = this;
       vm.filterFarmingConfigData();
+      vm.storeSettings();
+    },
+
+    pig_shop_item_search: function(new_val, old_val) {
+      var vm = this;
+      vm.storeSettings();
+    },
+
+    pig_shop_name_search: function(new_val, old_val) {
+      var vm = this;
+      vm.filterPigShopData();
       vm.storeSettings();
     },
 
