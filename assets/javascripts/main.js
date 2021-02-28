@@ -1,4 +1,4 @@
-var latest_data_version = '7ca93a4';
+var latest_data_version = 'fd78bd0';
 
 var normalizeDlc = function(value) {
   return value.map(ele => mapDlc(ele));
@@ -82,6 +82,7 @@ var app = new Vue({
       this.getFarmingConfigData();
       this.getCharacterData();
       this.getPigShopData();
+      this.getPigTraderData();
       this.data_version = latest_data_version;
     }
   },
@@ -317,6 +318,27 @@ var app = new Vue({
       { text: 'Item Name', filterable: true, value: 'item' },
       { text: 'Oinc', filterable: false, value: 'oinc_cost' },
     ],
+
+    pig_trader_item_search: '',
+    pig_trader_location_search: '',
+    pig_trader_locations: [],
+    pig_trader_complete_data: [],
+    pig_trader_data: [],
+    pig_trader_headers: [
+      {
+        text: 'Name',
+        align: 'start',
+        sortable: true,
+        filterable: false,
+        value: 'name',
+        width: 150,
+      },
+      { text: 'Trader Image', filterable: false, value: 'full_trader_img' },
+      { text: 'Items', filterable: true, value: 'items', width: 250 },
+      { text: 'Reward', filterable: false, value: 'reward', width: 80 },
+      { text: 'Limit', filterable: false, value: 'limit', width: 80 },
+      { text: 'Location', filterable: false, value: 'location', widht: 150 },
+    ],
   },
 
   methods: {
@@ -528,7 +550,7 @@ var app = new Vue({
         var formatted_data = raw_pig_shop_data.map(function(row, index) {
           var updated_row = row;
           updated_row.id = index + '_raw_pig_shop_' + row.shop_name.replace(/\s|\(|\)/, '_').toLowerCase() + '_' + row.item.replace(/\s/, '_').toLowerCase();
-          updated_row.full_shop_img = 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve/master/assets/images/' + row.shop_img
+          updated_row.full_shop_img = 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve/master/assets/images/' + row.shop_img;
           if (!hasElement(vm.pig_shop_names, row.shop_name)) {
             vm.pig_shop_names = addElement(vm.pig_shop_names, row.shop_name);
           }
@@ -537,6 +559,32 @@ var app = new Vue({
 
         vm.pig_shop_names = vm.pig_shop_names.sort();
         vm.pig_shop_complete_data = formatted_data;
+      });
+
+    },
+
+    getPigTraderData: function() {
+      var vm = this;
+      $.ajax({
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve/master/data/hamlet_villagers.json',
+        method: 'GET'
+      }).then(function (response) {
+        var raw_pig_trader_data = JSON.parse(response).data;
+        var formatted_data = raw_pig_trader_data.map(function(row, index) {
+          var updated_row = row;
+          updated_row.id = index + '_raw_pig_trader_' + row.name.replace(/\s/, '_').toLowerCase();
+          updated_row.full_trader_img = 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve/master/assets/images/' + row.trader_img;
+          updated_row.reward.full_oinc_img = 'https://raw.githubusercontent.com/gohkhoonhiang/dont_starve/master/assets/images/' + row.reward.oinc_img;
+          row.location.forEach(function(trader_location) {
+            if (!hasElement(vm.pig_trader_locations, trader_location)) {
+              vm.pig_trader_locations = addElement(vm.pig_trader_locations, trader_location);
+            }
+          });
+          return updated_row;
+        });
+
+        vm.pig_trader_locations = vm.pig_trader_locations.sort();
+        vm.pig_trader_complete_data = formatted_data;
       });
 
     },
@@ -653,6 +701,21 @@ var app = new Vue({
       vm.pig_shop_data = vm.filterByShopName(vm.pig_shop_complete_data, vm.pig_shop_name_search);
     },
 
+    filterByHamletLocation: function(data, pig_trader_location_search) {
+      var vm = this;
+      var search = pig_trader_location_search;
+      if (search === null || search.length === 0) { return data; }
+
+      return data.filter(function(trader) {
+        return trader.location.includes(search);
+      });
+    },
+
+    filterPigTraderData: function() {
+      var vm = this;
+      vm.pig_trader_data = vm.filterByHamletLocation(vm.pig_trader_complete_data, vm.pig_trader_location_search);
+    },
+
     highlightValue: function(value, threshold) {
       if (parseFloat(value) >= parseFloat(threshold)) {
         return '#8b104a';
@@ -747,6 +810,12 @@ var app = new Vue({
       vm.pig_shop_name_search = '';
     },
 
+    clearPigTraderFilters: function() {
+      var vm = this;
+      vm.pig_trader_item_search = '';
+      vm.pig_trader_location_search = '';
+    },
+
     retrieveSettings: function() {
       var vm = this;
       var settings = JSON.parse(localStorage.getItem('dont_starve_settings'));
@@ -792,6 +861,10 @@ var app = new Vue({
         pig_shop_name_search: vm.pig_shop_name_search,
         pig_shop_names: vm.pig_shop_names,
         pig_shop_complete_data: vm.pig_shop_complete_data,
+        pig_trader_item_search: vm.pig_trader_item_search,
+        pig_trader_location_search: vm.pig_trader_location_search,
+        pig_trader_locations: vm.pig_trader_locations,
+        pig_trader_complete_data: vm.pig_trader_complete_data,
       };
 
       localStorage.setItem('dont_starve_settings', JSON.stringify(settings));
@@ -886,6 +959,14 @@ var app = new Vue({
       }
     },
 
+    pig_trader_complete_data: function(new_val, old_val) {
+      var vm = this;
+      if (new_val.length > 0) {
+        vm.filterPigTraderData();
+        vm.storeSettings();
+      }
+    },
+
     toggle_dlc: function(new_val, old_val) {
       var vm = this;
       vm.filterVegetableRecipeData();
@@ -975,6 +1056,17 @@ var app = new Vue({
     pig_shop_name_search: function(new_val, old_val) {
       var vm = this;
       vm.filterPigShopData();
+      vm.storeSettings();
+    },
+
+    pig_trader_item_search: function(new_val, old_val) {
+      var vm = this;
+      vm.storeSettings();
+    },
+
+    pig_trader_location_search: function(new_val, old_val) {
+      var vm = this;
+      vm.filterPigTraderData();
       vm.storeSettings();
     },
 
